@@ -1,0 +1,1 @@
+<?php include_once("{$level}component/contents/{$page}/{$page}_ct.php") ?>

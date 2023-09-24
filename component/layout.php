@@ -2,7 +2,7 @@
 <html class="no-js" lang="zxx">
 
 <head>
-    <?php include($level.'componer/header/meta-data.php') ?>
+    <?php include($level.'component/header/meta-data.php') ?>
 </head>
 
 <body>
@@ -14,13 +14,13 @@
             <!--pos page inner-->
             <div class="pos_page_inner">
                 <!--header area -->
-                <?php include($level.'componer/meta-data/meta.php') ?>
+                <?php include($level.'component/meta-data/meta.php') ?>
 
                 <!--header end -->
-                <?php include($level.'componer/header/header.php') ?>
+                <?php include($level.'component/header/header.php') ?>
 
                 <!--pos home section-->
-                <?php include($level.'componer/index/home.php') ?>
+                <?php include($level.'component/index/home.php') ?>
                 
                 <!--pos home section end-->
             </div>
@@ -30,7 +30,7 @@
     <!--pos page end-->
 
     <!--footer area start-->
-    <?php include($level.'componer/footer/footer.php') ?>
+    <?php include($level.'component/footer/footer.php') ?>
     
     <!--footer area end-->
 
