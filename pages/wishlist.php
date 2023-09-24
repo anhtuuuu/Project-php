@@ -1,4 +1,4 @@
-﻿<!doctype html>
+﻿<?php $level='../' ?> <!doctype html>
 <html class="no-js" lang="zxx">
     <head>
         <meta charset="utf-8">
@@ -33,10 +33,10 @@
                                     <div class="col-lg-6 col-md-6">
                                        <div class="switcher">
                                             <ul>
-                                                <li class="languages"><a href="#"><img src="assets\img\logo\fontlogo.jpg" alt=""> English <i class="fa fa-angle-down"></i></a>
+                                                <li class="languages"><a href="#"><img src="<?php echo $level?>assets\img\logo\fontlogo.jpg" alt=""> English <i class="fa fa-angle-down"></i></a>
                                                     <ul class="dropdown_languages">
-                                                        <li><a href="#"><img src="assets\img\logo\fontlogo.jpg" alt=""> English</a></li>
-                                                        <li><a href="#"><img src="assets\img\logo\fontlogo2.jpg" alt=""> French </a></li>
+                                                        <li><a href="#"><img src="<?php echo $level?>assets\img\logo\fontlogo.jpg" alt=""> English</a></li>
+                                                        <li><a href="#"><img src="<?php echo $level?>assets\img\logo\fontlogo2.jpg" alt=""> French </a></li>
                                                     </ul>   
                                                 </li> 
 
@@ -69,7 +69,7 @@
                                 <div class="row align-items-center">
                                     <div class="col-lg-3 col-md-3">
                                         <div class="logo">
-                                            <a href="index.html"><img src="assets\img\logo\logo.jpg.png" alt=""></a>
+                                            <a href="index.html"><img src="<?php echo $level?>assets\img\logo\logo.jpg.png" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-9 col-md-9">
@@ -87,7 +87,7 @@
                                                 <div class="mini_cart">
                                                     <div class="cart_item">
                                                        <div class="cart_img">
-                                                           <a href="#"><img src="assets\img\cart\cart.jpg" alt=""></a>
+                                                           <a href="#"><img src="<?php echo $level?>assets\img\cart\cart.jpg" alt=""></a>
                                                        </div>
                                                         <div class="cart_info">
                                                             <a href="#">lorem ipsum dolor</a>
@@ -100,7 +100,7 @@
                                                     </div>
                                                     <div class="cart_item">
                                                        <div class="cart_img">
-                                                           <a href="#"><img src="assets\img\cart\cart2.jpg" alt=""></a>
+                                                           <a href="#"><img src="<?php echo $level?>assets\img\cart\cart2.jpg" alt=""></a>
                                                        </div>
                                                         <div class="cart_info">
                                                             <a href="#">Quisque ornare dui</a>
@@ -204,10 +204,10 @@
                                                                     </div>
                                                                     <div class="mega_bottom fix">
                                                                         <div class="mega_thumb">
-                                                                            <a href="#"><img src="assets\img\banner\banner1.jpg" alt=""></a>
+                                                                            <a href="#"><img src="<?php echo $level?>assets\img\banner\banner1.jpg" alt=""></a>
                                                                         </div>
                                                                         <div class="mega_thumb">
-                                                                            <a href="#"><img src="assets\img\banner\banner2.jpg" alt=""></a>
+                                                                            <a href="#"><img src="<?php echo $level?>assets\img\banner\banner2.jpg" alt=""></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -236,7 +236,7 @@
                                                                             </ul>
                                                                         </div>
                                                                         <div class="mega_items">
-                                                                            <a href="#"><img src="assets\img\banner\banner3.jpg" alt=""></a>
+                                                                            <a href="#"><img src="<?php echo $level?>assets\img\banner\banner3.jpg" alt=""></a>
                                                                         </div>
                                                                     </div>
 
@@ -366,10 +366,10 @@
                                                                     </div>
                                                                     <div>
                                                                         <div>
-                                                                            <a href="#"><img src="assets\img\banner\banner1.jpg" alt=""></a>
+                                                                            <a href="#"><img src="<?php echo $level?>assets\img\banner\banner1.jpg" alt=""></a>
                                                                         </div>
                                                                         <div>
-                                                                            <a href="#"><img src="assets\img\banner\banner2.jpg" alt=""></a>
+                                                                            <a href="#"><img src="<?php echo $level?>assets\img\banner\banner2.jpg" alt=""></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -398,7 +398,7 @@
                                                                             </ul>
                                                                         </div>
                                                                         <div>
-                                                                            <a href="#"><img src="assets\img\banner\banner3.jpg" alt=""></a>
+                                                                            <a href="#"><img src="<?php echo $level?>assets\img\banner\banner3.jpg" alt=""></a>
                                                                         </div>
                                                                     </div>
 
@@ -503,7 +503,7 @@
                                                         <tbody>
                                                             <tr>
                                                                <td class="product_remove"><a href="#">X</a></td>
-                                                                <td class="product_thumb"><a href="#"><img src="assets\img\cart\cart17.jpg" alt=""></a></td>
+                                                                <td class="product_thumb"><a href="#"><img src="<?php echo $level?>assets\img\cart\cart17.jpg" alt=""></a></td>
                                                                 <td class="product_name"><a href="#">Handbag fringilla</a></td>
                                                                 <td class="product-price">£65.00</td>
                                                                 <td class="product_quantity">In Stock</td>
@@ -514,7 +514,7 @@
 
                                                             <tr>
                                                                <td class="product_remove"><a href="#">X</a></td>
-                                                                <td class="product_thumb"><a href="#"><img src="assets\img\cart\cart18.jpg" alt=""></a></td>
+                                                                <td class="product_thumb"><a href="#"><img src="<?php echo $level?>assets\img\cart\cart18.jpg" alt=""></a></td>
                                                                 <td class="product_name"><a href="#">Handbags justo</a></td>
                                                                 <td class="product-price">£90.00</td>
                                                                 <td class="product_quantity">In Stock</td>
@@ -524,7 +524,7 @@
                                                             </tr>
                                                             <tr>
                                                                <td class="product_remove"><a href="#">X</a></td>
-                                                                <td class="product_thumb"><a href="#"><img src="assets\img\cart\cart19.jpg" alt=""></a></td>
+                                                                <td class="product_thumb"><a href="#"><img src="<?php echo $level?>assets\img\cart\cart19.jpg" alt=""></a></td>
                                                                 <td class="product_name"><a href="#">Handbag elit</a></td>
                                                                 <td class="product-price">£80.00</td>
                                                                 <td class="product_quantity">In Stock</td>

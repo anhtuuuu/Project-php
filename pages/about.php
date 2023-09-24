@@ -1,4 +1,4 @@
-﻿<!doctype html>
+﻿<?php $level='../' ?> <!doctype html>
 <html class="no-js" lang="zxx">
     <head>
         <meta charset="utf-8">
@@ -33,10 +33,10 @@
                                     <div class="col-lg-6 col-md-6">
                                        <div class="switcher">
                                             <ul>
-                                                <li class="languages"><a href="#"><img src="assets\img\logo\fontlogo.jpg" alt=""> English <i class="fa fa-angle-down"></i></a>
+                                                <li class="languages"><a href="#"><img src="<?php echo $level?>assets\img\logo\fontlogo.jpg" alt=""> English <i class="fa fa-angle-down"></i></a>
                                                     <ul class="dropdown_languages">
-                                                        <li><a href="#"><img src="assets\img\logo\fontlogo.jpg" alt=""> English</a></li>
-                                                        <li><a href="#"><img src="assets\img\logo\fontlogo2.jpg" alt=""> French </a></li>
+                                                        <li><a href="#"><img src="<?php echo $level?>assets\img\logo\fontlogo.jpg" alt=""> English</a></li>
+                                                        <li><a href="#"><img src="<?php echo $level?>assets\img\logo\fontlogo2.jpg" alt=""> French </a></li>
                                                     </ul>   
                                                 </li> 
 
@@ -69,7 +69,7 @@
                                 <div class="row align-items-center">
                                     <div class="col-lg-3 col-md-3">
                                         <div class="logo">
-                                            <a href="index.html"><img src="assets\img\logo\logo.jpg.png" alt=""></a>
+                                            <a href="index.html"><img src="<?php echo $level?>assets\img\logo\logo.jpg.png" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-9 col-md-9">
@@ -87,7 +87,7 @@
                                                 <div class="mini_cart">
                                                     <div class="cart_item">
                                                        <div class="cart_img">
-                                                           <a href="#"><img src="assets\img\cart\cart.jpg" alt=""></a>
+                                                           <a href="#"><img src="<?php echo $level?>assets\img\cart\cart.jpg" alt=""></a>
                                                        </div>
                                                         <div class="cart_info">
                                                             <a href="#">lorem ipsum dolor</a>
@@ -100,7 +100,7 @@
                                                     </div>
                                                     <div class="cart_item">
                                                        <div class="cart_img">
-                                                           <a href="#"><img src="assets\img\cart\cart2.jpg" alt=""></a>
+                                                           <a href="#"><img src="<?php echo $level?>assets\img\cart\cart2.jpg" alt=""></a>
                                                        </div>
                                                         <div class="cart_info">
                                                             <a href="#">Quisque ornare dui</a>
@@ -204,10 +204,10 @@
                                                                     </div>
                                                                     <div class="mega_bottom fix">
                                                                         <div class="mega_thumb">
-                                                                            <a href="#"><img src="assets\img\banner\banner1.jpg" alt=""></a>
+                                                                            <a href="#"><img src="<?php echo $level?>assets\img\banner\banner1.jpg" alt=""></a>
                                                                         </div>
                                                                         <div class="mega_thumb">
-                                                                            <a href="#"><img src="assets\img\banner\banner2.jpg" alt=""></a>
+                                                                            <a href="#"><img src="<?php echo $level?>assets\img\banner\banner2.jpg" alt=""></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -236,7 +236,7 @@
                                                                             </ul>
                                                                         </div>
                                                                         <div class="mega_items">
-                                                                            <a href="#"><img src="assets\img\banner\banner3.jpg" alt=""></a>
+                                                                            <a href="#"><img src="<?php echo $level?>assets\img\banner\banner3.jpg" alt=""></a>
                                                                         </div>
                                                                     </div>
 
@@ -366,10 +366,10 @@
                                                                     </div>
                                                                     <div>
                                                                         <div>
-                                                                            <a href="#"><img src="assets\img\banner\banner1.jpg" alt=""></a>
+                                                                            <a href="#"><img src="<?php echo $level?>assets\img\banner\banner1.jpg" alt=""></a>
                                                                         </div>
                                                                         <div>
-                                                                            <a href="#"><img src="assets\img\banner\banner2.jpg" alt=""></a>
+                                                                            <a href="#"><img src="<?php echo $level?>assets\img\banner\banner2.jpg" alt=""></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -398,7 +398,7 @@
                                                                             </ul>
                                                                         </div>
                                                                         <div>
-                                                                            <a href="#"><img src="assets\img\banner\banner3.jpg" alt=""></a>
+                                                                            <a href="#"><img src="<?php echo $level?>assets\img\banner\banner3.jpg" alt=""></a>
                                                                         </div>
                                                                     </div>
 
@@ -486,7 +486,7 @@
                             <div class="row align-items-center">
                                     <div class="col-lg-6 col-md-6">
                                         <div class="about_thumb">
-                                            <img src="assets\img\ship\about1.jpg" alt="">
+                                            <img src="<?php echo $level?>assets\img\ship\about1.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
@@ -509,7 +509,7 @@
                                     <div class="col-lg-3 col-md-6 col-sm-6">
                                         <div class="single_counterup">
                                            <div class="counter_img">
-                                                <img src="assets\img\cart\count.png" alt="">
+                                                <img src="<?php echo $level?>assets\img\cart\count.png" alt="">
                                             </div>
                                             <div class="counter_info">
                                                 <h2 class="counter_number">2170</h2>
@@ -520,7 +520,7 @@
                                      <div class="col-lg-3 col-md-6 col-sm-6">
                                         <div class="single_counterup count-two">
                                             <div class="counter_img">
-                                                <img src="assets\img\cart\count2.png" alt="">
+                                                <img src="<?php echo $level?>assets\img\cart\count2.png" alt="">
                                             </div>
                                             <div class="counter_info">
                                                 <h2 class="counter_number">8080</h2>
@@ -531,7 +531,7 @@
                                      <div class="col-lg-3 col-md-6 col-sm-6">
                                         <div class="single_counterup">
                                             <div class="counter_img">
-                                                <img src="assets\img\cart\count3.png" alt="">
+                                                <img src="<?php echo $level?>assets\img\cart\count3.png" alt="">
                                             </div>
                                             <div class="counter_info">
                                                 <h2 class="counter_number">2150</h2>
@@ -542,7 +542,7 @@
                                      <div class="col-lg-3 col-md-6 col-sm-6">
                                         <div class="single_counterup count-two">
                                             <div class="counter_img">
-                                                <img src="assets\img\cart\cart5.png" alt="">
+                                                <img src="<?php echo $level?>assets\img\cart\cart5.png" alt="">
                                             </div>
                                             <div class="counter_info">
                                                 <h2 class="counter_number">2170</h2>
@@ -602,7 +602,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="about__img">
-                                        <img src="assets\img\ship\about3.jpg" alt="">
+                                        <img src="<?php echo $level?>assets\img\ship\about3.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -618,32 +618,32 @@
                                 <div class="brand_active owl-carousel">
                                     <div class="col-lg-2">
                                         <div class="single_brand">
-                                            <a href="#"><img src="assets\img\brand\brand1.jpg" alt=""></a>
+                                            <a href="#"><img src="<?php echo $level?>assets\img\brand\brand1.jpg" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
                                         <div class="single_brand">
-                                            <a href="#"><img src="assets\img\brand\brand2.jpg" alt=""></a>
+                                            <a href="#"><img src="<?php echo $level?>assets\img\brand\brand2.jpg" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
                                         <div class="single_brand">
-                                            <a href="#"><img src="assets\img\brand\brand3.jpg" alt=""></a>
+                                            <a href="#"><img src="<?php echo $level?>assets\img\brand\brand3.jpg" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
                                         <div class="single_brand">
-                                            <a href="#"><img src="assets\img\brand\brand4.jpg" alt=""></a>
+                                            <a href="#"><img src="<?php echo $level?>assets\img\brand\brand4.jpg" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
                                         <div class="single_brand">
-                                            <a href="#"><img src="assets\img\brand\brand5.jpg" alt=""></a>
+                                            <a href="#"><img src="<?php echo $level?>assets\img\brand\brand5.jpg" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
                                         <div class="single_brand">
-                                            <a href="#"><img src="assets\img\brand\brand6.jpg" alt=""></a>
+                                            <a href="#"><img src="<?php echo $level?>assets\img\brand\brand6.jpg" alt=""></a>
                                         </div>
                                     </div>
                                 </div>

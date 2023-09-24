@@ -1,5 +1,5 @@
 ﻿<?php $level = "../"?>
-<!doctype html>
+<?php $level='../' ?> <!doctype html>
 <html class="no-js" lang="zxx">
     <head>
         <?php include_once("{$level}layout/meta-data/meta.php")?>
