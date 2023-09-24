@@ -28,7 +28,7 @@
                                             <input placeholder="Search..." type="text">
                                             <button type="submit"><i class="fa fa-search"></i></button>
                                         </form>
-                                        <a href="index.html">Back to home page</a>
+                                        <a href="index.php">Back to home page</a>
                                     </div>
                                 </div>
                             </div>

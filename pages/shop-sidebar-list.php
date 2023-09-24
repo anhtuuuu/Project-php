@@ -52,11 +52,11 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div class="header_links">
                                             <ul>
-                                                <li><a href="contact.html" title="Contact">Contact</a></li>
-                                                <li><a href="wishlist.html" title="wishlist">My wishlist</a></li>
-                                                <li><a href="my-account.html" title="My account">My account</a></li>
-                                                <li><a href="cart.html" title="My cart">My cart</a></li>
-                                                <li><a href="login.html" title="Login">Login</a></li>
+                                                <li><a href="contact.php" title="Contact">Contact</a></li>
+                                                <li><a href="wishlist.php" title="wishlist">My wishlist</a></li>
+                                                <li><a href="my-account.php" title="My account">My account</a></li>
+                                                <li><a href="cart.php" title="My cart">My cart</a></li>
+                                                <li><a href="login.php" title="Login">Login</a></li>
                                             </ul>
                                         </div>   
                                     </div>
@@ -69,7 +69,7 @@
                                 <div class="row align-items-center">
                                     <div class="col-lg-3 col-md-3">
                                         <div class="logo">
-                                            <a href="index.html"><img src="<?php echo $level?>assets\img\logo\logo.jpg.png" alt=""></a>
+                                            <a href="index.php"><img src="<?php echo $level?>assets\img\logo\logo.jpg.png" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-9 col-md-9">
@@ -120,7 +120,7 @@
                                                         <span class="prices">  $227.00  </span>
                                                     </div>
                                                     <div class="cart_button">
-                                                        <a href="checkout.html"> Check out</a>
+                                                        <a href="checkout.php"> Check out</a>
                                                     </div>
                                                 </div>
                                                 <!--mini cart end-->
@@ -138,29 +138,29 @@
                                                 <div class="main_menu d-none d-lg-block">
                                                     <nav>
                                                         <ul>
-                                                            <li class="active"><a href="index.html">Home</a>
+                                                            <li class="active"><a href="index.php">Home</a>
                                                                 <div class="mega_menu jewelry">
                                                                     <div class="mega_items jewelry">
                                                                         <ul>
-                                                                            <li><a href="index.html">Home 1</a></li>
-                                                                            <li><a href="index-2.html">Home 2</a></li>
+                                                                            <li><a href="index.php">Home 1</a></li>
+                                                                            <li><a href="index-2.php">Home 2</a></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div> 
                                                             </li>
-                                                            <li><a href="shop.html">shop</a>
+                                                            <li><a href="shop.php">shop</a>
                                                                 <div class="mega_menu jewelry">
                                                                     <div class="mega_items jewelry">
                                                                         <ul>
-                                                                            <li><a href="shop-list.html">shop list</a></li>
-                                                                            <li><a href="shop-fullwidth.html">shop Full Width Grid</a></li>
-                                                                            <li><a href="shop-fullwidth-list.html">shop Full Width list</a></li>
-                                                                            <li><a href="shop-sidebar.html">shop Right Sidebar</a></li>
-                                                                            <li><a href="shop-sidebar-list.html">shop list Right Sidebar</a></li>
-                                                                            <li><a href="single-product.html">Product Details</a></li>
-                                                                            <li><a href="single-product-sidebar.html">Product sidebar</a></li>
-                                                                            <li><a href="single-product-video.html">Product Details video</a></li>
-                                                                            <li><a href="single-product-gallery.html">Product Details Gallery</a></li>
+                                                                            <li><a href="shop-list.php">shop list</a></li>
+                                                                            <li><a href="shop-fullwidth.php">shop Full Width Grid</a></li>
+                                                                            <li><a href="shop-fullwidth-list.php">shop Full Width list</a></li>
+                                                                            <li><a href="shop-sidebar.php">shop Right Sidebar</a></li>
+                                                                            <li><a href="shop-sidebar-list.php">shop list Right Sidebar</a></li>
+                                                                            <li><a href="single-product.php">Product Details</a></li>
+                                                                            <li><a href="single-product-sidebar.php">Product sidebar</a></li>
+                                                                            <li><a href="single-product-video.php">Product Details video</a></li>
+                                                                            <li><a href="single-product-gallery.php">Product Details Gallery</a></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>  
@@ -248,51 +248,51 @@
                                                                         <div class="mega_items">
                                                                             <h3><a href="#">Column1</a></h3>
                                                                             <ul>
-                                                                                <li><a href="portfolio.html">Portfolio</a></li>
-                                                                                <li><a href="portfolio-details.html">single portfolio </a></li>
-                                                                                <li><a href="about.html">About Us </a></li>
-                                                                                <li><a href="about-2.html">About Us 2</a></li>
-                                                                                <li><a href="services.html">Service </a></li>
-                                                                                <li><a href="my-account.html">my account </a></li>
+                                                                                <li><a href="portfolio.php">Portfolio</a></li>
+                                                                                <li><a href="portfolio-details.php">single portfolio </a></li>
+                                                                                <li><a href="about.php">About Us </a></li>
+                                                                                <li><a href="about-2.php">About Us 2</a></li>
+                                                                                <li><a href="services.php">Service </a></li>
+                                                                                <li><a href="my-account.php">my account </a></li>
                                                                             </ul>
                                                                         </div>
                                                                         <div class="mega_items">
                                                                             <h3><a href="#">Column2</a></h3>
                                                                             <ul>
-                                                                                <li><a href="blog.html">Blog </a></li>
-                                                                                <li><a href="blog-details.html">Blog  Details </a></li>
-                                                                                <li><a href="blog-fullwidth.html">Blog FullWidth</a></li>
-                                                                                <li><a href="blog-sidebar.html">Blog  Sidebar</a></li>
-                                                                                <li><a href="faq.html">Frequently Questions</a></li>
-                                                                                <li><a href="404.html">404</a></li>
+                                                                                <li><a href="blog.php">Blog </a></li>
+                                                                                <li><a href="blog-details.php">Blog  Details </a></li>
+                                                                                <li><a href="blog-fullwidth.php">Blog FullWidth</a></li>
+                                                                                <li><a href="blog-sidebar.php">Blog  Sidebar</a></li>
+                                                                                <li><a href="faq.php">Frequently Questions</a></li>
+                                                                                <li><a href="404.php">404</a></li>
                                                                             </ul>
                                                                         </div>
                                                                         <div class="mega_items">
                                                                             <h3><a href="#">Column3</a></h3>
                                                                             <ul>
-                                                                                <li><a href="contact.html">Contact</a></li>
-                                                                                <li><a href="cart.html">cart</a></li>
-                                                                                <li><a href="checkout.html">Checkout  </a></li>
-                                                                                <li><a href="wishlist.html">Wishlist</a></li>
-                                                                                <li><a href="login.html">Login</a></li>
+                                                                                <li><a href="contact.php">Contact</a></li>
+                                                                                <li><a href="cart.php">cart</a></li>
+                                                                                <li><a href="checkout.php">Checkout  </a></li>
+                                                                                <li><a href="wishlist.php">Wishlist</a></li>
+                                                                                <li><a href="login.php">Login</a></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </li>
                                                             
-                                                             <li><a href="blog.html">blog</a>
+                                                             <li><a href="blog.php">blog</a>
                                                                 <div class="mega_menu jewelry">
                                                                     <div class="mega_items jewelry">
                                                                         <ul>
-                                                                            <li><a href="blog-details.html">blog details</a></li>
-                                                                            <li><a href="blog-fullwidth.html">blog fullwidth</a></li>
-                                                                            <li><a href="blog-sidebar.html">blog sidebar</a></li>
+                                                                            <li><a href="blog-details.php">blog details</a></li>
+                                                                            <li><a href="blog-fullwidth.php">blog fullwidth</a></li>
+                                                                            <li><a href="blog-sidebar.php">blog sidebar</a></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>  
                                                             </li>
-                                                            <li><a href="contact.html">contact us</a></li>
+                                                            <li><a href="contact.php">contact us</a></li>
 
                                                         </ul>
                                                     </nav>
@@ -300,29 +300,29 @@
                                                 <div class="mobile-menu d-lg-none">
                                                     <nav>
                                                         <ul>
-                                                            <li><a href="index.html">Home</a>
+                                                            <li><a href="index.php">Home</a>
                                                                 <div>
                                                                     <div>
                                                                         <ul>
-                                                                            <li><a href="index.html">Home 1</a></li>
-                                                                            <li><a href="index-2.html">Home 2</a></li>
+                                                                            <li><a href="index.php">Home 1</a></li>
+                                                                            <li><a href="index-2.php">Home 2</a></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div> 
                                                             </li>
-                                                            <li><a href="shop.html">shop</a>
+                                                            <li><a href="shop.php">shop</a>
                                                                 <div>
                                                                     <div>
                                                                         <ul>
-                                                                            <li><a href="shop-list.html">shop list</a></li>
-                                                                            <li><a href="shop-fullwidth.html">shop Full Width Grid</a></li>
-                                                                            <li><a href="shop-fullwidth-list.html">shop Full Width list</a></li>
-                                                                            <li><a href="shop-sidebar.html">shop Right Sidebar</a></li>
-                                                                            <li><a href="shop-sidebar-list.html">shop list Right Sidebar</a></li>
-                                                                            <li><a href="single-product.html">Product Details</a></li>
-                                                                            <li><a href="single-product-sidebar.html">Product sidebar</a></li>
-                                                                            <li><a href="single-product-video.html">Product Details video</a></li>
-                                                                            <li><a href="single-product-gallery.html">Product Details Gallery</a></li>
+                                                                            <li><a href="shop-list.php">shop list</a></li>
+                                                                            <li><a href="shop-fullwidth.php">shop Full Width Grid</a></li>
+                                                                            <li><a href="shop-fullwidth-list.php">shop Full Width list</a></li>
+                                                                            <li><a href="shop-sidebar.php">shop Right Sidebar</a></li>
+                                                                            <li><a href="shop-sidebar-list.php">shop list Right Sidebar</a></li>
+                                                                            <li><a href="single-product.php">Product Details</a></li>
+                                                                            <li><a href="single-product-sidebar.php">Product sidebar</a></li>
+                                                                            <li><a href="single-product-video.php">Product Details video</a></li>
+                                                                            <li><a href="single-product-gallery.php">Product Details Gallery</a></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>  
@@ -410,51 +410,51 @@
                                                                         <div>
                                                                             <h3><a href="#">Column1</a></h3>
                                                                             <ul>
-                                                                                <li><a href="portfolio.html">Portfolio</a></li>
-                                                                                <li><a href="portfolio-details.html">single portfolio </a></li>
-                                                                                <li><a href="about.html">About Us </a></li>
-                                                                                <li><a href="about-2.html">About Us 2</a></li>
-                                                                                <li><a href="services.html">Service </a></li>
-                                                                                <li><a href="my-account.html">my account </a></li>
+                                                                                <li><a href="portfolio.php">Portfolio</a></li>
+                                                                                <li><a href="portfolio-details.php">single portfolio </a></li>
+                                                                                <li><a href="about.php">About Us </a></li>
+                                                                                <li><a href="about-2.php">About Us 2</a></li>
+                                                                                <li><a href="services.php">Service </a></li>
+                                                                                <li><a href="my-account.php">my account </a></li>
                                                                             </ul>
                                                                         </div>
                                                                         <div>
                                                                             <h3><a href="#">Column2</a></h3>
                                                                             <ul>
-                                                                                <li><a href="blog.html">Blog </a></li>
-                                                                                <li><a href="blog-details.html">Blog  Details </a></li>
-                                                                                <li><a href="blog-fullwidth.html">Blog FullWidth</a></li>
-                                                                                <li><a href="blog-sidebar.html">Blog  Sidebar</a></li>
-                                                                                <li><a href="faq.html">Frequently Questions</a></li>
-                                                                                <li><a href="404.html">404</a></li>
+                                                                                <li><a href="blog.php">Blog </a></li>
+                                                                                <li><a href="blog-details.php">Blog  Details </a></li>
+                                                                                <li><a href="blog-fullwidth.php">Blog FullWidth</a></li>
+                                                                                <li><a href="blog-sidebar.php">Blog  Sidebar</a></li>
+                                                                                <li><a href="faq.php">Frequently Questions</a></li>
+                                                                                <li><a href="404.php">404</a></li>
                                                                             </ul>
                                                                         </div>
                                                                         <div>
                                                                             <h3><a href="#">Column3</a></h3>
                                                                             <ul>
-                                                                                <li><a href="contact.html">Contact</a></li>
-                                                                                <li><a href="cart.html">cart</a></li>
-                                                                                <li><a href="checkout.html">Checkout  </a></li>
-                                                                                <li><a href="wishlist.html">Wishlist</a></li>
-                                                                                <li><a href="login.html">Login</a></li>
+                                                                                <li><a href="contact.php">Contact</a></li>
+                                                                                <li><a href="cart.php">cart</a></li>
+                                                                                <li><a href="checkout.php">Checkout  </a></li>
+                                                                                <li><a href="wishlist.php">Wishlist</a></li>
+                                                                                <li><a href="login.php">Login</a></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </li>
                                                             
-                                                            <li><a href="blog.html">blog</a>
+                                                            <li><a href="blog.php">blog</a>
                                                                 <div>
                                                                     <div>
                                                                         <ul>
-                                                                            <li><a href="blog-details.html">blog details</a></li>
-                                                                            <li><a href="blog-fullwidth.html">blog fullwidth</a></li>
-                                                                            <li><a href="blog-sidebar.html">blog sidebar</a></li>
+                                                                            <li><a href="blog-details.php">blog details</a></li>
+                                                                            <li><a href="blog-fullwidth.php">blog fullwidth</a></li>
+                                                                            <li><a href="blog-sidebar.php">blog sidebar</a></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>  
                                                             </li>
-                                                            <li><a href="contact.html">contact us</a></li>
+                                                            <li><a href="contact.php">contact us</a></li>
 
                                                         </ul>
                                                     </nav>
@@ -471,7 +471,7 @@
                                 <div class="col-12">
                                     <div class="breadcrumb_content">
                                         <ul>
-                                            <li><a href="index.html">home</a></li>
+                                            <li><a href="index.php">home</a></li>
                                             <li><i class="fa fa-angle-right"></i></li>
                                             <li>shop</li>
                                         </ul>
@@ -533,7 +533,7 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="single_product">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product1.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product1.jpg" alt=""></a> 
                                                                    <div class="img_icone">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                                    </div>
@@ -543,7 +543,7 @@
                                                                 </div>
                                                                 <div class="product_content">
                                                                     <span class="product_price">$50.00</span>
-                                                                    <h3 class="product_title"><a href="single-product.html">Curabitur sodales</a></h3>
+                                                                    <h3 class="product_title"><a href="single-product.php">Curabitur sodales</a></h3>
                                                                 </div>
                                                                 <div class="product_info">
                                                                     <ul>
@@ -556,7 +556,7 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="single_product">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product2.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product2.jpg" alt=""></a> 
                                                                    <div class="hot_img">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
                                                                    </div>
@@ -566,7 +566,7 @@
                                                                 </div>
                                                                 <div class="product_content">
                                                                     <span class="product_price">$40.00</span>
-                                                                    <h3 class="product_title"><a href="single-product.html">Quisque ornare dui</a></h3>
+                                                                    <h3 class="product_title"><a href="single-product.php">Quisque ornare dui</a></h3>
                                                                 </div>
                                                                 <div class="product_info">
                                                                     <ul>
@@ -579,7 +579,7 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="single_product">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product3.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product3.jpg" alt=""></a> 
                                                                    <div class="img_icone">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                                    </div>
@@ -589,7 +589,7 @@
                                                                 </div>
                                                                 <div class="product_content">
                                                                     <span class="product_price">$60.00</span>
-                                                                    <h3 class="product_title"><a href="single-product.html">Sed non turpiss</a></h3>
+                                                                    <h3 class="product_title"><a href="single-product.php">Sed non turpiss</a></h3>
                                                                 </div>
                                                                 <div class="product_info">
                                                                     <ul>
@@ -602,7 +602,7 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="single_product">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product4.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product4.jpg" alt=""></a> 
                                                                    <div class="hot_img">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
                                                                    </div>
@@ -612,7 +612,7 @@
                                                                 </div>
                                                                 <div class="product_content">
                                                                     <span class="product_price">$65.00</span>
-                                                                    <h3 class="product_title"><a href="single-product.html">Duis convallis</a></h3>
+                                                                    <h3 class="product_title"><a href="single-product.php">Duis convallis</a></h3>
                                                                 </div>
                                                                 <div class="product_info">
                                                                     <ul>
@@ -625,7 +625,7 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="single_product">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product5.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product5.jpg" alt=""></a> 
                                                                    <div class="img_icone">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                                    </div>
@@ -635,7 +635,7 @@
                                                                 </div>
                                                                 <div class="product_content">
                                                                     <span class="product_price">$50.00</span>
-                                                                    <h3 class="product_title"><a href="single-product.html">Curabitur sodales</a></h3>
+                                                                    <h3 class="product_title"><a href="single-product.php">Curabitur sodales</a></h3>
                                                                 </div>
                                                                 <div class="product_info">
                                                                     <ul>
@@ -648,7 +648,7 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="single_product">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product6.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product6.jpg" alt=""></a> 
                                                                    <div class="hot_img">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
                                                                    </div>
@@ -658,7 +658,7 @@
                                                                 </div>
                                                                 <div class="product_content">
                                                                     <span class="product_price">$40.00</span>
-                                                                    <h3 class="product_title"><a href="single-product.html">Quisque ornare dui</a></h3>
+                                                                    <h3 class="product_title"><a href="single-product.php">Quisque ornare dui</a></h3>
                                                                 </div>
                                                                 <div class="product_info">
                                                                     <ul>
@@ -671,7 +671,7 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="single_product">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product7.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product7.jpg" alt=""></a> 
                                                                    <div class="img_icone">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                                    </div>
@@ -681,7 +681,7 @@
                                                                 </div>
                                                                 <div class="product_content">
                                                                     <span class="product_price">$60.00</span>
-                                                                    <h3 class="product_title"><a href="single-product.html">Sed non turpiss</a></h3>
+                                                                    <h3 class="product_title"><a href="single-product.php">Sed non turpiss</a></h3>
                                                                 </div>
                                                                 <div class="product_info">
                                                                     <ul>
@@ -694,7 +694,7 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="single_product">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product8.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product8.jpg" alt=""></a> 
                                                                    <div class="hot_img">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
                                                                    </div>
@@ -704,7 +704,7 @@
                                                                 </div>
                                                                 <div class="product_content">
                                                                     <span class="product_price">$65.00</span>
-                                                                    <h3 class="product_title"><a href="single-product.html">Duis convallis</a></h3>
+                                                                    <h3 class="product_title"><a href="single-product.php">Duis convallis</a></h3>
                                                                 </div>
                                                                 <div class="product_info">
                                                                     <ul>
@@ -717,7 +717,7 @@
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="single_product">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product9.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product9.jpg" alt=""></a> 
                                                                    <div class="img_icone">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                                    </div>
@@ -727,7 +727,7 @@
                                                                 </div>
                                                                 <div class="product_content">
                                                                     <span class="product_price">$50.00</span>
-                                                                    <h3 class="product_title"><a href="single-product.html">Curabitur sodales</a></h3>
+                                                                    <h3 class="product_title"><a href="single-product.php">Curabitur sodales</a></h3>
                                                                 </div>
                                                                 <div class="product_info">
                                                                     <ul>
@@ -744,7 +744,7 @@
                                                         <div class="row align-items-center">
                                                             <div class="col-lg-4 col-md-6 col-sm-6">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product2.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product2.jpg" alt=""></a> 
                                                                    <div class="hot_img">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
                                                                    </div>
@@ -762,7 +762,7 @@
                                                                        </ul>
                                                                    </div>
                                                                     <div class="list_title">
-                                                                        <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                                        <h3><a href="single-product.php">Lorem ipsum dolor</a></h3>
                                                                     </div>
                                                                     <p class="design"> in quibusdam accusantium qui nostrum consequuntur, officia, quidem ut placeat. Officiis, incidunt eos recusandae! Facilis aliquam vitae blanditiis quae perferendis minus eligendi</p>
 
@@ -790,7 +790,7 @@
                                                         <div class="row align-items-center">
                                                             <div class="col-lg-4 col-md-6 col-sm-6">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product3.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product3.jpg" alt=""></a> 
                                                                    <div class="img_icone">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                                    </div>
@@ -808,7 +808,7 @@
                                                                        </ul>
                                                                    </div>
                                                                     <div class="list_title">
-                                                                        <h3><a href="single-product.html">Quisque ornare dui</a></h3>
+                                                                        <h3><a href="single-product.php">Quisque ornare dui</a></h3>
                                                                     </div>
                                                                     <p class="design"> in quibusdam accusantium qui nostrum consequuntur, officia, quidem ut placeat. Officiis, incidunt eos recusandae! Facilis aliquam vitae blanditiis quae perferendis minus eligendi</p>
 
@@ -836,7 +836,7 @@
                                                         <div class="row align-items-center">
                                                             <div class="col-lg-4 col-md-6 col-sm-6">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product4.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product4.jpg" alt=""></a> 
                                                                    <div class="img_icone">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                                    </div>
@@ -854,7 +854,7 @@
                                                                        </ul>
                                                                    </div>
                                                                     <div class="list_title">
-                                                                        <h3><a href="single-product.html">Maecenas sit amet</a></h3>
+                                                                        <h3><a href="single-product.php">Maecenas sit amet</a></h3>
                                                                     </div>
                                                                     <p class="design"> in quibusdam accusantium qui nostrum consequuntur, officia, quidem ut placeat. Officiis, incidunt eos recusandae! Facilis aliquam vitae blanditiis quae perferendis minus eligendi</p>
 
@@ -882,7 +882,7 @@
                                                         <div class="row align-items-center">
                                                             <div class="col-lg-4 col-md-6 col-sm-6">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product5.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product5.jpg" alt=""></a> 
                                                                    <div class="img_icone">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                                    </div>
@@ -900,7 +900,7 @@
                                                                        </ul>
                                                                    </div>
                                                                     <div class="list_title">
-                                                                        <h3><a href="single-product.html">Sed non luctus turpis</a></h3>
+                                                                        <h3><a href="single-product.php">Sed non luctus turpis</a></h3>
                                                                     </div>
                                                                     <p class="design"> in quibusdam accusantium qui nostrum consequuntur, officia, quidem ut placeat. Officiis, incidunt eos recusandae! Facilis aliquam vitae blanditiis quae perferendis minus eligendi</p>
 
@@ -928,7 +928,7 @@
                                                         <div class="row align-items-center">
                                                             <div class="col-lg-4 col-md-6 col-sm-6">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product6.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product6.jpg" alt=""></a> 
                                                                    <div class="hot_img">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
                                                                    </div>
@@ -946,7 +946,7 @@
                                                                        </ul>
                                                                    </div>
                                                                     <div class="list_title">
-                                                                        <h3><a href="single-product.html">Donec dignissim eget</a></h3>
+                                                                        <h3><a href="single-product.php">Donec dignissim eget</a></h3>
                                                                     </div>
                                                                     <p class="design"> in quibusdam accusantium qui nostrum consequuntur, officia, quidem ut placeat. Officiis, incidunt eos recusandae! Facilis aliquam vitae blanditiis quae perferendis minus eligendi</p>
 
@@ -974,7 +974,7 @@
                                                         <div class="row align-items-center">
                                                             <div class="col-lg-4 col-md-6 col-sm-6">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product7.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product7.jpg" alt=""></a> 
                                                                    <div class="img_icone">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                                    </div>
@@ -992,7 +992,7 @@
                                                                        </ul>
                                                                    </div>
                                                                     <div class="list_title">
-                                                                        <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                                        <h3><a href="single-product.php">Lorem ipsum dolor</a></h3>
                                                                     </div>
                                                                     <p class="design"> in quibusdam accusantium qui nostrum consequuntur, officia, quidem ut placeat. Officiis, incidunt eos recusandae! Facilis aliquam vitae blanditiis quae perferendis minus eligendi</p>
 
@@ -1020,7 +1020,7 @@
                                                         <div class="row align-items-center">
                                                             <div class="col-lg-4 col-md-6 col-sm-6">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product8.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product8.jpg" alt=""></a> 
                                                                    <div class="img_icone">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                                    </div>
@@ -1038,7 +1038,7 @@
                                                                        </ul>
                                                                    </div>
                                                                     <div class="list_title">
-                                                                        <h3><a href="single-product.html">Donec ac congue</a></h3>
+                                                                        <h3><a href="single-product.php">Donec ac congue</a></h3>
                                                                     </div>
                                                                     <p class="design"> in quibusdam accusantium qui nostrum consequuntur, officia, quidem ut placeat. Officiis, incidunt eos recusandae! Facilis aliquam vitae blanditiis quae perferendis minus eligendi</p>
 
@@ -1066,7 +1066,7 @@
                                                         <div class="row align-items-center">
                                                             <div class="col-lg-4 col-md-6 col-sm-6">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product9.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product9.jpg" alt=""></a> 
                                                                    <div class="hot_img">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
                                                                    </div>
@@ -1084,7 +1084,7 @@
                                                                        </ul>
                                                                    </div>
                                                                     <div class="list_title">
-                                                                        <h3><a href="single-product.html">Curabitur sodales</a></h3>
+                                                                        <h3><a href="single-product.php">Curabitur sodales</a></h3>
                                                                     </div>
                                                                     <p class="design"> in quibusdam accusantium qui nostrum consequuntur, officia, quidem ut placeat. Officiis, incidunt eos recusandae! Facilis aliquam vitae blanditiis quae perferendis minus eligendi</p>
 
@@ -1112,7 +1112,7 @@
                                                         <div class="row align-items-center">
                                                             <div class="col-lg-4 col-md-6 col-sm-6">
                                                                 <div class="product_thumb">
-                                                                   <a href="single-product.html"><img src="<?php echo $level?>assets\img\product\product1.jpg" alt=""></a> 
+                                                                   <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product1.jpg" alt=""></a> 
                                                                    <div class="img_icone">
                                                                        <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                                    </div>
@@ -1130,7 +1130,7 @@
                                                                        </ul>
                                                                    </div>
                                                                     <div class="list_title">
-                                                                        <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                                        <h3><a href="single-product.php">Lorem ipsum dolor</a></h3>
                                                                     </div>
                                                                     <p class="design"> in quibusdam accusantium qui nostrum consequuntur, officia, quidem ut placeat. Officiis, incidunt eos recusandae! Facilis aliquam vitae blanditiis quae perferendis minus eligendi</p>
 
