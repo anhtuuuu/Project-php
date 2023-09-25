@@ -1,12 +1,6 @@
   <!--pos page start-->
   <div class="pos_page">
-                <div class="container">  
-                    <!--pos page inner-->
-                    <div class="pos_page_inner">  
-                       <!--header area -->
-                       <?php include ($level.'layout/header/header.php') ?>
-                        <!--header end -->
-
+              
                         <!--error section area start-->
                         <div class="error_section">
                             <div class="row">
