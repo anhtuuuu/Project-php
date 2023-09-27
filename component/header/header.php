@@ -32,7 +32,6 @@
                         <li><a href="<?php echo $level?>pages/my-account.php" title="My account">My account</a></li>
                         <li><a href="<?php echo $level?>pages/cart.php" title="My cart">My cart</a></li>
                         <li><a href="<?php echo $level?>pages/login.php" title="Login">Login</a></li>
-                        <li><a href="<?php echo $level?>Backend/index.php" title="Administrator">Administrator</a></li>
                     </ul>
                 </div>
             </div>
