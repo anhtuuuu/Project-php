@@ -44,11 +44,11 @@
                                 class="fa fa-search"></i></a>
                     </div>
                     <div class="portfolio_link">
-                        <a href="portfolio-details.php"><i class="fa fa-link"></i></a>
+                        <a href="<?php echo $level?>portfolio-details.php"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
                 <div class="portfolio__content">
-                    <a href="portfolio-details.php">Coffee & Cookie Time</a>
+                    <a href="<?php echo $level?>portfolio-details.php">Coffee & Cookie Time</a>
                     <span>admin</span>
                 </div>
             </div>
@@ -63,11 +63,11 @@
                                 class="fa fa-search"></i></a>
                     </div>
                     <div class="portfolio_link">
-                        <a href="portfolio-details.php"><i class="fa fa-link"></i></a>
+                        <a href="<?php echo $level?>portfolio-details.php"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
                 <div class="portfolio__content">
-                    <a href="portfolio-details.php">Coffee & Cookie Time</a>
+                    <a href="<?php echo $level?>portfolio-details.php">Coffee & Cookie Time</a>
                     <span>admin</span>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                                 class="fa fa-search"></i></a>
                     </div>
                     <div class="portfolio_link">
-                        <a href="portfolio-details.php"><i class="fa fa-link"></i></a>
+                        <a href="<?php echo $level?>portfolio-details.php"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
                 <div class="portfolio__content">
@@ -99,11 +99,11 @@
                                 class="fa fa-search"></i></a>
                     </div>
                     <div class="portfolio_link">
-                        <a href="portfolio-details.php"><i class="fa fa-link"></i></a>
+                        <a href="<?php echo $level?>portfolio-details.php"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
                 <div class="portfolio__content">
-                    <a href="portfolio-details.php">Coffee & Cookie Time</a>
+                    <a href="<?php echo $level?>portfolio-details.php">Coffee & Cookie Time</a>
                     <span>admin</span>
                 </div>
             </div>
@@ -117,11 +117,11 @@
                                 class="fa fa-search"></i></a>
                     </div>
                     <div class="portfolio_link">
-                        <a href="portfolio-details.php"><i class="fa fa-link"></i></a>
+                        <a href="<?php echo $level?>portfolio-details.php"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
                 <div class="portfolio__content">
-                    <a href="portfolio-details.php">Coffee & Cookie Time</a>
+                    <a href="<?php echo $level?>portfolio-details.php">Coffee & Cookie Time</a>
                     <span>admin</span>
                 </div>
             </div>
@@ -135,11 +135,11 @@
                                 class="fa fa-search"></i></a>
                     </div>
                     <div class="portfolio_link">
-                        <a href="portfolio-details.php"><i class="fa fa-link"></i></a>
+                        <a href="<?php echo $level?>portfolio-details.php"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
                 <div class="portfolio__content">
-                    <a href="portfolio-details.php">Coffee & Cookie Time</a>
+                    <a href="<?php echo $level?>portfolio-details.php">Coffee & Cookie Time</a>
                     <span>admin</span>
                 </div>
             </div>
@@ -153,11 +153,11 @@
                                 class="fa fa-search"></i></a>
                     </div>
                     <div class="portfolio_link">
-                        <a href="portfolio-details.php"><i class="fa fa-link"></i></a>
+                        <a href="<?php echo $level?>portfolio-details.php"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
                 <div class="portfolio__content">
-                    <a href="portfolio-details.php">Coffee & Cookie Time</a>
+                    <a href="<?php echo $level?>portfolio-details.php">Coffee & Cookie Time</a>
                     <span>admin</span>
                 </div>
             </div>
@@ -171,11 +171,11 @@
                                 class="fa fa-search"></i></a>
                     </div>
                     <div class="portfolio_link">
-                        <a href="portfolio-details.php"><i class="fa fa-link"></i></a>
+                        <a href="<?php echo $level?>portfolio-details.php"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
                 <div class="portfolio__content">
-                    <a href="portfolio-details.php">Coffee & Cookie Time</a>
+                    <a href="<?php echo $level?>portfolio-details.php">Coffee & Cookie Time</a>
                     <span>admin</span>
                 </div>
             </div>
@@ -189,11 +189,11 @@
                                 class="fa fa-search"></i></a>
                     </div>
                     <div class="portfolio_link">
-                        <a href="portfolio-details.php"><i class="fa fa-link"></i></a>
+                        <a href="<?php echo $level?>portfolio-details.php"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
                 <div class="portfolio__content">
-                    <a href="portfolio-details.php">Coffee & Cookie Time</a>
+                    <a href="<?php echo $level?>portfolio-details.php">Coffee & Cookie Time</a>
                     <span>admin</span>
                 </div>
             </div>
@@ -207,11 +207,11 @@
                                 class="fa fa-search"></i></a>
                     </div>
                     <div class="portfolio_link">
-                        <a href="portfolio-details.php"><i class="fa fa-link"></i></a>
+                        <a href="<?php echo $level?>portfolio-details.php"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
                 <div class="portfolio__content">
-                    <a href="portfolio-details.php">Coffee & Cookie Time</a>
+                    <a href="<?php echo $level?>portfolio-details.php">Coffee & Cookie Time</a>
                     <span>admin</span>
                 </div>
             </div>
@@ -225,11 +225,11 @@
                                 class="fa fa-search"></i></a>
                     </div>
                     <div class="portfolio_link">
-                        <a href="portfolio-details.php"><i class="fa fa-link"></i></a>
+                        <a href="<?php echo $level?>portfolio-details.php"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
                 <div class="portfolio__content">
-                    <a href="portfolio-details.php">Coffee & Cookie Time</a>
+                    <a href="<?php echo $level?>portfolio-details.php">Coffee & Cookie Time</a>
                     <span>admin</span>
                 </div>
             </div>
@@ -243,11 +243,11 @@
                                 class="fa fa-search"></i></a>
                     </div>
                     <div class="portfolio_link">
-                        <a href="portfolio-details.php"><i class="fa fa-link"></i></a>
+                        <a href="<?php echo $level?>portfolio-details.php"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
                 <div class="portfolio__content">
-                    <a href="portfolio-details.php">Coffee & Cookie Time</a>
+                    <a href="<?php echo $level?>portfolio-details.php">Coffee & Cookie Time</a>
                     <span>admin</span>
                 </div>
             </div>

@@ -3,14 +3,14 @@
       <h1>ApexCharts</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+          <li class="breadcrumb-item"><a href="<?php echo $level?>index.php">Home</a></li>
           <li class="breadcrumb-item">Charts</li>
           <li class="breadcrumb-item active">ApexCharts</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
-    <p>ApexCharts Examples. You can check the <a href="https://apexcharts.com/javascript-chart-demos/" target="_blank">official website</a> for more examples.</p>
+    <p>ApexCharts Examples. You can check the <a href="<?php echo $level?>https://apexcharts.com/javascript-chart-demos/" target="_blank">official website</a> for more examples.</p>
 
     <section class="section">
       <div class="row">

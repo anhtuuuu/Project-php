@@ -51,7 +51,7 @@
                                         <div class="col-lg-3">
                                             <div class="single_product">
                                                 <div class="product_thumb">
-                                                   <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product1.jpg" alt=""></a> 
+                                                   <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product1.jpg" alt=""></a> 
                                                    <div class="img_icone">
                                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                    </div>
@@ -61,7 +61,7 @@
                                                 </div>
                                                 <div class="product_content">
                                                     <span class="product_price">$50.00</span>
-                                                    <h3 class="product_title"><a href="single-product.php">Curabitur sodales</a></h3>
+                                                    <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Curabitur sodales</a></h3>
                                                 </div>
                                                 <div class="product_info">
                                                     <ul>
@@ -74,7 +74,7 @@
                                         <div class="col-lg-3">
                                             <div class="single_product">
                                                 <div class="product_thumb">
-                                                   <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product2.jpg" alt=""></a> 
+                                                   <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product2.jpg" alt=""></a> 
                                                    <div class="hot_img">
                                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-hot.png" alt="">
                                                    </div>
@@ -84,7 +84,7 @@
                                                 </div>
                                                 <div class="product_content">
                                                     <span class="product_price">$40.00</span>
-                                                    <h3 class="product_title"><a href="single-product.php">Quisque ornare dui</a></h3>
+                                                    <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Quisque ornare dui</a></h3>
                                                 </div>
                                                 <div class="product_info">
                                                     <ul>
@@ -97,7 +97,7 @@
                                         <div class="col-lg-3">
                                             <div class="single_product">
                                                 <div class="product_thumb">
-                                                   <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product3.jpg" alt=""></a> 
+                                                   <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product3.jpg" alt=""></a> 
                                                    <div class="img_icone">
                                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                    </div>
@@ -107,7 +107,7 @@
                                                 </div>
                                                 <div class="product_content">
                                                     <span class="product_price">$60.00</span>
-                                                    <h3 class="product_title"><a href="single-product.php">Sed non turpiss</a></h3>
+                                                    <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Sed non turpiss</a></h3>
                                                 </div>
                                                 <div class="product_info">
                                                     <ul>
@@ -120,7 +120,7 @@
                                         <div class="col-lg-3">
                                             <div class="single_product">
                                                 <div class="product_thumb">
-                                                   <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product4.jpg" alt=""></a> 
+                                                   <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product4.jpg" alt=""></a> 
                                                    <div class="hot_img">
                                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-hot.png" alt="">
                                                    </div>
@@ -130,7 +130,7 @@
                                                 </div>
                                                 <div class="product_content">
                                                     <span class="product_price">$65.00</span>
-                                                    <h3 class="product_title"><a href="single-product.php">Duis convallis</a></h3>
+                                                    <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Duis convallis</a></h3>
                                                 </div>
                                                 <div class="product_info">
                                                     <ul>
@@ -143,7 +143,7 @@
                                         <div class="col-lg-3">
                                             <div class="single_product">
                                                 <div class="product_thumb">
-                                                   <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product6.jpg" alt=""></a> 
+                                                   <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product6.jpg" alt=""></a> 
                                                    <div class="img_icone">
                                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                    </div>
@@ -153,7 +153,7 @@
                                                 </div>
                                                 <div class="product_content">
                                                     <span class="product_price">$50.00</span>
-                                                    <h3 class="product_title"><a href="single-product.php">Curabitur sodales</a></h3>
+                                                    <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Curabitur sodales</a></h3>
                                                 </div>
                                                 <div class="product_info">
                                                     <ul>
@@ -213,7 +213,7 @@
                                         <div class="col-lg-3">
                                             <div class="single_product">
                                                 <div class="product_thumb">
-                                                   <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product7.jpg" alt=""></a> 
+                                                   <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product7.jpg" alt=""></a> 
                                                    <div class="img_icone">
                                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                    </div>
@@ -223,7 +223,7 @@
                                                 </div>
                                                 <div class="product_content">
                                                     <span class="product_price">$50.00</span>
-                                                    <h3 class="product_title"><a href="single-product.php">Curabitur sodales</a></h3>
+                                                    <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Curabitur sodales</a></h3>
                                                 </div>
                                                 <div class="product_info">
                                                     <ul>
@@ -236,7 +236,7 @@
                                         <div class="col-lg-3">
                                             <div class="single_product">
                                                 <div class="product_thumb">
-                                                   <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product8.jpg" alt=""></a> 
+                                                   <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product8.jpg" alt=""></a> 
                                                    <div class="hot_img">
                                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-hot.png" alt="">
                                                    </div>
@@ -246,7 +246,7 @@
                                                 </div>
                                                 <div class="product_content">
                                                     <span class="product_price">$40.00</span>
-                                                    <h3 class="product_title"><a href="single-product.php">Quisque ornare dui</a></h3>
+                                                    <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Quisque ornare dui</a></h3>
                                                 </div>
                                                 <div class="product_info">
                                                     <ul>
@@ -259,7 +259,7 @@
                                         <div class="col-lg-3">
                                             <div class="single_product">
                                                 <div class="product_thumb">
-                                                   <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product9.jpg" alt=""></a> 
+                                                   <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product9.jpg" alt=""></a> 
                                                    <div class="img_icone">
                                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                    </div>
@@ -269,7 +269,7 @@
                                                 </div>
                                                 <div class="product_content">
                                                     <span class="product_price">$60.00</span>
-                                                    <h3 class="product_title"><a href="single-product.php">Sed non turpiss</a></h3>
+                                                    <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Sed non turpiss</a></h3>
                                                 </div>
                                                 <div class="product_info">
                                                     <ul>
@@ -282,7 +282,7 @@
                                         <div class="col-lg-3">
                                             <div class="single_product">
                                                 <div class="product_thumb">
-                                                   <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product3.jpg" alt=""></a> 
+                                                   <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product3.jpg" alt=""></a> 
                                                    <div class="hot_img">
                                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-hot.png" alt="">
                                                    </div>
@@ -292,7 +292,7 @@
                                                 </div>
                                                 <div class="product_content">
                                                     <span class="product_price">$65.00</span>
-                                                    <h3 class="product_title"><a href="single-product.php">Duis convallis</a></h3>
+                                                    <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Duis convallis</a></h3>
                                                 </div>
                                                 <div class="product_info">
                                                     <ul>
@@ -305,7 +305,7 @@
                                         <div class="col-lg-3">
                                             <div class="single_product">
                                                 <div class="product_thumb">
-                                                   <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product2.jpg" alt=""></a> 
+                                                   <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product2.jpg" alt=""></a> 
                                                    <div class="img_icone">
                                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                                                    </div>
@@ -315,7 +315,7 @@
                                                 </div>
                                                 <div class="product_content">
                                                     <span class="product_price">$50.00</span>
-                                                    <h3 class="product_title"><a href="single-product.php">Curabitur sodales</a></h3>
+                                                    <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Curabitur sodales</a></h3>
                                                 </div>
                                                 <div class="product_info">
                                                     <ul>
@@ -336,7 +336,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single_blog">
                                             <div class="blog_thumb">
-                                                <a href="blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog3.jpg" alt=""></a>
+                                                <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog3.jpg" alt=""></a>
                                             </div>
                                             <div class="blog_content">
                                                 <div class="blog_post">
@@ -346,7 +346,7 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <h3><a href="blog-details.php">When an unknown took a galley of type.</a></h3>
+                                                <h3><a href="<?php echo $level?>blog-details.php">When an unknown took a galley of type.</a></h3>
                                                 <p>Distinctively simplify dynamic resources whereas prospective core competencies. Objectively pursue multidisciplinary human capital for interoperable.</p>
                                                 <div class="post_footer">
                                                     <div class="post_meta">
@@ -356,7 +356,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="Read_more">
-                                                        <a href="blog-details.php">Read more  <i class="fa fa-angle-double-right"></i></a>
+                                                        <a href="<?php echo $level?>blog-details.php">Read more  <i class="fa fa-angle-double-right"></i></a>
                                                     </div> 
                                                 </div>
                                             </div>
@@ -365,7 +365,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single_blog">
                                             <div class="blog_thumb">
-                                                <a href="blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog4.jpg" alt=""></a>
+                                                <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog4.jpg" alt=""></a>
                                             </div>
                                             <div class="blog_content">
                                                 <div class="blog_post">
@@ -375,7 +375,7 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <h3><a href="blog-details.php">When an unknown took a galley of type.</a></h3>
+                                                <h3><a href="<?php echo $level?>blog-details.php">When an unknown took a galley of type.</a></h3>
                                                 <p>Distinctively simplify dynamic resources whereas prospective core competencies. Objectively pursue multidisciplinary human capital for interoperable.</p>
                                                 <div class="post_footer">
                                                     <div class="post_meta">
@@ -385,7 +385,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="Read_more">
-                                                        <a href="blog-details.php">Read more  <i class="fa fa-angle-double-right"></i></a>
+                                                        <a href="<?php echo $level?>blog-details.php">Read more  <i class="fa fa-angle-double-right"></i></a>
                                                     </div> 
                                                 </div>
                                             </div>
@@ -394,7 +394,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single_blog">
                                             <div class="blog_thumb">
-                                                <a href="blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog1.jpg" alt=""></a>
+                                                <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog1.jpg" alt=""></a>
                                             </div>
                                             <div class="blog_content">
                                                 <div class="blog_post">
@@ -404,7 +404,7 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <h3><a href="blog-details.php">When an unknown took a galley of type.</a></h3>
+                                                <h3><a href="<?php echo $level?>blog-details.php">When an unknown took a galley of type.</a></h3>
                                                 <p>Distinctively simplify dynamic resources whereas prospective core competencies. Objectively pursue multidisciplinary human capital for interoperable.</p>
                                                 <div class="post_footer">
                                                     <div class="post_meta">
@@ -414,7 +414,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class="Read_more">
-                                                        <a href="blog-details.php">Read more  <i class="fa fa-angle-double-right"></i></a>
+                                                        <a href="<?php echo $level?>blog-details.php">Read more  <i class="fa fa-angle-double-right"></i></a>
                                                     </div> 
                                                 </div>
                                             </div>

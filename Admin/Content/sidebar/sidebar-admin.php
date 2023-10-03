@@ -15,72 +15,72 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="components-alerts.php">
+            <a href="<?php echo $level?>components-alerts.php">
               <i class="bi bi-circle"></i><span>Alerts</span>
             </a>
           </li>
           <li>
-            <a href="components-accordion.php">
+            <a href="<?php echo $level?>components-accordion.php">
               <i class="bi bi-circle"></i><span>Accordion</span>
             </a>
           </li>
           <li>
-            <a href="components-badges.php">
+            <a href="<?php echo $level?>components-badges.php">
               <i class="bi bi-circle"></i><span>Badges</span>
             </a>
           </li>
           <li>
-            <a href="components-breadcrumbs.php">
+            <a href="<?php echo $level?>components-breadcrumbs.php">
               <i class="bi bi-circle"></i><span>Breadcrumbs</span>
             </a>
           </li>
           <li>
-            <a href="components-buttons.php">
+            <a href="<?php echo $level?>components-buttons.php">
               <i class="bi bi-circle"></i><span>Buttons</span>
             </a>
           </li>
           <li>
-            <a href="components-cards.php">
+            <a href="<?php echo $level?>components-cards.php">
               <i class="bi bi-circle"></i><span>Cards</span>
             </a>
           </li>
           <li>
-            <a href="components-carousel.php">
+            <a href="<?php echo $level?>components-carousel.php">
               <i class="bi bi-circle"></i><span>Carousel</span>
             </a>
           </li>
           <li>
-            <a href="components-list-group.php">
+            <a href="<?php echo $level?>components-list-group.php">
               <i class="bi bi-circle"></i><span>List group</span>
             </a>
           </li>
           <li>
-            <a href="components-modal.php">
+            <a href="<?php echo $level?>components-modal.php">
               <i class="bi bi-circle"></i><span>Modal</span>
             </a>
           </li>
           <li>
-            <a href="components-tabs.php">
+            <a href="<?php echo $level?>components-tabs.php">
               <i class="bi bi-circle"></i><span>Tabs</span>
             </a>
           </li>
           <li>
-            <a href="components-pagination.php">
+            <a href="<?php echo $level?>components-pagination.php">
               <i class="bi bi-circle"></i><span>Pagination</span>
             </a>
           </li>
           <li>
-            <a href="components-progress.php">
+            <a href="<?php echo $level?>components-progress.php">
               <i class="bi bi-circle"></i><span>Progress</span>
             </a>
           </li>
           <li>
-            <a href="components-spinners.php">
+            <a href="<?php echo $level?>components-spinners.php">
               <i class="bi bi-circle"></i><span>Spinners</span>
             </a>
           </li>
           <li>
-            <a href="components-tooltips.php">
+            <a href="<?php echo $level?>components-tooltips.php">
               <i class="bi bi-circle"></i><span>Tooltips</span>
             </a>
           </li>
@@ -93,22 +93,22 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="forms-elements.php">
+            <a href="<?php echo $level?>forms-elements.php">
               <i class="bi bi-circle"></i><span>Form Elements</span>
             </a>
           </li>
           <li>
-            <a href="forms-layouts.php">
+            <a href="<?php echo $level?>forms-layouts.php">
               <i class="bi bi-circle"></i><span>Form Layouts</span>
             </a>
           </li>
           <li>
-            <a href="forms-editors.php">
+            <a href="<?php echo $level?>forms-editors.php">
               <i class="bi bi-circle"></i><span>Form Editors</span>
             </a>
           </li>
           <li>
-            <a href="forms-validation.php">
+            <a href="<?php echo $level?>forms-validation.php">
               <i class="bi bi-circle"></i><span>Form Validation</span>
             </a>
           </li>
@@ -121,12 +121,12 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="tables-general.php">
+            <a href="<?php echo $level?>tables-general.php">
               <i class="bi bi-circle"></i><span>General Tables</span>
             </a>
           </li>
           <li>
-            <a href="tables-data.php">
+            <a href="<?php echo $level?>tables-data.php">
               <i class="bi bi-circle"></i><span>Data Tables</span>
             </a>
           </li>
@@ -139,17 +139,17 @@
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="charts-chartjs.php">
+            <a href="<?php echo $level?>charts-chartjs.php">
               <i class="bi bi-circle"></i><span>Chart.js</span>
             </a>
           </li>
           <li>
-            <a href="charts-apexcharts.php">
+            <a href="<?php echo $level?>charts-apexcharts.php">
               <i class="bi bi-circle"></i><span>ApexCharts</span>
             </a>
           </li>
           <li>
-            <a href="charts-echarts.php">
+            <a href="<?php echo $level?>charts-echarts.php">
               <i class="bi bi-circle"></i><span>ECharts</span>
             </a>
           </li>
@@ -162,17 +162,17 @@
         </a>
         <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="icons-bootstrap.php">
+            <a href="<?php echo $level?>icons-bootstrap.php">
               <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
             </a>
           </li>
           <li>
-            <a href="icons-remix.php">
+            <a href="<?php echo $level?>icons-remix.php">
               <i class="bi bi-circle"></i><span>Remix Icons</span>
             </a>
           </li>
           <li>
-            <a href="icons-boxicons.php">
+            <a href="<?php echo $level?>icons-boxicons.php">
               <i class="bi bi-circle"></i><span>Boxicons</span>
             </a>
           </li>

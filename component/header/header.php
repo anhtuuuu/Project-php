@@ -97,7 +97,7 @@
                                 <span class="prices"> $227.00 </span>
                             </div>
                             <div class="cart_button">
-                                <a href="checkout.php"> Check out</a>
+                                <a href="<?php echo $level?>checkout.php"> Check out</a>
                             </div>
                         </div>
                         <!--mini cart end-->
@@ -125,7 +125,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="shop.php">shop</a>
+                                <li><a href="<?php echo $level?>shop.php">shop</a>
                                     <div class="mega_menu jewelry">
                                         <div class="mega_items jewelry">
                                             <ul>

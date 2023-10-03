@@ -4,14 +4,14 @@
   <h1>Chart.js</h1>
   <nav>
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+      <li class="breadcrumb-item"><a href="<?php echo $level?>index.php">Home</a></li>
       <li class="breadcrumb-item">Charts</li>
       <li class="breadcrumb-item active">Chart.js</li>
     </ol>
   </nav>
 </div><!-- End Page Title -->
 
-<p>Chart.JS Examples. You can check the <a href="https://www.chartjs.org/docs/latest/samples/" target="_blank">official website</a> for more examples.</p>
+<p>Chart.JS Examples. You can check the <a href="<?php echo $level?>https://www.chartjs.org/docs/latest/samples/" target="_blank">official website</a> for more examples.</p>
 
 <section class="section">
   <div class="row">

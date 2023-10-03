@@ -4,7 +4,7 @@
                                 <div class="col-12">
                                     <div class="breadcrumb_content">
                                         <ul>
-                                            <li><a href="index.php">home</a></li>
+                                            <li><a href="<?php echo $level?>index.php">home</a></li>
                                             <li><i class="fa fa-angle-right"></i></li>
                                             <li>my account</li>
                                         </ul>
@@ -28,7 +28,7 @@
                                                     <li><a href="#downloads" data-toggle="tab" class="nav-link">Downloads</a></li>
                                                     <li><a href="#address" data-toggle="tab" class="nav-link">Addresses</a></li>
                                                     <li><a href="#account-details" data-toggle="tab" class="nav-link">Account details</a></li>
-                                                    <li><a href="login.php" class="nav-link">logout</a></li>
+                                                    <li><a href="<?php echo $level?>login.php" class="nav-link">logout</a></li>
                                                 </ul>
                                             </div>    
                                         </div>
@@ -58,14 +58,14 @@
                                                                     <td>May 10, 2018</td>
                                                                     <td><span class="success">Completed</span></td>
                                                                     <td>$25.00 for 1 item </td>
-                                                                    <td><a href="cart.php" class="view">view</a></td>
+                                                                    <td><a href="<?php echo $level?>cart.php" class="view">view</a></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>2</td>
                                                                     <td>May 10, 2018</td>
                                                                     <td>Processing</td>
                                                                     <td>$17.00 for 1 item </td>
-                                                                    <td><a href="cart.php" class="view">view</a></td>
+                                                                    <td><a href="<?php echo $level?>cart.php" class="view">view</a></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>

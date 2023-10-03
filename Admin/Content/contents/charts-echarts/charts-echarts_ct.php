@@ -4,14 +4,14 @@
       <h1>ECharts</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+          <li class="breadcrumb-item"><a href="<?php echo $level?>index.php">Home</a></li>
           <li class="breadcrumb-item">Charts</li>
           <li class="breadcrumb-item active">ECharts</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
-    <p>ECharts Examples. You can check the <a href="https://echarts.apache.org/examples/en/index.php" target="_blank">official website</a> for more examples.</p>
+    <p>ECharts Examples. You can check the <a href="<?php echo $level?>https://echarts.apache.org/examples/en/index.php" target="_blank">official website</a> for more examples.</p>
 
     <section class="section">
       <div class="row">

@@ -4,7 +4,7 @@
                                 <div class="col-12">
                                     <div class="breadcrumb_content">
                                         <ul>
-                                            <li><a href="index.php">home</a></li>
+                                            <li><a href="<?php echo $level?>index.php">home</a></li>
                                             <li><i class="fa fa-angle-right"></i></li>
                                             <li>blog details</li>
                                         </ul>
@@ -35,16 +35,16 @@
                                                 </div>
                                                 <div class="blog_active owl-carousel">
                                                    <div class="blog_thumb blog__hover">
-                                                        <a href="blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog9.jpg" alt=""></a>
+                                                        <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog9.jpg" alt=""></a>
                                                     </div>
                                                     <div class="blog_thumb">
-                                                        <a href="blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog7.jpg" alt=""></a>
+                                                        <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog7.jpg" alt=""></a>
                                                     </div>
                                                     <div class="blog_thumb">
-                                                        <a href="blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog8.jpg" alt=""></a>
+                                                        <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog8.jpg" alt=""></a>
                                                     </div>
                                                     <div class="blog_thumb">
-                                                        <a href="blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog7.jpg" alt=""></a>
+                                                        <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog7.jpg" alt=""></a>
                                                     </div>
                                                 </div>   
 
