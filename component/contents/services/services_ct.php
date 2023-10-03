@@ -134,7 +134,7 @@
     <div class="row align-items-center">
         <div class="col-lg-6 col-md-6">
             <div class="services_section_thumb">
-                <img src="<?php echo $level?><?php echo $level?>assets\img\services\service4.jpg" alt="">
+               <img src="<?php echo $level?>assets\img\services\service4.jpg" alt="">
             </div>
         </div>
         <div class="col-lg-6 col-md-6">

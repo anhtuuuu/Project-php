@@ -82,7 +82,7 @@
                                                     <div class="col-lg-4">
                                                         <div class="single_img_services mb-20">
                                                             <div class="services_thumb">
-                                                                <img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog6.jpg" alt="">
+                                                               <img src="<?php echo $level?>assets\img\blog\blog6.jpg" alt="">
                                                             </div>
                                                             <div class="services_content">
                                                                <h3>DISCUSS IDEAS</h3>
@@ -96,7 +96,7 @@
                                                     <div class="col-lg-4 ">
                                                         <div class="single_img_services mb-20">
                                                             <div class="services_thumb">
-                                                                <img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog9.jpg" alt="">
+                                                               <img src="<?php echo $level?>assets\img\blog\blog9.jpg" alt="">
                                                             </div>
                                                             <div class="services_content">
                                                                <h3>DESIGN THE COVER</h3>
@@ -110,7 +110,7 @@
                                                     <div class="col-lg-4">
                                                         <div class="single_img_services mb-20">
                                                             <div class="services_thumb">
-                                                                <img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog10.jpg" alt="">
+                                                               <img src="<?php echo $level?>assets\img\blog\blog10.jpg" alt="">
                                                             </div>
                                                             <div class="services_content">
                                                                <h3>CORE DEVELOPMENT</h3>
