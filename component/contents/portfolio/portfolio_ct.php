@@ -80,6 +80,7 @@
                     <a href="#"><img src="<?php echo $level?>assets\img\portfolio\port<?php echo $count+1?>.jpg" alt=""></a>
                     <div class="portfolio_popup">
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port1.jpg"><i
                                 class="fa fa-search"></i></a>
                     </div>
@@ -281,16 +282,17 @@
                     <div class="portfolio_popup">
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port12.jpg"><i
 =======
+=======
+>>>>>>> b380f7afc893c0ceae3a966ad92011b23a0b5ac9
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port<?php echo $count+1?>.jpg"><i
->>>>>>> 2e1584d30c4869452d7fb8a4656deacf3152611f
                                 class="fa fa-search"></i></a>
                     </div>
                     <div class="portfolio_link">
-                        <a href="<?php echo $level?>portfolio-details.php"><i class="fa fa-link"></i></a>
+                        <a href="portfolio-details.php"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
                 <div class="portfolio__content">
-                    <a href="<?php echo $level?>portfolio-details.php">Coffee & Cookie Time</a>
+                    <a href="portfolio-details.php">Coffee & Cookie Time</a>
                     <span>admin</span>
                 </div>
             </div>
