@@ -17,82 +17,56 @@
             <div class="sidebar_widget catrgorie mb-35">
                 <h3>Categories</h3>
                 <ul>
-                    <li class="has-sub"><a href="#"><i class="fa fa-caret-right"></i> women</a>
+                    <?php 
+                        $categorie = array(
+                            array(
+                                'title' => 'Women',
+                                'menu' => array('Accessories','Dresses','Tops','HandBags'),
+                                'item' => array('Accessories','Dresses','Tops','HandBags'),
+                            ),
+                            array(
+                                'title' => 'Men',
+                                'menu' => array('Accessories','Dresses','Tops','HandBags'),
+                                'item' => array('Accessories','Dresses','Tops','HandBags'),
+                            ),
+                            array(
+                                'title' => 'Footwear',
+                                'menu' => array('Accessories','Dresses','Tops','HandBags'),
+                                'item' => array('Accessories','Dresses','Tops','HandBags'),
+                            ),
+                            array(
+                                'title' => 'Jewelry',
+                                'menu' => array('Accessories','Dresses','Tops','HandBags'),
+                                'item' => array('Accessories','Dresses','Tops','HandBags'),
+                            ),
+                            array(
+                                'title' => 'Lady',
+                                'menu' => array('Accessories','Dresses','Tops','HandBags'),
+                                'item' => array('Accessories','Dresses','Tops','HandBags'),
+                            )
+                        )
+                    ?>
+                    <?php foreach($categorie as $cat): ?>
+                    <li class="has-sub"><a href="#"><i class="fa fa-caret-right"></i> <?php echo $cat['title']?></a>
                         <ul class="categorie_sub">
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Accessories</a>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> <?php echo $cat['menu'][0]?></a>
                                 <ul class="categorie_sub">
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Accessories</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Dresses</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Tops</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> HandBags</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i> <?php echo $cat['item'][0]?></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i> <?php echo $cat['item'][1]?></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i> <?php echo $cat['item'][2]?></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i> <?php echo $cat['item'][3]?></a>
+                                    </li>
                                 </ul>
                             </li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Dresses</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Tops</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> HandBags</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> <?php echo $cat['menu'][1]?></a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> <?php echo $cat['menu'][2]?></a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i> <?php echo $cat['menu'][3]?></a></li>
                         </ul>
                     </li>
-                    <li class="has-sub"><a href="#"><i class="fa fa-caret-right"></i> Men</a>
-                        <ul class="categorie_sub">
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Accessories</a>
-                                <ul class="categorie_sub">
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Accessories</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Dresses</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Tops</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> HandBags</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Dresses</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Tops</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> HandBags</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-sub"><a href="#"><i class="fa fa-caret-right"></i> Footwear</a>
-                        <ul class="categorie_sub">
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Accessories</a>
-                                <ul class="categorie_sub">
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Accessories</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Dresses</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Tops</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> HandBags</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Dresses</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Tops</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> HandBags</a></li>
-                        </ul>
-
-                    </li>
-                    <li class="has-sub"><a href="#"><i class="fa fa-caret-right"></i> Jewelry</a>
-                        <ul class="categorie_sub">
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Accessories</a>
-                                <ul class="categorie_sub">
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Accessories</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Dresses</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Tops</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> HandBags</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Dresses</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Tops</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> HandBags</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-sub"><a href="#"><i class="fa fa-caret-right"></i> Lady</a>
-                        <ul class="categorie_sub">
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Accessories</a>
-                                <ul class="categorie_sub">
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Accessories</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Dresses</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> Tops</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i> HandBags</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Dresses</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Tops</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> HandBags</a></li>
-                        </ul>
-                    </li>
+                    <?php endforeach;?>
 
                 </ul>
             </div>
@@ -103,32 +77,38 @@
                 <div class="block_title">
                     <h3><a href="#">Wishlist</a></h3>
                 </div>
+                <?php 
+                    $carts = array(
+                        array(
+                            'link' => 'cart',
+                            'name' => 'lorem ipsum dolor',
+                            'price' => '$115.00',
+                            'quanity' => 'Qty: 1'
+                        ),
+                        array(
+                            'link' => 'cart2',
+                            'name' => 'Quisque ornare dui',
+                            'price' => '$105.00',
+                            'quanity' => 'Qty: 1'
+                        )
+                    )
+                ?>
+                <?php foreach($carts as $cart):?>
                 <div class="cart_item">
                     <div class="cart_img">
-                        <a href="#"><img src="<?php echo $level?>assets\img\cart\cart.jpg" alt=""></a>
+                        <a href="#"><img src="<?php echo $level?>assets\img\cart\<?php echo $cart['link']?>.jpg"
+                                alt=""></a>
                     </div>
                     <div class="cart_info">
-                        <a href="#">lorem ipsum dolor</a>
-                        <span class="cart_price">$115.00</span>
-                        <span class="quantity">Qty: 1</span>
+                        <a href="#"><?php echo $cart['name']?></a>
+                        <span class="cart_price"><?php echo $cart['price']?></span>
+                        <span class="quantity"><?php echo $cart['quanity']?></span>
                     </div>
                     <div class="cart_remove">
                         <a title="Remove this item" href="#"><i class="fa fa-times-circle"></i></a>
                     </div>
                 </div>
-                <div class="cart_item">
-                    <div class="cart_img">
-                        <a href="#"><img src="<?php echo $level?>assets\img\cart\cart2.jpg" alt=""></a>
-                    </div>
-                    <div class="cart_info">
-                        <a href="#">Quisque ornare dui</a>
-                        <span class="cart_price">$105.00</span>
-                        <span class="quantity">Qty: 1</span>
-                    </div>
-                    <div class="cart_remove">
-                        <a title="Remove this item" href="#"><i class="fa fa-times-circle"></i></a>
-                    </div>
-                </div>
+                <?php endforeach;?>
                 <div class="block_content">
                     <p>2 products</p>
                     <a href="#">» My wishlists</a>
@@ -141,16 +121,15 @@
                 <div class="block_title">
                     <h3>popular tags</h3>
                 </div>
+                <?php $list_items = array('ipod','sam sung','apple','iphone 5s','superdrive','shuffle','nano','iphone 4s','canon')?>
                 <div class="block_tags">
-                    <a href="#">ipod</a>
-                    <a href="#">sam sung</a>
-                    <a href="#">apple</a>
-                    <a href="#">iphone 5s</a>
-                    <a href="#">superdrive</a>
-                    <a href="#">shuffle</a>
-                    <a href="#">nano</a>
-                    <a href="#">iphone 4s</a>
-                    <a href="#">canon</a>
+                    <?php 
+                        foreach($list_items as $list)
+                        {
+                            echo '<a href="#">'.$list.'</a>';
+                        };
+                    ?>
+                    
                 </div>
             </div>
             <!--popular tags end-->
