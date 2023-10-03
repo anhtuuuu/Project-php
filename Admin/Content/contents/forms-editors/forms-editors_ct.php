@@ -14,50 +14,37 @@
 <section class="section">
   <div class="row">
     <div class="col-lg-6">
-
+      <?php
+        $section = array(
+          array(
+            'title' => 'Default',
+            'class_name' => 'default'
+          ),
+          array(
+            'title' => 'Bubble',
+            'class_name' => 'bubble'
+          ),
+          array(
+            'title' => 'Full',
+            'class_name' => 'full'
+          )          
+          );
+          foreach($section as $sect):      
+      ?>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Quill Editor Default</h5>
+          <h5 class="card-title">Quill Editor <?php echo $sect['title']?></h5>
 
           <!-- Quill Editor Default -->
-          <div class="quill-editor-default">
+          <div class="quill-editor-<?php echo $sect['class_name']?>">
             <p>Hello World!</p>
-            <p>This is Quill <strong>default</strong> editor</p>
+            <p>This is Quill <strong><?php echo $sect['class_name']?></strong> editor</p>
           </div>
           <!-- End Quill Editor Default -->
 
         </div>
       </div>
-
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Quill Editor Bubble</h5>
-
-          <!-- Quill Editor Bubble -->
-          <p>Select some text to display options in poppovers</p>
-          <div class="quill-editor-bubble">
-            <p>Hello World!</p>
-            <p>This is Quill <strong>bubble</strong> editor</p>
-          </div>
-          <!-- End Quill Editor Bubble -->
-
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Quill Editor Full</h5>
-
-          <!-- Quill Editor Full -->
-          <p>Quill editor with full toolset</p>
-          <div class="quill-editor-full">
-            <p>Hello World!</p>
-            <p>This is Quill <strong>full</strong> editor</p>
-          </div>
-          <!-- End Quill Editor Full -->
-
-        </div>
-      </div>
+      <?php endforeach;?>      
 
     </div>
 

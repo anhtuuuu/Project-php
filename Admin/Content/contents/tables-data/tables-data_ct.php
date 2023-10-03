@@ -24,49 +24,61 @@
               <table class="table datatable">
                 <thead>
                   <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Position</th>
-                    <th scope="col">Age</th>
-                    <th scope="col">Start Date</th>
+                    <?php $list = array('#','Name','Position','Age','Start Date');
+                      foreach($list as $ls)
+                      {
+                        echo '<th scope="col">'.$ls.'</th>';
+                      }
+                    ?>                  
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Brandon Jacob</td>
-                    <td>Designer</td>
-                    <td>28</td>
-                    <td>2016-05-25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Bridie Kessler</td>
-                    <td>Developer</td>
-                    <td>35</td>
-                    <td>2014-12-05</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Ashleigh Langosh</td>
-                    <td>Finance</td>
-                    <td>45</td>
-                    <td>2011-08-12</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Angus Grady</td>
-                    <td>HR</td>
-                    <td>34</td>
-                    <td>2012-06-11</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Raheem Lehner</td>
-                    <td>Dynamic Division Officer</td>
-                    <td>47</td>
-                    <td>2011-04-19</td>
-                  </tr>
+                  <?php $data = array(
+                    array(
+                      'name' => 'Brandon Jacob',
+                      'position' => 'Designer',
+                      'age' => '28',
+                      'date' => '2016-05-25'
+                    ),
+                    array(
+                      'name' => 'Bridie Kessler',
+                      'position' => 'Developer',
+                      'age' => '35',
+                      'date' => '2014-12-05'
+                    ),
+                    array(
+                      'name' => 'Ashleigh Langosh',
+                      'position' => 'Finance',
+                      'age' => '45',
+                      'date' => '2011-08-12'
+                    ),
+                    array(
+                      'name' => 'Angus Grady',
+                      'position' => 'HR',
+                      'age' => '34',
+                      'date' => '2012-06-11'
+                    ),
+                    array(
+                      'name' => 'Raheem Lehner',
+                      'position' => 'Dynamic Division Officer',
+                      'age' => '47',
+                      'date' => '2011-04-19'
+                    )
+                    );
+                    foreach($data as $count => $dt):
+                    ?>
+                    <tr>
+                      <th scope="row"><?php echo $count+1?></th>
+                      <td><?php echo $dt['name'] ?></td>
+                      <td><?php echo $dt['position'] ?></td>
+                      <td><?php echo $dt['age'] ?></td>
+                      <td><?php echo $dt['date'] ?></td>
+                    </tr>
+                    <?php endforeach;?>
+                  
+                  
+                  
+                  
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->
