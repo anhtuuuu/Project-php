@@ -5,10 +5,10 @@
             <!--sidebar banner-->
             <div class="sidebar_widget banner mb-35">
                 <div class="banner_img mb-35">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\banner\banner5.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\banner\banner5.jpg" alt=""></a>
                 </div>
                 <div class="banner_img">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\banner\banner6.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\banner\banner6.jpg" alt=""></a>
                 </div>
             </div>
             <!--sidebar banner end-->
@@ -96,7 +96,7 @@
                 <?php foreach($carts as $cart):?>
                 <div class="cart_item">
                     <div class="cart_img">
-                        <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\<?php echo $cart['link']?>.jpg"
+                        <a href="#"><img src="<?php echo $level?>assets\img\cart\<?php echo $cart['link']?>.jpg"
                                 alt=""></a>
                     </div>
                     <div class="cart_info">
@@ -150,7 +150,7 @@
             <!--sidebar banner-->
             <div class="sidebar_widget bottom ">
                 <div class="banner_img">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\banner\banner9.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\banner\banner9.jpg" alt=""></a>
                 </div>
             </div>
             <!--sidebar banner end-->

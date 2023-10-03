@@ -97,7 +97,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 gird_item computers food">
             <div class="single_portfolio_inner">
                 <div class="portfolio_thumb">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\portfolio\port2.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\portfolio\port2.jpg" alt=""></a>
                     <div class="portfolio_popup">
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port2.jpg"><i
                                 class="fa fa-search"></i></a>
@@ -115,7 +115,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 gird_item company general">
             <div class="single_portfolio_inner">
                 <div class="portfolio_thumb">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\portfolio\port3.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\portfolio\port3.jpg" alt=""></a>
                     <div class="portfolio_popup">
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port3.jpg"><i
                                 class="fa fa-search"></i></a>
@@ -133,7 +133,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 gird_item computers hipster">
             <div class="single_portfolio_inner">
                 <div class="portfolio_thumb">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\portfolio\port4.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\portfolio\port4.jpg" alt=""></a>
                     <div class="portfolio_popup">
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port4.jpg"><i
                                 class="fa fa-search"></i></a>
@@ -151,7 +151,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 gird_item computers general food">
             <div class="single_portfolio_inner">
                 <div class="portfolio_thumb">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\portfolio\port5.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\portfolio\port5.jpg" alt=""></a>
                     <div class="portfolio_popup">
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port5.jpg"><i
                                 class="fa fa-search"></i></a>
@@ -169,7 +169,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 gird_item company general hipster">
             <div class="single_portfolio_inner">
                 <div class="portfolio_thumb">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\portfolio\port6.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\portfolio\port6.jpg" alt=""></a>
                     <div class="portfolio_popup">
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port6.jpg"><i
                                 class="fa fa-search"></i></a>
@@ -187,7 +187,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 gird_item computers company food">
             <div class="single_portfolio_inner">
                 <div class="portfolio_thumb">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\portfolio\port7.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\portfolio\port7.jpg" alt=""></a>
                     <div class="portfolio_popup">
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port7.jpg"><i
                                 class="fa fa-search"></i></a>
@@ -205,7 +205,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 gird_item computers general Hipster">
             <div class="single_portfolio_inner">
                 <div class="portfolio_thumb">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\portfolio\port8.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\portfolio\port8.jpg" alt=""></a>
                     <div class="portfolio_popup">
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port9.jpg"><i
                                 class="fa fa-search"></i></a>
@@ -223,7 +223,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 gird_item company general hipster food">
             <div class="single_portfolio_inner">
                 <div class="portfolio_thumb">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\portfolio\port9.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\portfolio\port9.jpg" alt=""></a>
                     <div class="portfolio_popup">
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port9.jpg"><i
                                 class="fa fa-search"></i></a>
@@ -241,7 +241,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 gird_item computers company hipster food">
             <div class="single_portfolio_inner">
                 <div class="portfolio_thumb">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\portfolio\port10.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\portfolio\port10.jpg" alt=""></a>
                     <div class="portfolio_popup">
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port10.jpg"><i
                                 class="fa fa-search"></i></a>
@@ -259,7 +259,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 gird_item computers company general food">
             <div class="single_portfolio_inner">
                 <div class="portfolio_thumb">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\portfolio\port11.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\portfolio\port11.jpg" alt=""></a>
                     <div class="portfolio_popup">
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port11.jpg"><i
                                 class="fa fa-search"></i></a>
@@ -277,7 +277,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 gird_item computers company general hipster">
             <div class="single_portfolio_inner">
                 <div class="portfolio_thumb">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\portfolio\port12.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\portfolio\port12.jpg" alt=""></a>
                     <div class="portfolio_popup">
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port12.jpg"><i
 =======

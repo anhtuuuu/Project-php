@@ -35,16 +35,16 @@
                                                 </div>
                                                 <div class="blog_active owl-carousel">
                                                    <div class="blog_thumb blog__hover">
-                                                        <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog9.jpg" alt=""></a>
+                                                        <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?>assets\img\blog\blog9.jpg" alt=""></a>
                                                     </div>
                                                     <div class="blog_thumb">
-                                                        <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog7.jpg" alt=""></a>
+                                                        <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?>assets\img\blog\blog7.jpg" alt=""></a>
                                                     </div>
                                                     <div class="blog_thumb">
-                                                        <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog8.jpg" alt=""></a>
+                                                        <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?>assets\img\blog\blog8.jpg" alt=""></a>
                                                     </div>
                                                     <div class="blog_thumb">
-                                                        <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog7.jpg" alt=""></a>
+                                                        <a href="<?php echo $level?>blog-details.php"><img src="<?php echo $level?>assets\img\blog\blog7.jpg" alt=""></a>
                                                     </div>
                                                 </div>   
 
@@ -177,7 +177,7 @@
                                                <h3>Latest Tweets</h3>
                                                 <div class="single_posts mb-20">
                                                     <div class="posts_thumb">
-                                                        <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\tweets.jpeg" alt=""></a>
+                                                        <a href="#"><img src="<?php echo $level?>assets\img\blog\tweets.jpeg" alt=""></a>
                                                     </div>
                                                     <div class="post_content ">
                                                         <span>
@@ -189,7 +189,7 @@
                                                 </div>
                                                 <div class="single_posts mb-20">
                                                     <div class="posts_thumb">
-                                                        <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\tweets.jpeg" alt=""></a>
+                                                        <a href="#"><img src="<?php echo $level?>assets\img\blog\tweets.jpeg" alt=""></a>
                                                     </div>
                                                     <div class="post_content ">
                                                         <span>
@@ -201,7 +201,7 @@
                                                 </div>
                                                 <div class="single_posts mb-20">
                                                     <div class="posts_thumb">
-                                                        <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\tweets.jpeg" alt=""></a>
+                                                        <a href="#"><img src="<?php echo $level?>assets\img\blog\tweets.jpeg" alt=""></a>
                                                     </div>
                                                     <div class="post_content ">
                                                         <span>
@@ -242,7 +242,7 @@
                                                 <div class="widget_recent_inner">   
                                                     <div class="single_posts">
                                                         <div class="posts_thumb">
-                                                            <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo $level?>assets\img\blog\blog11.jpg" alt=""></a>
                                                         </div>
                                                         <div class="post_content">
                                                             <span>
@@ -254,7 +254,7 @@
                                                     </div>
                                                     <div class="single_posts">
                                                         <div class="posts_thumb">
-                                                            <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog13.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo $level?>assets\img\blog\blog13.jpg" alt=""></a>
                                                         </div>
                                                         <div class="post_content">
                                                             <span>
@@ -266,7 +266,7 @@
                                                     </div>
                                                    <div class="single_posts">
                                                         <div class="posts_thumb">
-                                                            <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog14.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo $level?>assets\img\blog\blog14.jpg" alt=""></a>
                                                         </div>
                                                         <div class="post_content">
                                                             <span>
@@ -283,7 +283,7 @@
                                                 <div class="widget_recent_inner">   
                                                     <div class="single_posts">
                                                         <div class="posts_thumb">
-                                                            <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo $level?>assets\img\blog\blog11.jpg" alt=""></a>
                                                         </div>
                                                         <div class="post_content">
                                                             <span>
@@ -295,7 +295,7 @@
                                                     </div>
                                                     <div class="single_posts">
                                                         <div class="posts_thumb">
-                                                            <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog13.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo $level?>assets\img\blog\blog13.jpg" alt=""></a>
                                                         </div>
                                                         <div class="post_content">
                                                             <span>
@@ -307,7 +307,7 @@
                                                     </div>
                                                    <div class="single_posts">
                                                         <div class="posts_thumb">
-                                                            <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog14.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo $level?>assets\img\blog\blog14.jpg" alt=""></a>
                                                         </div>
                                                         <div class="post_content">
                                                             <span>
@@ -324,7 +324,7 @@
                                                 <div class="widget_recent_inner">   
                                                     <div class="single_posts">
                                                         <div class="posts_thumb">
-                                                            <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog12.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo $level?>assets\img\blog\blog12.jpg" alt=""></a>
                                                         </div>
                                                         <div class="post_content">
                                                             <span>
@@ -336,7 +336,7 @@
                                                     </div>
                                                     <div class="single_posts">
                                                         <div class="posts_thumb">
-                                                            <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog12.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo $level?>assets\img\blog\blog12.jpg" alt=""></a>
                                                         </div>
                                                         <div class="post_content">
                                                             <span>
@@ -348,7 +348,7 @@
                                                     </div>
                                                    <div class="single_posts">
                                                         <div class="posts_thumb">
-                                                            <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\blog\blog12.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo $level?>assets\img\blog\blog12.jpg" alt=""></a>
                                                         </div>
                                                         <div class="post_content">
                                                             <span>

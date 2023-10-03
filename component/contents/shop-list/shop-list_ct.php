@@ -131,7 +131,7 @@
                 </div>
                 <div class="special_product_inner mb-20">
                     <div class="special_p_thumb">
-                        <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart3.jpg" alt=""></a>
+                        <a href="#"><img src="<?php echo $level?>assets\img\cart\cart3.jpg" alt=""></a>
                     </div>
                     <div class="small_p_desc">
                         <div class="product_ratting">
@@ -152,7 +152,7 @@
                 </div>
                 <div class="special_product_inner">
                     <div class="special_p_thumb">
-                        <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart18.jpg" alt=""></a>
+                        <a href="#"><img src="<?php echo $level?>assets\img\cart\cart18.jpg" alt=""></a>
                     </div>
                     <div class="small_p_desc">
                         <div class="product_ratting">

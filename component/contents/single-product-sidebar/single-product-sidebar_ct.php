@@ -89,7 +89,7 @@
                 </div>
                 <div class="cart_item">
                     <div class="cart_img">
-                        <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart.jpg" alt=""></a>
+                        <a href="#"><img src="<?php echo $level?>assets\img\cart\cart.jpg" alt=""></a>
                     </div>
                     <div class="cart_info">
                         <a href="#">lorem ipsum dolor</a>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="cart_item">
                     <div class="cart_img">
-                        <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart2.jpg" alt=""></a>
+                        <a href="#"><img src="<?php echo $level?>assets\img\cart\cart2.jpg" alt=""></a>
                     </div>
                     <div class="cart_info">
                         <a href="#">Quisque ornare dui</a>
@@ -159,7 +159,7 @@
                 </div>
                 <div class="special_product_inner mb-20">
                     <div class="special_p_thumb">
-                        <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart3.jpg" alt=""></a>
+                        <a href="#"><img src="<?php echo $level?>assets\img\cart\cart3.jpg" alt=""></a>
                     </div>
                     <div class="small_p_desc">
                         <div class="product_ratting">
@@ -180,7 +180,7 @@
                 </div>
                 <div class="special_product_inner">
                     <div class="special_p_thumb">
-                        <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart18.jpg" alt=""></a>
+                        <a href="#"><img src="<?php echo $level?>assets\img\cart\cart18.jpg" alt=""></a>
                     </div>
                     <div class="small_p_desc">
                         <div class="product_ratting">
@@ -210,7 +210,7 @@
                         <div class="tab-content produc_tab_c">
                             <div class="tab-pane fade show active" id="p_tab1" role="tabpanel">
                                 <div class="modal_img">
-                                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\product\productbig.jpg"
+                                    <a href="#"><img src="<?php echo $level?>assets\img\product\productbig.jpg"
                                             alt=""></a>
                                     <div class="img_icone">
                                        <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
@@ -223,7 +223,7 @@
                             </div>
                             <div class="tab-pane fade" id="p_tab2" role="tabpanel">
                                 <div class="modal_img">
-                                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\product\productbig1.jpg"
+                                    <a href="#"><img src="<?php echo $level?>assets\img\product\productbig1.jpg"
                                             alt=""></a>
                                     <div class="img_icone">
                                        <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
@@ -236,7 +236,7 @@
                             </div>
                             <div class="tab-pane fade" id="p_tab3" role="tabpanel">
                                 <div class="modal_img">
-                                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\product\productbig2.jpg"
+                                    <a href="#"><img src="<?php echo $level?>assets\img\product\productbig2.jpg"
                                             alt=""></a>
                                     <div class="img_icone">
                                        <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
@@ -252,17 +252,17 @@
                             <ul class="nav" role="tablist">
                                 <li>
                                     <a class="active" data-toggle="tab" href="#p_tab1" role="tab" aria-controls="p_tab1"
-                                        aria-selected="false"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart.jpg"
+                                        aria-selected="false"><img src="<?php echo $level?>assets\img\cart\cart.jpg"
                                             alt=""></a>
                                 </li>
                                 <li>
                                     <a data-toggle="tab" href="#p_tab2" role="tab" aria-controls="p_tab2"
-                                        aria-selected="false"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart2.jpg"
+                                        aria-selected="false"><img src="<?php echo $level?>assets\img\cart\cart2.jpg"
                                             alt=""></a>
                                 </li>
                                 <li>
                                     <a data-toggle="tab" href="#p_tab3" role="tab" aria-controls="p_tab3"
-                                        aria-selected="false"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart4.jpg"
+                                        aria-selected="false"><img src="<?php echo $level?>assets\img\cart\cart4.jpg"
                                             alt=""></a>
                                 </li>
                             </ul>

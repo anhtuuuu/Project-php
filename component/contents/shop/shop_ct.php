@@ -87,7 +87,7 @@
                 </div>
                 <div class="cart_item">
                     <div class="cart_img">
-                        <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart.jpg" alt=""></a>
+                        <a href="#"><img src="<?php echo $level?>assets\img\cart\cart.jpg" alt=""></a>
                     </div>
                     <div class="cart_info">
                         <a href="#">lorem ipsum dolor</a>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="cart_item">
                     <div class="cart_img">
-                        <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart2.jpg" alt=""></a>
+                        <a href="#"><img src="<?php echo $level?>assets\img\cart\cart2.jpg" alt=""></a>
                     </div>
                     <div class="cart_info">
                         <a href="#">Quisque ornare dui</a>
@@ -157,7 +157,7 @@
                 </div>
                 <div class="special_product_inner mb-20">
                     <div class="special_p_thumb">
-                        <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart3.jpg" alt=""></a>
+                        <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?>assets\img\cart\cart3.jpg" alt=""></a>
                     </div>
                     <div class="small_p_desc">
                         <div class="product_ratting">
@@ -178,7 +178,7 @@
                 </div>
                 <div class="special_product_inner">
                     <div class="special_p_thumb">
-                        <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart18.jpg"
+                        <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?>assets\img\cart\cart18.jpg"
                                 alt=""></a>
                     </div>
                     <div class="small_p_desc">

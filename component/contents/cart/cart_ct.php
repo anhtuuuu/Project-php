@@ -38,7 +38,7 @@
                                                 <tbody>
                                                     <tr>
                                                        <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                                                        <td class="product_thumb"><a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart17.jpg" alt=""></a></td>
+                                                        <td class="product_thumb"><a href="#"><img src="<?php echo $level?>assets\img\cart\cart17.jpg" alt=""></a></td>
                                                         <td class="product_name"><a href="#">Handbag fringilla</a></td>
                                                         <td class="product-price">£65.00</td>
                                                         <td class="product_quantity"><input min="0" max="100" value="1" type="number"></td>
@@ -49,7 +49,7 @@
 
                                                     <tr>
                                                        <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                                                        <td class="product_thumb"><a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart18.jpg" alt=""></a></td>
+                                                        <td class="product_thumb"><a href="#"><img src="<?php echo $level?>assets\img\cart\cart18.jpg" alt=""></a></td>
                                                         <td class="product_name"><a href="#">Handbags justo</a></td>
                                                         <td class="product-price">£90.00</td>
                                                         <td class="product_quantity"><input min="0" max="100" value="1" type="number"></td>
@@ -59,7 +59,7 @@
                                                     </tr>
                                                     <tr>
                                                        <td class="product_remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                                                        <td class="product_thumb"><a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart19.jpg" alt=""></a></td>
+                                                        <td class="product_thumb"><a href="#"><img src="<?php echo $level?>assets\img\cart\cart19.jpg" alt=""></a></td>
                                                         <td class="product_name"><a href="#">Handbag elit</a></td>
                                                         <td class="product-price">£80.00</td>
                                                         <td class="product_quantity"><input min="0" max="100" value="1" type="number"></td>
