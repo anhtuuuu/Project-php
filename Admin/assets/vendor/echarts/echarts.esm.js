@@ -80832,7 +80832,7 @@ function (_super) {
           }
         } else {
           var lang = model.get('lang');
-          var html = '' + '<body style="margin:0;">' + '<img src="' + url + '" style="max-width:100%;" title="' + (lang && lang[0] || '') + '" />' + '</body>';
+          var html = '' + '<body style="margin:0;">' + '<img src="<?php echo $level?>' + url + '" style="max-width:100%;" title="' + (lang && lang[0] || '') + '" />' + '</body>';
           var tab = window.open();
           tab.document.write(html);
           tab.document.title = title;

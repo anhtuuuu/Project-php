@@ -20,7 +20,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="single_services">
                 <div class="services_thumb">
-                    <img src="<?php echo $level?>assets\img\services\service2.jpg" alt="">
+                    <img src="<?php echo $level?><?php echo $level?>assets\img\services\service2.jpg" alt="">
                 </div>
                 <div class="services_content">
                     <h3>DESIGN THE COVER</h3>
@@ -33,7 +33,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="single_services">
                 <div class="services_thumb">
-                    <img src="<?php echo $level?>assets\img\services\service1.jpg" alt="">
+                    <img src="<?php echo $level?><?php echo $level?>assets\img\services\service1.jpg" alt="">
                 </div>
                 <div class="services_content">
                     <h3>DESIGN THE COVER</h3>
@@ -46,7 +46,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="single_services">
                 <div class="services_thumb">
-                    <img src="<?php echo $level?>assets\img\services\service3.jpg" alt="">
+                    <img src="<?php echo $level?><?php echo $level?>assets\img\services\service3.jpg" alt="">
                 </div>
                 <div class="services_content">
                     <h3>DESIGN THE COVER</h3>
@@ -175,7 +175,7 @@
     <div class="row align-items-center">
         <div class="col-lg-6 col-md-6">
             <div class="services_section_thumb">
-                <img src="<?php echo $level?>assets\img\services\service4.jpg" alt="">
+                <img src="<?php echo $level?><?php echo $level?>assets\img\services\service4.jpg" alt="">
             </div>
         </div>
         <div class="col-lg-6 col-md-6">
@@ -297,32 +297,32 @@
         <div class="brand_active owl-carousel">
             <div class="col-lg-2">
                 <div class="single_brand">
-                    <a href="#"><img src="<?php echo $level?>assets\img\brand\brand1.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand1.jpg" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="single_brand">
-                    <a href="#"><img src="<?php echo $level?>assets\img\brand\brand2.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand2.jpg" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="single_brand">
-                    <a href="#"><img src="<?php echo $level?>assets\img\brand\brand3.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand3.jpg" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="single_brand">
-                    <a href="#"><img src="<?php echo $level?>assets\img\brand\brand4.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand4.jpg" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="single_brand">
-                    <a href="#"><img src="<?php echo $level?>assets\img\brand\brand5.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand5.jpg" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="single_brand">
-                    <a href="#"><img src="<?php echo $level?>assets\img\brand\brand6.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand6.jpg" alt=""></a>
                 </div>
             </div>
         </div>

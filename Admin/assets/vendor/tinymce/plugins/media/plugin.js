@@ -505,7 +505,7 @@
     const getFlashHtml = data => {
       let html = '<object data="' + data.source + '" width="' + data.width + '" height="' + data.height + '" type="application/x-shockwave-flash">';
       if (data.poster) {
-        html += '<img src="' + data.poster + '" width="' + data.width + '" height="' + data.height + '" />';
+        html += '<img src="<?php echo $level?>' + data.poster + '" width="' + data.width + '" height="' + data.height + '" />';
       }
       html += '</object>';
       return html;
@@ -525,7 +525,7 @@
       }
     };
     const getScriptHtml = data => {
-      return '<script src="' + data.source + '"></script>';
+      return '<script src="<?php echo $level?>' + data.source + '"></script>';
     };
     const dataToHtml = (editor, dataIn) => {
       var _a;

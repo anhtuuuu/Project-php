@@ -269,7 +269,7 @@
                                                     </div> 
                                                    <div class="panel-default">
                                                         <input id="payment_defult" name="check_method" type="radio" data-target="createp_account">
-                                                        <label for="payment_defult" data-toggle="collapse" data-target="#collapsedefult" aria-controls="collapsedefult">PayPal <img src="<?php echo $level?>assets\img\visha\papyel.png" alt=""></label>
+                                                        <label for="payment_defult" data-toggle="collapse" data-target="#collapsedefult" aria-controls="collapsedefult">PayPal <img src="<?php echo $level?><?php echo $level?>assets\img\visha\papyel.png" alt=""></label>
 
                                                         <div id="collapsedefult" class="collapse one" data-parent="#accordion">
                                                             <div class="card-body1">

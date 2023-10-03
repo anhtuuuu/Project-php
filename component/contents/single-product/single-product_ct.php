@@ -25,17 +25,17 @@
                      <ul class="nav" role="tablist">
                          <li>
                              <a class="active" data-toggle="tab" href="#p_tab1" role="tab" aria-controls="p_tab1"
-                                 aria-selected="false"><img src="<?php echo $level?>assets\img\cart\cart.jpg"
+                                 aria-selected="false"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart.jpg"
                                      alt=""></a>
                          </li>
                          <li>
                              <a data-toggle="tab" href="#p_tab2" role="tab" aria-controls="p_tab2"
-                                 aria-selected="false"><img src="<?php echo $level?>assets\img\cart\cart2.jpg"
+                                 aria-selected="false"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart2.jpg"
                                      alt=""></a>
                          </li>
                          <li>
                              <a data-toggle="tab" href="#p_tab3" role="tab" aria-controls="p_tab3"
-                                 aria-selected="false"><img src="<?php echo $level?>assets\img\cart\cart4.jpg"
+                                 aria-selected="false"><img src="<?php echo $level?><?php echo $level?>assets\img\cart\cart4.jpg"
                                      alt=""></a>
                          </li>
                      </ul>
@@ -43,9 +43,9 @@
                  <div class="tab-content produc_tab_c">
                      <div class="tab-pane fade show active" id="p_tab1" role="tabpanel">
                          <div class="modal_img">
-                             <a href="#"><img src="<?php echo $level?>assets\img\product\product13.jpg" alt=""></a>
+                             <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product13.jpg" alt=""></a>
                              <div class="img_icone">
-                                 <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
+                                 <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                              </div>
                              <div class="view_img">
                                  <a class="large_view" href="assets\img\product\product13.jpg"><i
@@ -55,9 +55,9 @@
                      </div>
                      <div class="tab-pane fade" id="p_tab2" role="tabpanel">
                          <div class="modal_img">
-                             <a href="#"><img src="<?php echo $level?>assets\img\product\product14.jpg" alt=""></a>
+                             <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product14.jpg" alt=""></a>
                              <div class="img_icone">
-                                 <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
+                                 <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                              </div>
                              <div class="view_img">
                                  <a class="large_view" href="assets\img\product\product14.jpg"><i
@@ -67,9 +67,9 @@
                      </div>
                      <div class="tab-pane fade" id="p_tab3" role="tabpanel">
                          <div class="modal_img">
-                             <a href="#"><img src="<?php echo $level?>assets\img\product\product15.jpg" alt=""></a>
+                             <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product15.jpg" alt=""></a>
                              <div class="img_icone">
-                                 <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
+                                 <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                              </div>
                              <div class="view_img">
                                  <a class="large_view" href="assets\img\product\product15.jpg"> <i
@@ -292,10 +292,10 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product1.jpg"
+                         <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product1.jpg"
                                  alt=""></a>
                          <div class="img_icone">
-                             <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
+                             <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                          </div>
                          <div class="product_action">
                              <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
@@ -317,10 +317,10 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product2.jpg"
+                         <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product2.jpg"
                                  alt=""></a>
                          <div class="hot_img">
-                             <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
+                             <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-hot.png" alt="">
                          </div>
                          <div class="product_action">
                              <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
@@ -342,10 +342,10 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product3.jpg"
+                         <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product3.jpg"
                                  alt=""></a>
                          <div class="img_icone">
-                             <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
+                             <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                          </div>
                          <div class="product_action">
                              <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
@@ -367,10 +367,10 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product4.jpg"
+                         <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product4.jpg"
                                  alt=""></a>
                          <div class="hot_img">
-                             <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
+                             <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-hot.png" alt="">
                          </div>
                          <div class="product_action">
                              <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
@@ -392,10 +392,10 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product6.jpg"
+                         <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product6.jpg"
                                  alt=""></a>
                          <div class="img_icone">
-                             <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
+                             <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                          </div>
                          <div class="product_action">
                              <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
@@ -434,10 +434,10 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product6.jpg"
+                         <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product6.jpg"
                                  alt=""></a>
                          <div class="img_icone">
-                             <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
+                             <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                          </div>
                          <div class="product_action">
                              <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
@@ -459,10 +459,10 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product5.jpg"
+                         <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product5.jpg"
                                  alt=""></a>
                          <div class="hot_img">
-                             <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
+                             <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-hot.png" alt="">
                          </div>
                          <div class="product_action">
                              <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
@@ -484,10 +484,10 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product4.jpg"
+                         <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product4.jpg"
                                  alt=""></a>
                          <div class="img_icone">
-                             <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
+                             <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                          </div>
                          <div class="product_action">
                              <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
@@ -509,10 +509,10 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product3.jpg"
+                         <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product3.jpg"
                                  alt=""></a>
                          <div class="hot_img">
-                             <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
+                             <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-hot.png" alt="">
                          </div>
                          <div class="product_action">
                              <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
@@ -534,10 +534,10 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="single-product.php"><img src="<?php echo $level?>assets\img\product\product2.jpg"
+                         <a href="single-product.php"><img src="<?php echo $level?><?php echo $level?>assets\img\product\product2.jpg"
                                  alt=""></a>
                          <div class="img_icone">
-                             <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
+                             <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
                          </div>
                          <div class="product_action">
                              <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
