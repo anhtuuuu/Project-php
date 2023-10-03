@@ -1,4 +1,4 @@
 <?php $level = '../';
-    $page = "charts-layouts";
+    $page = "forms-layouts";
     include_once("{$level}Shared/reuse_layout.php");
 ?>
