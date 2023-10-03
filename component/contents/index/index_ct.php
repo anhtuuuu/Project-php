@@ -162,33 +162,40 @@
             <!--banner slider start-->
             <div class="banner_slider slider_1">
                 <div class="slider_active owl-carousel">
-                    <div class="single_slider" style="background-image: url(assets/img/slider/slide_1.png)">
+                    <?php
+                        $banner = array(
+                            array(
+                                'link' => 'slide_1',
+                                'title' => "Women's Fashion",
+                                'parg' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+                                'shop_now' => 'shop now'
+                            ),
+                            array(
+                                'link' => 'slider_2',
+                                'title' => "New Collection",
+                                'parg' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+                                'shop_now' => 'shop now'
+                            ),
+                            array(
+                                'link' => 'slider_3',
+                                'title' => "Best Collection",
+                                'parg' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+                                'shop_now' => 'shop now'
+                            ),
+                        )
+                    ?>
+                    <?php foreach($banner as $ban):?>
+                        <div class="single_slider" style="background-image: url(assets/img/slider/<?php echo $ban['link']?>.png)">
                         <div class="slider_content">
                             <div class="slider_content_inner">
-                                <h1>Women's Fashion</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                                <a href="#">shop now</a>
+                                <h1><?php echo $ban['title']?></h1>
+                                <p><?php echo $ban['parg']?> </p>
+                                <a href="#"><?php echo $ban['shop_now']?></a>
                             </div>
                         </div>
                     </div>
-                    <div class="single_slider" style="background-image: url(assets/img/slider/slider_2.png)">
-                        <div class="slider_content">
-                            <div class="slider_content_inner">
-                                <h1>New Collection</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                                <a href="#">shop now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single_slider" style="background-image: url(assets/img/slider/slider_3.png)">
-                        <div class="slider_content">
-                            <div class="slider_content_inner">
-                                <h1>Best Collection</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                                <a href="#">shop now</a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach;?>
+                    
                 </div>
             </div>
             <!--banner slider start-->
@@ -200,21 +207,61 @@
                 </div>
                 <div class="row">
                     <div class="product_active owl-carousel">
-                        <div class="col-lg-3">
+                        <?php 
+                            $product_active = array(
+                                array(
+                                    'link_product' => 'product1',
+                                    'link_span' => 'span-new',
+                                    'price' => '$50.00',
+                                    'title' => 'Curabitur sodales'
+
+                                ),
+                                array(
+                                    'link_product' => 'product2',
+                                    'link_span' => 'span-hot',
+                                    'price' => '$40.00',
+                                    'title' => 'Quisque ornare dui'
+
+                                ),
+                                array(
+                                    'link_product' => 'product3',
+                                    'link_span' => 'span-new',
+                                    'price' => '$60.00',
+                                    'title' => 'Sed non turpiss'
+
+                                ),
+                                array(
+                                    'link_product' => 'product4',
+                                    'link_span' => 'span-hot',
+                                    'price' => '$65.00',
+                                    'title' => 'Duis convallis'
+
+                                ),
+                                array(
+                                    'link_product' => 'product6',
+                                    'link_span' => 'span-new',
+                                    'price' => '$50.00',
+                                    'title' => 'Curabitur sodales'
+                                )
+                                
+                            )
+                        ?>
+                        <?php foreach($product_active as $pda): ?>
+                            <div class="col-lg-3">
                             <div class="single_product">
                                 <div class="product_thumb">
                                     <a href="single-product.php"><img
-                                            src="<?php echo $level?>assets\img\product\product1.jpg" alt=""></a>
+                                            src="<?php echo $level?>assets\img\product\<?php echo $pda['link_product']?>.jpg" alt=""></a>
                                     <div class="img_icone">
-                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
+                                        <img src="<?php echo $level?>assets\img\cart\<?php echo $pda['link_span']?>.png" alt="">
                                     </div>
                                     <div class="product_action">
                                         <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                                     </div>
                                 </div>
                                 <div class="product_content">
-                                    <span class="product_price">$50.00</span>
-                                    <h3 class="product_title"><a href="single-product.php">Curabitur sodales</a></h3>
+                                    <span class="product_price"><?php echo $pda['price']?></span>
+                                    <h3 class="product_title"><a href="single-product.php"><?php echo $pda['title']?></a></h3>
                                 </div>
                                 <div class="product_info">
                                     <ul>
@@ -225,106 +272,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="single_product">
-                                <div class="product_thumb">
-                                    <a href="single-product.php"><img
-                                            src="<?php echo $level?>assets\img\product\product2.jpg" alt=""></a>
-                                    <div class="hot_img">
-                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-hot.png" alt="">
-                                    </div>
-                                    <div class="product_action">
-                                        <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                    </div>
-                                </div>
-                                <div class="product_content">
-                                    <span class="product_price">$40.00</span>
-                                    <h3 class="product_title"><a href="single-product.php">Quisque ornare dui</a></h3>
-                                </div>
-                                <div class="product_info">
-                                    <ul>
-                                        <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                                        <li><a href="#" data-toggle="modal" data-target="#modal_box"
-                                                title="Quick view">View Detail</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="single_product">
-                                <div class="product_thumb">
-                                    <a href="single-product.php"><img
-                                            src="<?php echo $level?>assets\img\product\product3.jpg" alt=""></a>
-                                    <div class="img_icone">
-                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
-                                    </div>
-                                    <div class="product_action">
-                                        <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                    </div>
-                                </div>
-                                <div class="product_content">
-                                    <span class="product_price">$60.00</span>
-                                    <h3 class="product_title"><a href="single-product.php">Sed non turpiss</a></h3>
-                                </div>
-                                <div class="product_info">
-                                    <ul>
-                                        <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                                        <li><a href="#" data-toggle="modal" data-target="#modal_box"
-                                                title="Quick view">View Detail</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="single_product">
-                                <div class="product_thumb">
-                                    <a href="single-product.php"><img
-                                            src="<?php echo $level?>assets\img\product\product4.jpg" alt=""></a>
-                                    <div class="hot_img">
-                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-hot.png" alt="">
-                                    </div>
-                                    <div class="product_action">
-                                        <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                    </div>
-                                </div>
-                                <div class="product_content">
-                                    <span class="product_price">$65.00</span>
-                                    <h3 class="product_title"><a href="single-product.php">Duis convallis</a></h3>
-                                </div>
-                                <div class="product_info">
-                                    <ul>
-                                        <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                                        <li><a href="#" data-toggle="modal" data-target="#modal_box"
-                                                title="Quick view">View Detail</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="single_product">
-                                <div class="product_thumb">
-                                    <a href="single-product.php"><img
-                                            src="<?php echo $level?>assets\img\product\product6.jpg" alt=""></a>
-                                    <div class="img_icone">
-                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
-                                    </div>
-                                    <div class="product_action">
-                                        <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                    </div>
-                                </div>
-                                <div class="product_content">
-                                    <span class="product_price">$50.00</span>
-                                    <h3 class="product_title"><a href="single-product.php">Curabitur sodales</a></h3>
-                                </div>
-                                <div class="product_info">
-                                    <ul>
-                                        <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                                        <li><a href="#" data-toggle="modal" data-target="#modal_box"
-                                                title="Quick view">View Detail</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach;?>
+                        
                     </div>
                 </div>
             </div>
@@ -337,46 +286,60 @@
                 </div>
                 <div class="row">
                     <div class="product_active owl-carousel">
-                        <div class="col-lg-3">
+                        <?php $feature_product= array(
+                                array(
+                                    'link_product' => 'product7',
+                                    'link_span' => 'span-new',
+                                    'price' => '$60.00',
+                                    'title' => 'Maecenas sit amet'
+
+                                ),
+                                array(
+                                    'link_product' => 'product8',
+                                    'link_span' => 'span-hot',
+                                    'price' => '$50.00',
+                                    'title' => 'Sed non turpis'
+
+                                ),
+                                array(
+                                    'link_product' => 'product9',
+                                    'link_span' => 'span-new',
+                                    'price' => '$70.00',
+                                    'title' => 'Donec ac congue'
+
+                                ),
+                                array(
+                                    'link_product' => 'product3',
+                                    'link_span' => 'span-hot',
+                                    'price' => '$60.00',
+                                    'title' => 'Curabitur sodales'
+
+                                ),
+                                array(
+                                    'link_product' => 'product2',
+                                    'link_span' => 'span-new',
+                                    'price' => '$50.00',
+                                    'title' => 'Phasellus a arcu'
+                                )
+                                
+                            )
+                        ?>
+                        <?php foreach($product_active as $pda): ?>
+                            <div class="col-lg-3">
                             <div class="single_product">
                                 <div class="product_thumb">
                                     <a href="single-product.php"><img
-                                            src="<?php echo $level?>assets\img\product\product7.jpg" alt=""></a>
-                                    <div class="hot_img">
-                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-hot.png" alt="">
-                                    </div>
-                                    <div class="product_action">
-                                        <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                    </div>
-                                </div>
-                                <div class="product_content">
-                                    <span class="product_price">$60.00</span>
-                                    <h3 class="product_title"><a href="single-product.php">Maecenas sit amet</a></h3>
-                                </div>
-                                <div class="product_info">
-                                    <ul>
-                                        <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                                        <li><a href="#" data-toggle="modal" data-target="#modal_box"
-                                                title="Quick view">View Detail</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="single_product">
-                                <div class="product_thumb">
-                                    <a href="single-product.php"><img
-                                            src="<?php echo $level?>assets\img\product\product8.jpg" alt=""></a>
+                                            src="<?php echo $level?>assets\img\product\<?php echo $pda['link_product']?>.jpg" alt=""></a>
                                     <div class="img_icone">
-                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
+                                        <img src="<?php echo $level?>assets\img\cart\<?php echo $pda['link_span']?>.png" alt="">
                                     </div>
                                     <div class="product_action">
                                         <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                                     </div>
                                 </div>
                                 <div class="product_content">
-                                    <span class="product_price">$50.00</span>
-                                    <h3 class="product_title"><a href="single-product.php">Sed non turpis</a></h3>
+                                    <span class="product_price"><?php echo $pda['price']?></span>
+                                    <h3 class="product_title"><a href="single-product.php"><?php echo $pda['title']?></a></h3>
                                 </div>
                                 <div class="product_info">
                                     <ul>
@@ -387,81 +350,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="single_product">
-                                <div class="product_thumb">
-                                    <a href="single-product.php"><img
-                                            src="<?php echo $level?>assets\img\product\product9.jpg" alt=""></a>
-                                    <div class="img_icone">
-                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
-                                    </div>
-                                    <div class="product_action">
-                                        <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                    </div>
-                                </div>
-                                <div class="product_content">
-                                    <span class="product_price">$70.00</span>
-                                    <h3 class="product_title"><a href="single-product.php">Donec ac congue</a></h3>
-                                </div>
-                                <div class="product_info">
-                                    <ul>
-                                        <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                                        <li><a href="#" data-toggle="modal" data-target="#modal_box"
-                                                title="Quick view">View Detail</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="single_product">
-                                <div class="product_thumb">
-                                    <a href="single-product.php"><img
-                                            src="<?php echo $level?>assets\img\product\product3.jpg" alt=""></a>
-                                    <div class="hot_img">
-                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-hot.png" alt="">
-                                    </div>
-                                    <div class="product_action">
-                                        <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                    </div>
-                                </div>
-                                <div class="product_content">
-                                    <span class="product_price">$60.00</span>
-                                    <h3 class="product_title"><a href="single-product.php">Curabitur sodales</a></h3>
-                                </div>
-                                <div class="product_info">
-                                    <ul>
-                                        <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                                        <li><a href="#" data-toggle="modal" data-target="#modal_box"
-                                                title="Quick view">View Detail</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="single_product">
-                                <div class="product_thumb">
-                                    <a href="single-product.php"><img
-                                            src="<?php echo $level?>assets\img\product\product2.jpg" alt=""></a>
-                                    <div class="img_icone">
-                                        <img src="<?php echo $level?><?php echo $level?>assets\img\cart\span-new.png" alt="">
-                                    </div>
-                                    <div class="product_action">
-                                        <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                    </div>
-                                </div>
-                                <div class="product_content">
-                                    <span class="product_price">$50.00</span>
-                                    <h3 class="product_title"><a href="single-product.php">Phasellus a arcu</a></h3>
-                                </div>
-                                <div class="product_info">
-                                    <ul>
-                                        <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                                        <li><a href="#" data-toggle="modal" data-target="#modal_box"
-                                                title="Quick view">View Detail</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach;?>
+                        
                     </div>
                 </div>
             </div>
@@ -470,22 +360,31 @@
             <!--banner area start-->
             <div class="banner_area mb-60">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6">
+                    <?php
+                    $banner_area = array(
+                        array(
+                            'link' => 'banner7',
+                            'title' => 'sale off',
+                            'sale_ps' => '40%'
+                        ),
+                        array(
+                            'link' => 'banner8',
+                            'title' => 'sale off',
+                            'sale_ps' => '30%'
+                        )                    
+                    )
+                    ?>
+                    <?php foreach($banner_area as $bna):?>
+                        <div class="col-lg-6 col-md-6">
                         <div class="single_banner">
-                            <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\banner\banner7.jpg" alt=""></a>
+                            <a href="#"><img src="<?php echo $level?>assets\img\banner\<?php echo $bna['link']?>.jpg" alt=""></a>
                             <div class="banner_title">
-                                <p>Up to <span> 40%</span> off</p>
+                                <p><?php echo $bna['title']?> <span> <?php echo $bna['sale_ps']?></span></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single_banner">
-                            <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\banner\banner8.jpg" alt=""></a>
-                            <div class="banner_title title_2">
-                                <p>sale off <span> 30%</span></p>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach;?>
+                    
                 </div>
             </div>
             <!--banner area end-->
@@ -497,36 +396,17 @@
                 </div>
                 <div class="row">
                     <div class="brand_active owl-carousel">
-                        <div class="col-lg-2">
+                        <?php
+                            $brand_link = array('brand1','brand2','brand3','brand4','brand5','brand6');
+                            foreach($brand_link as $brl):
+                        ?>
+                         <div class="col-lg-2">
                             <div class="single_brand">
-                                <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand1.jpg" alt=""></a>
+                                <a href="#"><img src="<?php echo $level?>assets\img\brand\<?php echo $brl?>.jpg" alt=""></a>
                             </div>
                         </div>
-                        <div class="col-lg-2">
-                            <div class="single_brand">
-                                <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand2.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="single_brand">
-                                <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand3.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="single_brand">
-                                <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand4.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="single_brand">
-                                <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand5.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="single_brand">
-                                <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand6.jpg" alt=""></a>
-                            </div>
-                        </div>
+                        <?php endforeach;?>
+                        
                     </div>
                 </div>
             </div>
