@@ -25,21 +25,61 @@
             <div class="col-12">
 
                 <button class="active" data-filter="*">all</button>
-                <button data-filter=".company">Company</button>
-                <button data-filter=".computers">Computers</button>
-                <button data-filter=".general">General</button>
-                <button data-filter=".hipster">Hipster</button>
-                <button data-filter=".food">Just Food</button>
+                <?php $button = array(
+                    array(
+                        'data' => '.company',
+                        'title' => 'Company'
+                    ),
+                    array(
+                        'data' => '.computers',
+                        'title' => 'Computers'
+                    ),
+                    array(
+                        'data' => '.general',
+                        'title' => 'General'
+                    ),
+                    array(
+                        'data' => '.hipster',
+                        'title' => 'Hipster'
+                    ),
+                    array(
+                        'data' => '.food',
+                        'title' => 'Just Food'
+                    ),                    
+                );
+                foreach($button as $btn):
+                ?>
+                <button data-filter="<?php echo $btn['data']?>"><?php echo $btn['title']?></button>
+                <?php endforeach;?>
 
             </div>
         </div>
     </div>
+    
     <div class="row portfolio_gallery">
-        <div class="col-lg-3 col-md-4 col-sm-6 gird_item computers general">
+        <?php 
+            $gallery = array(
+            'computers general',
+            'computers food',
+            'company general',
+            'computers hipster',
+            'computers general food',
+            'company general hipster',
+            'computers company food',
+            'computers general Hipster',
+            'company general hipster food',
+            'computers company hipster food',
+            'computers company general food',
+            'computers company general hipster'
+            );
+            foreach($gallery as $count => $gal):
+        ?>
+        <div class="col-lg-3 col-md-4 col-sm-6 gird_item <?php echo $gal?>">
             <div class="single_portfolio_inner">
                 <div class="portfolio_thumb">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\portfolio\port1.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\portfolio\port<?php echo $count+1?>.jpg" alt=""></a>
                     <div class="portfolio_popup">
+<<<<<<< HEAD
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port1.jpg"><i
                                 class="fa fa-search"></i></a>
                     </div>
@@ -240,6 +280,9 @@
                     <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\portfolio\port12.jpg" alt=""></a>
                     <div class="portfolio_popup">
                         <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port12.jpg"><i
+=======
+                        <a class="port_popup" href="<?php echo $level?>assets\img\portfolio\port<?php echo $count+1?>.jpg"><i
+>>>>>>> 2e1584d30c4869452d7fb8a4656deacf3152611f
                                 class="fa fa-search"></i></a>
                     </div>
                     <div class="portfolio_link">
@@ -252,6 +295,8 @@
                 </div>
             </div>
         </div>
+        <?php endforeach;?>
+        
     </div>
 </div>
 <!--portfolio section end-->

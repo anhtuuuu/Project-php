@@ -17,45 +17,39 @@
 <!--services img area-->
 <div class="srrvices_gallery">
     <div class="row">
+        <?php 
+            $service = array(
+                array(
+                    'title' => 'DESIGN THE COVER',
+                    'parg' => 'Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum
+                    formas humanitatis per seacula quarta decima et quinta decima.'
+                ),
+                array(
+                    'title' => 'DESIGN THE COVER',
+                    'parg' => 'Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum
+                    formas humanitatis per seacula quarta decima et quinta decima.'
+                ),
+                array(
+                    'title' => 'DESIGN THE COVER',
+                    'parg' => 'Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum
+                    formas humanitatis per seacula quarta decima et quinta decima.'
+                )
+                );
+            foreach($service as $count => $sv):
+        ?>
         <div class="col-lg-4 col-md-6">
             <div class="single_services">
                 <div class="services_thumb">
-                    <img src="<?php echo $level?><?php echo $level?>assets\img\services\service2.jpg" alt="">
+                    <img src="<?php echo $level?>assets\img\services\service<?php echo $count+1?>.jpg" alt="">
                 </div>
                 <div class="services_content">
-                    <h3>DESIGN THE COVER</h3>
-                    <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum
-                        formas humanitatis per seacula quarta decima et quinta decima.</p>
+                    <h3><?php echo $sv['title']?></h3>
+                    <p><?php echo $sv['parg']?></p>
 
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-            <div class="single_services">
-                <div class="services_thumb">
-                    <img src="<?php echo $level?><?php echo $level?>assets\img\services\service1.jpg" alt="">
-                </div>
-                <div class="services_content">
-                    <h3>DESIGN THE COVER</h3>
-                    <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum
-                        formas humanitatis per seacula quarta decima et quinta decima.</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-            <div class="single_services">
-                <div class="services_thumb">
-                    <img src="<?php echo $level?><?php echo $level?>assets\img\services\service3.jpg" alt="">
-                </div>
-                <div class="services_content">
-                    <h3>DESIGN THE COVER</h3>
-                    <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum
-                        formas humanitatis per seacula quarta decima et quinta decima.</p>
-
-                </div>
-            </div>
-        </div>
+        <?php endforeach;?>
     </div>
 </div>
 <!--services img end-->
@@ -73,98 +67,63 @@
         </div>
     </div>
     <div class="row">
+        <?php $our_sv = array(
+            array(
+                'item' => '<i class="fa fa-sliders" aria-hidden="true"></i>',
+                'title' => 'BRANDING',
+                'parg' => 'Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.'
+            ),
+            array(
+                'item' => ' <i class="fa fa-umbrella"></i>',
+                'title' => 'WEB DESIGN',
+                'parg' => 'Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.'
+            ),
+            array(
+                'item' => '<i class="fa fa-camera"></i>',
+                'title' => 'PHOTOGRAPHY',
+                'parg' => 'Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.'
+            ),
+            array(
+                'item' => '<i class="fa fa-cog"></i>',
+                'title' => 'WEB DEVELOPMENT',
+                'parg' => 'Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.'
+            ),
+            array(
+                'item' => '<i class="fa fa-file-code-o" aria-hidden="true"></i>',
+                'title' => 'CODING',
+                'parg' => 'Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.'
+            ),
+            array(
+                'item' => '<i class="fa fa-bar-chart" aria-hidden="true"></i>',
+                'title' => 'MARKETING',
+                'parg' => 'Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.'
+            ),
+            array(
+                'item' => ' <i class="fa fa-headphones"></i>',
+                'title' => 'SUPPORT',
+                'parg' => 'Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.'
+            ),
+            array(
+                'item' => ' <i class="fa fa-leaf"></i>',
+                'title' => 'GRAPHIC DESIGN',
+                'parg' => 'Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.'
+            )
+            
+            );
+            foreach($our_sv as $os):
+        ?>
         <div class="col-lg-3 col-md-6">
             <div class="services_item">
                 <div class="services_icone">
-                    <i class="fa fa-sliders" aria-hidden="true"></i>
+                    <?php echo $os['item']?>
                 </div>
                 <div class="services_desc">
-                    <h3>BRANDING</h3>
-                    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+                    <h3><?php echo $os['title']?></h3>
+                    <p><?php echo $os['parg']?></p>
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="services_item">
-                <div class="services_icone">
-                    <i class="fa fa-umbrella"></i>
-                </div>
-                <div class="services_desc">
-                    <h3>WEB DESIGN</h3>
-
-                    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="services_item">
-                <div class="services_icone">
-
-                    <i class="fa fa-camera"></i>
-
-                </div>
-                <div class="services_desc">
-                    <h3>PHOTOGRAPHY</h3>
-
-                    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="services_item">
-                <div class="services_icone">
-                    <i class="fa fa-cog"></i>
-                </div>
-                <div class="services_desc">
-                    <h3>WEB DEVELOPMENT</h3>
-                    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="services_item">
-                <div class="services_icone">
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                </div>
-                <div class="services_desc">
-                    <h3>CODING</h3>
-                    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="services_item">
-                <div class="services_icone">
-                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                </div>
-                <div class="services_desc">
-                    <h3>MARKETING</h3>
-                    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="services_item">
-                <div class="services_icone">
-                    <i class="fa fa-headphones"></i>
-                </div>
-                <div class="services_desc">
-                    <h3>SUPPORT</h3>
-                    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="services_item">
-                <div class="services_icone">
-                    <i class="fa fa-leaf"></i>
-                </div>
-                <div class="services_desc">
-                    <h3>GRAPHIC DESIGN</h3>
-                    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
-                </div>
-            </div>
-        </div>
+        <?php endforeach;?>
     </div>
 </div>
 <!--our services area end-->
@@ -198,74 +157,55 @@
 <!--price table area -->
 <div class="priceing_table mb-35">
     <div class="row">
+        <?php
+            $price_table = array(
+                array(
+                    'title' => 'Standard',
+                    'price' => '£19',
+                    'list' => array('2 GB Webspace','1 Domain','PHP 5 Enbled','24H – Support'),
+                    'class' => ''
+                ),
+                array(
+                    'title' => 'Standard',
+                    'price' => '£19',
+                    'list' => array('2 GB Webspace','1 Domain','PHP 5 Enbled','24H – Support'),
+                    'class' => 'class="list_button"'
+                ),
+                array(
+                    'title' => 'Standard',
+                    'price' => '£19',
+                    'list' => array('2 GB Webspace','1 Domain','PHP 5 Enbled','24H – Support'),
+                    'class' => ''
+                ),
+                array(
+                    'title' => 'Standard',
+                    'price' => '£19',
+                    'list' => array('2 GB Webspace','1 Domain','PHP 5 Enbled','24H – Support'),
+                    'class' => 'class="list_button"'
+                ),
+                
+                );
+                foreach($price_table as $pt):
+        ?>
         <div class="col-lg-3 col-md-6">
             <div class="single_priceing">
                 <div class="priceing_title">
-                    <h1>Standard</h1>
+                    <h1><?php echo $pt['title']?></h1>
                 </div>
                 <div class="priceing_list">
-                    <h1><span>£19</span>/Month</h1>
+                    <h1><span><?php echo $pt['price']?></span>/Month</h1>
                     <ul>
-                        <li>2 GB Webspace</li>
-                        <li>1 Domain</li>
-                        <li>PHP 5 Enbled</li>
-                        <li>24H – Support</li>
+                        <li><?php echo $pt['list'][0]?></li>
+                        <li><?php echo $pt['list'][1]?></li>
+                        <li><?php echo $pt['list'][2]?></li>
+                        <li><?php echo $pt['list'][3]?></li>
                     </ul>
-                    <a href="#">purchase now </a>
+                    <a <?php echo $pt['class']?> href="#">purchase now </a>
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="single_priceing">
-                <div class="priceing_title">
-                    <h1>Standard</h1>
-                </div>
-                <div class="priceing_list">
-                    <h1><span>£19</span>/Month</h1>
-                    <ul>
-                        <li>2 GB Webspace</li>
-                        <li>1 Domain</li>
-                        <li>PHP 5 Enbled</li>
-                        <li>24H – Support</li>
-                    </ul>
-                    <a class="list_button" href="#">purchase now </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="single_priceing">
-                <div class="priceing_title">
-                    <h1>Standard</h1>
-                </div>
-                <div class="priceing_list">
-                    <h1><span>£19</span>/Month</h1>
-                    <ul>
-                        <li>2 GB Webspace</li>
-                        <li>1 Domain</li>
-                        <li>PHP 5 Enbled</li>
-                        <li>24H – Support</li>
-                    </ul>
-                    <a href="#">purchase now </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="single_priceing">
-                <div class="priceing_title">
-                    <h1>Standard</h1>
-                </div>
-                <div class="priceing_list">
-                    <h1><span>£19</span>/Month</h1>
-                    <ul>
-                        <li>2 GB Webspace</li>
-                        <li>1 Domain</li>
-                        <li>PHP 5 Enbled</li>
-                        <li>24H – Support</li>
-                    </ul>
-                    <a class="list_button" href="#">purchase now </a>
-                </div>
-            </div>
-        </div>
+        <?php endforeach;?>
+
     </div>
 </div>
 <!--price table  end-->
@@ -295,36 +235,16 @@
     </div>
     <div class="row">
         <div class="brand_active owl-carousel">
+            <?php
+                $brand_link = array('brand1','brand2','brand3','brand4','brand5','brand6');
+                foreach($brand_link as $brl):
+            ?>
             <div class="col-lg-2">
                 <div class="single_brand">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand1.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo $level?>assets\img\brand\<?php echo $brl?>.jpg" alt=""></a>
                 </div>
             </div>
-            <div class="col-lg-2">
-                <div class="single_brand">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand2.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="single_brand">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand3.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="single_brand">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand4.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="single_brand">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand5.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="single_brand">
-                    <a href="#"><img src="<?php echo $level?><?php echo $level?>assets\img\brand\brand6.jpg" alt=""></a>
-                </div>
-            </div>
+            <?php endforeach;?>            
         </div>
     </div>
 </div>
