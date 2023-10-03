@@ -12,4 +12,4 @@
         <link rel="stylesheet" href="<?php echo $level?>assets\css\bundle.css">
         <link rel="stylesheet" href="<?php echo $level?>assets\css\style.css">
         <link rel="stylesheet" href="<?php echo $level?>assets\css\responsive.css">
-        <script src="<?php echo $level?><?php echo $level?>assets\js\vendor\modernizr-2.8.3.min.js"></script>
+        <script src="<?php echo $level?>assets\js\vendor\modernizr-2.8.3.min.js"></script>
