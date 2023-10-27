@@ -1,3 +1,7 @@
+<?php
+    include_once "{$level}Database/dashboard/list_data_recentSales.php"
+?>
+
 <main id="main" class="main">
 
     <div class="pagetitle">
@@ -206,7 +210,7 @@
                                 <table class="table table-borderless datatable">
                                     <thead>
                                         <tr>
-                                            <?php $col = array('#','Customer','Product','Price','Status');
+                                            <?php $col = array('Id','Customer','Product','Price','Status');
                                     foreach($col as $c)
                                     {
                                       echo '<th scope="col">'.$c.'</th>';
@@ -216,57 +220,28 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php $tbody = array(
-                                array(
-                                    'row_code' => '#2457',
-                                    'customer' => 'Brandon Jacob',
-                                    'product' => 'At praesentium minu',
-                                    'price' => '$64',
-                                    'status' => 'success',
-                                    'status_name' => 'Approved'
-                                      ),
-                                array(
-                                  'row_code' => '#2147',
-                                  'customer' => 'Bridie Kessler',
-                                  'product' => 'Blanditiis dolor omnis similique',
-                                  'price' => '$47',
-                                  'status' => 'warning',
-                                  'status_name' => 'Pending'
-                              ),
-                              array(
-                                'row_code' => '#2049',
-                                'customer' => 'Ashleigh Langosh',
-                                'product' => 'At recusandae consectetur',
-                                'price' => '$147',
-                                'status' => 'success',
-                                'status_name' => 'Approved'
-                            ),
-                            array(
-                              'row_code' => '#2644',
-                              'customer' => 'Angus Grady',
-                              'product' => 'Ut voluptatem id earum et',
-                              'price' => '$67',
-                              'status' => 'danger',
-                              'status_name' => 'Rejected'
-                          ),
-                          array(
-                            'row_code' => '#2644',
-                            'customer' => 'Raheem Lehner',
-                            'product' => 'Sunt similique distinctio',
-                            'price' => '$165',
-                            'status' => 'success',
-                            'status_name' => 'Approved'
-                        )
-                        
-                              );
-                              foreach($tbody as $tbd):
+                                        
+                        <!-- warning success danger -->
+                        <?php                       
+
+                          function check_status($check)
+                          {
+                            if($check == 'Approved') return 'success';
+                            if($check == 'Pending') return 'warning';
+                            if($check == 'Rejected') return 'danger';                           
+                          }
+                        ?>
+                             
+                              <?php
+                            
+                              foreach($recentSales as $rcs):
                                ?>
                                         <tr>
-                                            <th scope="row"><a href="#"><?php echo $tbd['row_code']?></a></th>
-                                            <td><?php echo $tbd['customer']?></td>
-                                            <td><a href="#" class="text-primary"><?php echo $tbd['product']?></a></td>
-                                            <td><?php echo $tbd['price']?></td>
-                                            <td><span class="badge bg-<?php echo $tbd['status']?>"><?php echo $tbd['status_name']?></span></td>
+                                            <th scope="row"><a href="#"><?php echo $rcs['id']?></a></th>
+                                            <td><?php echo $rcs['customer']?></td>
+                                            <td><a href="#" class="text-primary"><?php echo $rcs['product']?></a></td>
+                                            <td><?php echo $rcs['price']?></td>
+                                            <td><span class="badge bg-<?php echo check_status($rcs['status'])?>"><?php echo $rcs['status']?></span></td>
                                         </tr>
                                         <?php endforeach;?>                                        
                                     </tbody>
