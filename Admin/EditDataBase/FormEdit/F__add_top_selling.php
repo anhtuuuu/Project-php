@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <form action="<?php echo $level ?>EditDataBase/edit/E_add_top_selling.php" method="POST">
+    <form action="<?php echo $level ?>EditDataBase/edit/E_add_top_selling.php" method="POST" enctype="multipart/form-data">
         <h2>Add Top Selling </h2>
         <div class="form-group">
             <label for="preview">Preview:</label>

@@ -14,9 +14,13 @@
 
     $next_id = 'L'.$count_id;
     // echo     $next_id 
-   
+    $preview = basename($_FILES['preview']['name']);
+    // echo $preview;
+    $target_file = "{$level}../uploads/".$preview;
+    move_uploaded_file($_FILES['preview']['tmp_name'],$target_file);
+
     $st = $conn->prepare("insert into dashboard_topselling values(?,?,?,?,?,?,?)");
-    $st->execute([$next_id,$_POST['preview'],$_POST['product'],$_POST['price'],$_POST['sold'],$_POST['revenue'], $status_default]);
+    $st->execute([$next_id,$preview,$_POST['product'],$_POST['price'],$_POST['sold'],$_POST['revenue'], $status_default]);
     echo '<h2 style="color: #34a853"> Added successful products </h2> ';
     echo "<a href='{$level}index.php'> Return to homepage </a>"
 ?>

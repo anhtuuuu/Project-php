@@ -4,7 +4,7 @@
 
     // echo "connected";
     $id = $_GET['id'];
-    $preview = $_POST['preview'];
+    $preview = basename($_FILES['preview']['name']);
     $product = $_POST['product'];
     $price = $_POST['price'];
     $sold = $_POST['sold'];
