@@ -210,7 +210,7 @@
                                 <table class="table table-borderless datatable">
                                     <thead>
                                         <tr>
-                                            <?php $col = array('Id','Customer','Product','Price','Status');
+                                            <?php $col = array('Id','Customer','Product','Price','Status','Edit');
                                     foreach($col as $c)
                                     {
                                       echo '<th scope="col">'.$c.'</th>';
@@ -220,19 +220,19 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        
-                        <!-- warning success danger -->
-                        <?php                       
 
-                          function check_status($check)
-                          {
-                            if($check == 'Approved') return 'success';
-                            if($check == 'Pending') return 'warning';
-                            if($check == 'Rejected') return 'danger';                           
-                          }
-                        ?>
-                             
-                              <?php
+                                        <!-- warning success danger -->
+                                        <?php                       
+
+                                function check_status($check)
+                                {
+                                    if($check == 'Approved') return 'success';
+                                    if($check == 'Pending') return 'warning';
+                                    if($check == 'Rejected') return 'danger';                           
+                                }
+                                ?>
+
+                                        <?php
                             
                               foreach($recentSales as $rcs):
                                ?>
@@ -241,16 +241,27 @@
                                             <td><?php echo $rcs['customer']?></td>
                                             <td><a href="#" class="text-primary"><?php echo $rcs['product']?></a></td>
                                             <td><?php echo $rcs['price']?></td>
-                                            <td><span class="badge bg-<?php echo check_status($rcs['status'])?>"><?php echo $rcs['status']?></span></td>
+                                            <td><span
+                                                    class="badge bg-<?php echo check_status($rcs['status'])?>"><?php echo $rcs['status']?></span>
+                                            </td>
+                                            <td>
+                                                <a href="" style="margin:0 5px;"><i title="Delete"
+                                                        class="bi bi-trash"></i></a>
+                                                <a href="" style="margin:0 5px;"><i title="Edit"
+                                                        class="bi bi-pencil"></i></a>
+                                            </td>
                                         </tr>
-                                        <?php endforeach;?>                                        
+                                        <?php endforeach;?>
                                     </tbody>
                                 </table>
-
+                               <a href="<?php echo $level ?>EditDataBase/FormEdit/F__add_recent_sales.php" class="d-flex flex-row-reverse">
+                                <button type="button" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i> Add </button>                                
+                               </a>
                             </div>
 
                         </div>
-                    </div><!-- End Recent Sales -->
+                    </div>
+                    <!-- End Recent Sales -->
 
                     <!-- Top Selling -->
                     <div class="col-12">
@@ -275,18 +286,18 @@
                                 <table class="table table-borderless">
                                     <thead>
                                         <tr>
-                                        
-                                          <?php $col_sl = array('Preview','Product','Price','Sold','Revenue');
+
+                                            <?php $col_sl = array('Preview','Product','Price','Sold','Revenue');
                                             foreach($col_sl as $csl)
                                             {
                                               echo '<th scope="col">'.$csl.'</th>';
                                             }
                                           ?>
-                                            
+
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    <?php $tbody_sl = array(
+                                        <?php $tbody_sl = array(
                                       array(
                                         
                                         'parg' => 'Ut inventore ipsa voluptasnulla',                                        
@@ -325,16 +336,18 @@
                                       );
                                       foreach($tbody_sl as $count => $tbsl):
                                       ?>
-                                      <tr>
+                                        <tr>
                                             <th scope="row"><a href="#"><img
-                                                        src="<?php echo $level?>assets/img/product-<?php echo $count+1?>.jpg" alt=""></a>
+                                                        src="<?php echo $level?>assets/img/product-<?php echo $count+1?>.jpg"
+                                                        alt=""></a>
                                             </th>
-                                            <td><a href="#" class="text-primary fw-bold"><?php echo $tbsl['parg']?></a></td>
+                                            <td><a href="#" class="text-primary fw-bold"><?php echo $tbsl['parg']?></a>
+                                            </td>
                                             <td><?php echo $tbsl['price']?></td>
                                             <td class="fw-bold"><?php echo $tbsl['sold']?></td>
                                             <td><?php echo $tbsl['revenue']?></td>
                                         </tr>
-                                      <?php endforeach;?>                                        
+                                        <?php endforeach;?>
                                     </tbody>
                                 </table>
 
@@ -596,7 +609,7 @@
                         <h5 class="card-title">News &amp; Updates <span>| Today</span></h5>
 
                         <div class="news">
-                          <?php $news = array(
+                            <?php $news = array(
                             array(
                               'title' => 'Nihil blanditiis at in nihil autem',
                               'parg' => 'Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...'
@@ -621,12 +634,12 @@
                           );
                           foreach($news as $count => $nws):
                           ?>
-                          <div class="post-item clearfix">
+                            <div class="post-item clearfix">
                                 <img src="<?php echo $level?>assets/img/news-<?php echo $count+1?>.jpg" alt="">
                                 <h4><a href="#"><?php echo $nws['title']?></a></h4>
                                 <p>S<?php echo $nws['parg']?></p>
                             </div>
-                          <?php endforeach;?>                            
+                            <?php endforeach;?>
 
                         </div><!-- End sidebar recent posts-->
 
