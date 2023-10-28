@@ -1,5 +1,13 @@
 <?php
-    include_once "{$level}Database/dashboard/list_data_recentSales.php"
+    include_once "{$level}Database/dashboard/list_data_recentSales.php";
+    include_once "{$level}Database/dashboard/list_data_topSelling.php";
+    function check_status($check)
+    {
+        if($check == 'Approved') return 'success';
+        if($check == 'Pending') return 'warning';
+        if($check == 'Rejected') return 'danger';                           
+    }
+
 ?>
 
 <main id="main" class="main">
@@ -219,23 +227,13 @@
 
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody>                                            
 
-                                        <!-- warning success danger -->
-                                        <?php                       
-
-                                function check_status($check)
-                                {
-                                    if($check == 'Approved') return 'success';
-                                    if($check == 'Pending') return 'warning';
-                                    if($check == 'Rejected') return 'danger';                           
-                                }
-                                ?>
-
-                                        <?php
-                            
-                              foreach($recentSales as $rcs):
-                               ?>
+                               
+                                    <?php
+                                    
+                                    foreach($recentSales as $rcs):
+                                    ?>
                                         <tr>
                                             <th scope="row"><a href="#"><?php echo $rcs['id']?></a></th>
                                             <td><?php echo $rcs['customer']?></td>
@@ -245,16 +243,20 @@
                                                     class="badge bg-<?php echo check_status($rcs['status'])?>"><?php echo $rcs['status']?></span>
                                             </td>
                                             <td>
-                                                <a href="<?php echo $level ?>EditDataBase/edit/E_delete_recent_sales.php?id=<?php echo $rcs['id'] ?>" style="margin:0 5px;"><i title="Delete" class="bi bi-trash"></i></a>
-                                                <a href="<?php echo $level ?>EditDataBase" style="margin:0 5px;"><i title="Edit" class="bi bi-pencil"></i></a>
+                                                <a href="<?php echo $level ?>EditDataBase/edit/E_delete_recent_sales.php?id=<?php echo $rcs['id'] ?>"
+                                                    style="margin:0 5px;"><i title="Delete" class="bi bi-trash"></i></a>
+                                                <a href="<?php echo $level ?>EditDataBase/FormEdit/F_edit_recent_sales.php?id=<?php echo $rcs['id'] ?>"
+                                                    style="margin:0 5px;"><i title="Edit" class="bi bi-pencil"></i></a>
                                             </td>
                                         </tr>
                                         <?php endforeach;?>
                                     </tbody>
                                 </table>
-                               <a href="<?php echo $level ?>EditDataBase/FormEdit/F__add_recent_sales.php" class="d-flex flex-row-reverse">
-                                <button type="button" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i> Add </button>                                
-                               </a>
+                                <a href="<?php echo $level ?>EditDataBase/FormEdit/F__add_recent_sales.php"
+                                    class="d-flex flex-row-reverse">
+                                    <button type="button" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>
+                                        Add </button>
+                                </a>
                             </div>
 
                         </div>
@@ -285,7 +287,7 @@
                                     <thead>
                                         <tr>
 
-                                            <?php $col_sl = array('Preview','Product','Price','Sold','Revenue');
+                                            <?php $col_sl = array('Id','Preview','Product','Price','Sold','Revenue','Status','Edit');
                                             foreach($col_sl as $csl)
                                             {
                                               echo '<th scope="col">'.$csl.'</th>';
@@ -295,59 +297,39 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php $tbody_sl = array(
-                                      array(
-                                        
-                                        'parg' => 'Ut inventore ipsa voluptasnulla',                                        
-                                        'price' => '$64',
-                                        'sold' => '124',
-                                        'revenue' => '$5,828'
-                                      ),
-                                      array(
-                                        
-                                        'parg' => 'Exercitationem similique doloremque',                                        
-                                        'price' => '$46',
-                                        'sold' => '98',
-                                        'revenue' => '$4,508'
-                                      ),
-                                      array(
-                                        
-                                        'parg' => 'Doloribus nisi exercitationem',                                        
-                                        'price' => '$59',
-                                        'sold' => '74',
-                                        'revenue' => '$4,366'
-                                      ),
-                                      array(
-                                        
-                                        'parg' => 'Officiis quaerat sint rerum error',                                        
-                                        'price' => '$32',
-                                        'sold' => '63',
-                                        'revenue' => '$2,016'
-                                      ),
-                                      array(
-                                        
-                                        'parg' => 'Sit unde debitis delectus repellendus',                                        
-                                        'price' => '$79',
-                                        'sold' => '41',
-                                        'revenue' => '$3,239'
-                                      )                                          
-                                      );
-                                      foreach($tbody_sl as $count => $tbsl):
+                                        <?php
+                                      foreach($topSelling as $tsl):
                                       ?>
                                         <tr>
+                                            <td><?php echo $tsl['id']?></td>
                                             <th scope="row"><a href="#"><img
-                                                        src="<?php echo $level?>assets/img/product-<?php echo $count+1?>.jpg"
+                                                        src="../uploads/<?php echo $tsl['preview']?>"
                                                         alt=""></a>
                                             </th>
-                                            <td><a href="#" class="text-primary fw-bold"><?php echo $tbsl['parg']?></a>
+                                            <td><a href="#" class="text-primary fw-bold"><?php echo $tsl['product']?></a>
                                             </td>
-                                            <td><?php echo $tbsl['price']?></td>
-                                            <td class="fw-bold"><?php echo $tbsl['sold']?></td>
-                                            <td><?php echo $tbsl['revenue']?></td>
+                                            <td><?php echo $tsl['price']?></td>
+                                            <td class="fw-bold"><?php echo $tsl['sold']?></td>
+                                            <td><?php echo $tsl['revenue']?></td>
+                                            <td>
+                                                <span class="badge bg-<?php echo check_status($tsl['status'])?>"><?php echo $tsl['status']?></span>
+                                            </td>
+                                            <td>
+                                                <a href="<?php echo $level ?>EditDataBase/edit/E_delete_top_selling.php?id=<?php echo $tsl['id'] ?>"
+                                                    style="margin:0 5px;"><i title="Delete" class="bi bi-trash"></i></a>
+                                                <a href="<?php echo $level ?>EditDataBase/FormEdit/F_edit_top_selling.php?id=<?php echo $tsl['id'] ?>"
+                                                    style="margin:0 5px;"><i title="Edit" class="bi bi-pencil"></i></a>
+                                            </td>
+                                            
                                         </tr>
                                         <?php endforeach;?>
                                     </tbody>
                                 </table>
+                                <a href="<?php echo $level ?>EditDataBase/FormEdit/F__add_top_selling.php"
+                                    class="d-flex flex-row-reverse">
+                                    <button type="button" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>
+                                        Add </button>
+                                </a>
 
                             </div>
 

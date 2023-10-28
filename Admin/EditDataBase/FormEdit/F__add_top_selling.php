@@ -30,21 +30,28 @@
 </head>
 
 <body>
-    <form action="<?php echo $level ?>EditDataBase/edit/E_add_recent_sales.php" method="POST">
-        <h2>Add Recent Sales </h2>
+    <form action="<?php echo $level ?>EditDataBase/edit/E_add_top_selling.php" method="POST">
+        <h2>Add Top Selling </h2>
         <div class="form-group">
-            <label for="customer">Customer:</label>
-            <input type="text" class="form-control" placeholder="Enter Customer" name="customer" id="customer">
+            <label for="preview">Preview:</label>
+            <input type="file" class="form-control" placeholder="Enter Preview" name="preview" id="preview">
         </div>
         <div class="form-group">
             <label for="product">Product:</label>
-            <input type="text" class="form-control" placeholder="Enter Product" name="product" id="product">
+            <input type="text" class="form-control" placeholder="Enter Customer" name="product" id="product">
         </div>
         <div class="form-group">
             <label for="price">Price:</label>
             <input type="text" class="form-control" placeholder="Enter Price" name="price" id="price">
         </div>
-        
+        <div class="form-group">
+            <label for="sold">Sold:</label>
+            <input type="number" class="form-control" placeholder="Enter Sold" name="sold" id="sold">
+        </div>
+        <div class="form-group">
+            <label for="revenue">Revenue:</label>
+            <input type="text" class="form-control" placeholder="Enter Revenue" name="revenue" id="revenue">
+        </div>        
         <div class="btn-add d-flex flex-row-reverse">
             <button type="submit" class="btn btn-primary">Add</button>
         </div>

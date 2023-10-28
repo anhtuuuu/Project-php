@@ -6,6 +6,21 @@
         $level = "../../";
         include_once("{$level}Content/meta-data/data-admin.php");
         include_once("{$level}Content/script/script-admin.php");
+        include_once "{$level}Database/dashboard/list_data_recentSales.php";    
+
+        $customer;
+        $product;
+        $price;
+        $id = $_GET['id'];
+        foreach($recentSales as $rcs)
+        {
+            if($rcs['id'] == $id)
+            {
+                $customer = $rcs['customer'];
+                $product =  $rcs['product'];
+                $price =  $rcs['price'];
+            }
+        }
     ?>
     <style>
         body{
@@ -30,23 +45,23 @@
 </head>
 
 <body>
-    <form action="<?php echo $level ?>EditDataBase/edit/E_add_recent_sales.php" method="POST">
-        <h2>Add Recent Sales </h2>
+    <form action="<?php echo $level ?>EditDataBase/edit/E_change_recent_sales.php?id=<?php echo $id ?>" method="POST">
+        <h2>Change Recent Sales </h2>
         <div class="form-group">
             <label for="customer">Customer:</label>
-            <input type="text" class="form-control" placeholder="Enter Customer" name="customer" id="customer">
+            <input type="text" class="form-control" placeholder="Enter Customer" name="customer" id="customer" value="<?php echo $customer ?>">
         </div>
         <div class="form-group">
             <label for="product">Product:</label>
-            <input type="text" class="form-control" placeholder="Enter Product" name="product" id="product">
+            <input type="text" class="form-control" placeholder="Enter Customer" name="product" id="product" value="<?php echo $product ?>">
         </div>
         <div class="form-group">
             <label for="price">Price:</label>
-            <input type="text" class="form-control" placeholder="Enter Price" name="price" id="price">
+            <input type="text" class="form-control" placeholder="Enter Price" name="price" id="price" value="<?php echo $price ?>"> 
         </div>
         
         <div class="btn-add d-flex flex-row-reverse">
-            <button type="submit" class="btn btn-primary">Add</button>
+            <button type="submit" class="btn btn-primary">Change</button>
         </div>
     </form>
 </body>

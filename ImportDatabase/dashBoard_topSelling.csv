@@ -1,6 +1,6 @@
-﻿id,customer,product,price,status
-#SP01,Brandon Jacob,Curabitur sodales,$50.00 ,Approved
-#SP02,Ashleigh Langosh,Quisque ornare dui,$40.00 ,Pending
-#SP03,Bridie Kessler,Sed non turpiss,$60.00 ,Rejected
-#SP04,Raheem Lehner,Duis convallis,$65.00 ,Approved
-#SP02,Angus Grady,Quisque ornare dui,$40.00 ,Approved
+﻿id,preview,product,price,sold,revenue,status
+L01,product1.jpg,,$50.00 ,124,"$5,828 ",Approved
+L02,product2.jpg,,$40.00 ,98,"$4,508 ",Approved
+L03,product3.jpg,,$60.00 ,74,"$4,366 ",Approved
+L04,product4.jpg,,$65.00 ,63,"$2,016 ",Approved
+L05,product5.jpg,,$115.00 ,41,"$3,239 ",Rejected
