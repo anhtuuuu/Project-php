@@ -245,10 +245,8 @@
                                                     class="badge bg-<?php echo check_status($rcs['status'])?>"><?php echo $rcs['status']?></span>
                                             </td>
                                             <td>
-                                                <a href="" style="margin:0 5px;"><i title="Delete"
-                                                        class="bi bi-trash"></i></a>
-                                                <a href="" style="margin:0 5px;"><i title="Edit"
-                                                        class="bi bi-pencil"></i></a>
+                                                <a href="<?php echo $level ?>EditDataBase/edit/E_delete_recent_sales.php?id=<?php echo $rcs['id'] ?>" style="margin:0 5px;"><i title="Delete" class="bi bi-trash"></i></a>
+                                                <a href="<?php echo $level ?>EditDataBase" style="margin:0 5px;"><i title="Edit" class="bi bi-pencil"></i></a>
                                             </td>
                                         </tr>
                                         <?php endforeach;?>
