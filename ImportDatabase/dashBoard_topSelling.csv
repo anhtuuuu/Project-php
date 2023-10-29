@@ -1,6 +1,6 @@
 ﻿id,preview,product,price,sold,revenue,status
-L01,product1.jpg,,$50.00 ,124,"$5,828 ",Approved
-L02,product2.jpg,,$40.00 ,98,"$4,508 ",Approved
-L03,product3.jpg,,$60.00 ,74,"$4,366 ",Approved
-L04,product4.jpg,,$65.00 ,63,"$2,016 ",Approved
-L05,product5.jpg,,$115.00 ,41,"$3,239 ",Rejected
+L01,product1.jpg,,$50.00 ,124,"$5,828 ",In stock
+L02,product2.jpg,,$40.00 ,98,"$4,508 ",Out of stock
+L03,product3.jpg,,$60.00 ,74,"$4,366 ",In stock
+L04,product4.jpg,,$65.00 ,63,"$2,016 ",In stock
+L05,product5.jpg,,$115.00 ,41,"$3,239 ",In stock

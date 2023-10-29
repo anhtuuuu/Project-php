@@ -1,7 +1,7 @@
 <?php
     $level = "../../";
     include_once "{$level}Database/dashboard/list_data_topSelling.php";    
-    $status_default = "Approved";
+    $status_default = "In stock";
     $count_id = 0;
     foreach($topSelling as $rcs)
     {

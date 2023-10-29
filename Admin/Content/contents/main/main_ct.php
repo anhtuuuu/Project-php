@@ -7,6 +7,11 @@
         if($check == 'Pending') return 'warning';
         if($check == 'Rejected') return 'danger';                           
     }
+    function check_status_2($check)
+    {
+        if($check == 'In stock') return 'success';
+        if($check == 'Out of stock') return 'danger';                           
+    }
 
 ?>
 
@@ -252,11 +257,13 @@
                                         <?php endforeach;?>
                                     </tbody>
                                 </table>
+                                <div class="btn-add d-flex flex-row-reverse">
                                 <a href="<?php echo $level ?>EditDataBase/FormEdit/F__add_recent_sales.php"
                                     class="d-flex flex-row-reverse">
                                     <button type="button" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>
                                         Add </button>
                                 </a>
+                                </div>
                             </div>
 
                         </div>
@@ -312,7 +319,7 @@
                                             <td class="fw-bold"><?php echo $tsl['sold']?></td>
                                             <td><?php echo $tsl['revenue']?></td>
                                             <td>
-                                                <span class="badge bg-<?php echo check_status($tsl['status'])?>"><?php echo $tsl['status']?></span>
+                                                <span class="badge bg-<?php echo check_status_2($tsl['status'])?>"><?php echo $tsl['status']?></span>
                                             </td>
                                             <td>
                                                 <a href="<?php echo $level ?>EditDataBase/edit/E_delete_top_selling.php?id=<?php echo $tsl['id'] ?>"
@@ -325,11 +332,14 @@
                                         <?php endforeach;?>
                                     </tbody>
                                 </table>
+                                <div class="btn-add d-flex flex-row-reverse">
                                 <a href="<?php echo $level ?>EditDataBase/FormEdit/F__add_top_selling.php"
-                                    class="d-flex flex-row-reverse">
+                                    class="">
                                     <button type="button" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>
                                         Add </button>
                                 </a>
+                                </div>
+                                
 
                             </div>
 

@@ -5,6 +5,9 @@
     // echo "connected";
     $id = $_GET['id'];
     $preview = basename($_FILES['preview']['name']);
+    $target_file = "{$level}../uploads/".$preview;
+    move_uploaded_file($_FILES['preview']['tmp_name'],$target_file);
+
     $product = $_POST['product'];
     $price = $_POST['price'];
     $sold = $_POST['sold'];
