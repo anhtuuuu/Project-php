@@ -13,6 +13,25 @@
         if($check == 'Out of stock') return 'danger';                           
     }
 
+     // link and button delete & restore for recent sales
+     function restore_or_delete_btn_rs($check){
+        if($check == 'Rejected') return '<i title="Restore" class="bi bi-arrow-counterclockwise"></i>';
+        else return '<i title="Delete" class="bi bi-trash"></i>';
+    }
+    function restore_or_delete_link_rs($check){
+        if($check == 'Rejected') return 'E_restore_recent_sales.php';
+        else return 'E_delete_recent_sales.php';
+    }
+
+    // link and button delete & restore for top selling
+    function restore_or_delete_btn_tsl($check){
+        if($check == 'Out of stock') return '<i title="Restore" class="bi bi-arrow-counterclockwise"></i>';
+        else return '<i title="Delete" class="bi bi-trash"></i>';
+    }
+    function restore_or_delete_link_tsl($check){
+        if($check == 'Out of stock') return 'E_restore_top_selling.php';
+        else return 'E_delete_top_selling.php';
+    }
 ?>
 
 <main id="main" class="main">
@@ -248,8 +267,8 @@
                                                     class="badge bg-<?php echo check_status($rcs['status'])?>"><?php echo $rcs['status']?></span>
                                             </td>
                                             <td>
-                                                <a href="<?php echo $level ?>EditDataBase/edit/E_delete_recent_sales.php?id=<?php echo $rcs['id'] ?>"
-                                                    style="margin:0 5px;"><i title="Delete" class="bi bi-trash"></i></a>
+                                                <a href="<?php echo $level ?>EditDataBase/edit/<?php echo restore_or_delete_link_rs($rcs['status']) ?>?id=<?php echo $rcs['id'] ?>"
+                                                    style="margin:0 5px;"><?php echo restore_or_delete_btn_rs($rcs['status']) ?></a>
                                                 <a href="<?php echo $level ?>EditDataBase/FormEdit/F_edit_recent_sales.php?id=<?php echo $rcs['id'] ?>"
                                                     style="margin:0 5px;"><i title="Edit" class="bi bi-pencil"></i></a>
                                             </td>
@@ -258,11 +277,11 @@
                                     </tbody>
                                 </table>
                                 <div class="btn-add d-flex flex-row-reverse">
-                                <a href="<?php echo $level ?>EditDataBase/FormEdit/F__add_recent_sales.php"
-                                    class="d-flex flex-row-reverse">
-                                    <button type="button" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>
-                                        Add </button>
-                                </a>
+                                    <a href="<?php echo $level ?>EditDataBase/FormEdit/F__add_recent_sales.php"
+                                        class="d-flex flex-row-reverse">
+                                        <button type="button" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>
+                                            Add </button>
+                                    </a>
                                 </div>
                             </div>
 
@@ -322,8 +341,9 @@
                                                 <span class="badge bg-<?php echo check_status_2($tsl['status'])?>"><?php echo $tsl['status']?></span>
                                             </td>
                                             <td>
-                                                <a href="<?php echo $level ?>EditDataBase/edit/E_delete_top_selling.php?id=<?php echo $tsl['id'] ?>"
-                                                    style="margin:0 5px;"><i title="Delete" class="bi bi-trash"></i></a>
+                                                <a href="<?php echo $level ?>EditDataBase/edit/<?php echo restore_or_delete_link_tsl($tsl['status'])?>?id=<?php echo $tsl['id'] ?>"
+                                                    style="margin:0 5px;"><?php echo restore_or_delete_btn_tsl($tsl['status'])?></a>
+                                
                                                 <a href="<?php echo $level ?>EditDataBase/FormEdit/F_edit_top_selling.php?id=<?php echo $tsl['id'] ?>"
                                                     style="margin:0 5px;"><i title="Edit" class="bi bi-pencil"></i></a>
                                             </td>
