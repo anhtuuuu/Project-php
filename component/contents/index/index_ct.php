@@ -1,3 +1,50 @@
+<?php 
+   
+   include_once("{$level}lib/conn.php"); 
+   
+       
+   
+       //---------------------------------- Truy vấn SQL
+       //Truy vấn product
+       $stmt = $conn->prepare("SELECT * FROM product_information_tb WHERE product_style LIKE N'%product%'");
+       $stmt->execute();
+      //Truy vấn product_slider
+       $stmt_slide = $conn->prepare("SELECT * FROM product_slider");
+       $stmt_slide->execute();
+      //Truy vấn categories
+       $categorie = $conn->prepare("SELECT * FROM categories");
+       $categorie->execute();
+     //Truy vấn cart
+       $carts= $conn->prepare("SELECT * FROM product_information_tb WHERE product_style LIKE N'%cart%'");
+       $carts->execute();
+      //Truy vấn items
+       $list_items = $conn->prepare("SELECT * FROM items");
+       $list_items->execute();
+      //truy vấn banners
+       $banner_area = $conn->prepare("SELECT * FROM banners");
+       $banner_area->execute();
+       //truy vấn brands
+       $brand_link = $conn->prepare("SELECT * FROM brands");
+       $brand_link->execute();
+       //-------------------------------- Lấy kết quả
+       //kết quả product
+       $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+       //kết quả product_slider
+       $result_slide= $stmt_slide->fetchAll(PDO::FETCH_ASSOC);
+       //kết quả categorie
+       $result_categorie=$categorie->fetchAll(PDO::FETCH_ASSOC);
+        //kết quả carts
+       $result_carts=$carts->fetchAll(PDO::FETCH_ASSOC);
+        //kết quả list_iteam
+       $result_list_items=$list_items->fetchAll(PDO::FETCH_ASSOC);
+        //kết quả banner_area
+       $result_banner_area=$banner_area->fetchAll(PDO::FETCH_ASSOC);
+        //kết qua brand_link
+       $result_brand_link=$brand_link->fetchAll(PDO::FETCH_ASSOC);
+      
+      
+?>
+
 <!--pos home section-->
 <div class=" pos_home_section">
     <div class="row pos_home">
@@ -17,36 +64,7 @@
             <div class="sidebar_widget catrgorie mb-35">
                 <h3>Categories</h3>
                 <ul>
-                    <?php 
-                        $categorie = array(
-                            array(
-                                'title' => 'Women',
-                                'menu' => array('Accessories','Dresses','Tops','HandBags'),
-                                'item' => array('Accessories','Dresses','Tops','HandBags'),
-                            ),
-                            array(
-                                'title' => 'Men',
-                                'menu' => array('Accessories','Dresses','Tops','HandBags'),
-                                'item' => array('Accessories','Dresses','Tops','HandBags'),
-                            ),
-                            array(
-                                'title' => 'Footwear',
-                                'menu' => array('Accessories','Dresses','Tops','HandBags'),
-                                'item' => array('Accessories','Dresses','Tops','HandBags'),
-                            ),
-                            array(
-                                'title' => 'Jewelry',
-                                'menu' => array('Accessories','Dresses','Tops','HandBags'),
-                                'item' => array('Accessories','Dresses','Tops','HandBags'),
-                            ),
-                            array(
-                                'title' => 'Lady',
-                                'menu' => array('Accessories','Dresses','Tops','HandBags'),
-                                'item' => array('Accessories','Dresses','Tops','HandBags'),
-                            )
-                        )
-                    ?>
-                    <?php foreach($categorie as $cat): ?>
+                    <?php foreach($result_categorie as $cat): ?>
                     <li class="has-sub"><a href="#"><i class="fa fa-caret-right"></i> <?php echo $cat['title']?></a>
                         <ul class="categorie_sub">
                             <li><a href="#"><i class="fa fa-caret-right"></i> <?php echo $cat['menu'][0]?></a>
@@ -77,32 +95,17 @@
                 <div class="block_title">
                     <h3><a href="#">Wishlist</a></h3>
                 </div>
-                <?php 
-                    $carts = array(
-                        array(
-                            'link' => 'cart',
-                            'name' => 'lorem ipsum dolor',
-                            'price' => '$115.00',
-                            'quanity' => 'Qty: 1'
-                        ),
-                        array(
-                            'link' => 'cart2',
-                            'name' => 'Quisque ornare dui',
-                            'price' => '$105.00',
-                            'quanity' => 'Qty: 1'
-                        )
-                    )
-                ?>
-                <?php foreach($carts as $cart):?>
+           
+                <?php foreach($result_carts as $cart):?>
                 <div class="cart_item">
                     <div class="cart_img">
-                        <a href="#"><img src="<?php echo $level?>assets\img\cart\<?php echo $cart['link']?>.jpg"
+                        <a href="#"><img src="<?php echo $level?>assets\img\<?php echo $cart['product_image']?>.jpg"
                                 alt=""></a>
                     </div>
                     <div class="cart_info">
-                        <a href="#"><?php echo $cart['name']?></a>
-                        <span class="cart_price"><?php echo $cart['price']?></span>
-                        <span class="quantity"><?php echo $cart['quanity']?></span>
+                        <a href="#"><?php echo $cart['product_name']?></a>
+                        <span class="cart_price">$<?php echo $cart['price']?></span>
+                        <span class="quantity">Qty:<?php echo $cart['quanity']?></span>
                     </div>
                     <div class="cart_remove">
                         <a title="Remove this item" href="#"><i class="fa fa-times-circle"></i></a>
@@ -121,12 +124,11 @@
                 <div class="block_title">
                     <h3>popular tags</h3>
                 </div>
-                <?php $list_items = array('ipod','sam sung','apple','iphone 5s','superdrive','shuffle','nano','iphone 4s','canon')?>
                 <div class="block_tags">
                     <?php 
-                        foreach($list_items as $list)
+                        foreach($result_list_items as $list)
                         {
-                            echo '<a href="#">'.$list.'</a>';
+                            echo '<a href="#">'.$list['name'].'</a>';
                         };
                     ?>
                     
@@ -162,35 +164,15 @@
             <!--banner slider start-->
             <div class="banner_slider slider_1">
                 <div class="slider_active owl-carousel">
-                    <?php
-                        $banner = array(
-                            array(
-                                'link' => 'slide_1',
-                                'title' => "Women's Fashion",
-                                'parg' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-                                'shop_now' => 'shop now'
-                            ),
-                            array(
-                                'link' => 'slider_2',
-                                'title' => "New Collection",
-                                'parg' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-                                'shop_now' => 'shop now'
-                            ),
-                            array(
-                                'link' => 'slider_3',
-                                'title' => "Best Collection",
-                                'parg' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-                                'shop_now' => 'shop now'
-                            ),
-                        )
-                    ?>
-                    <?php foreach($banner as $ban):?>
-                        <div class="single_slider" style="background-image: url(assets/img/slider/<?php echo $ban['link']?>.png)">
+                   
+                       
+                    <?php foreach( $result_slide as $ban):?>
+                        <div class="single_slider" style="background-image: url(assets/img/slider/<?php echo $ban['image']?>.png)">
                         <div class="slider_content">
                             <div class="slider_content_inner">
                                 <h1><?php echo $ban['title']?></h1>
                                 <p><?php echo $ban['parg']?> </p>
-                                <a href="#"><?php echo $ban['shop_now']?></a>
+                                <a href="#"><?php echo $ban['button']?></a>
                             </div>
                         </div>
                     </div>
@@ -207,61 +189,22 @@
                 </div>
                 <div class="row">
                     <div class="product_active owl-carousel">
-                        <?php 
-                            $product_active = array(
-                                array(
-                                    'link_product' => 'product1',
-                                    'link_span' => 'span-new',
-                                    'price' => '$50.00',
-                                    'title' => 'Curabitur sodales'
-
-                                ),
-                                array(
-                                    'link_product' => 'product2',
-                                    'link_span' => 'span-hot',
-                                    'price' => '$40.00',
-                                    'title' => 'Quisque ornare dui'
-
-                                ),
-                                array(
-                                    'link_product' => 'product3',
-                                    'link_span' => 'span-new',
-                                    'price' => '$60.00',
-                                    'title' => 'Sed non turpiss'
-
-                                ),
-                                array(
-                                    'link_product' => 'product4',
-                                    'link_span' => 'span-hot',
-                                    'price' => '$65.00',
-                                    'title' => 'Duis convallis'
-
-                                ),
-                                array(
-                                    'link_product' => 'product6',
-                                    'link_span' => 'span-new',
-                                    'price' => '$50.00',
-                                    'title' => 'Curabitur sodales'
-                                )
-                                
-                            )
-                        ?>
-                        <?php foreach($product_active as $pda): ?>
+                        <?php foreach($result as $pda): ?>
                             <div class="col-lg-3">
                             <div class="single_product">
                                 <div class="product_thumb">
-                                    <a href="single-product.php"><img
-                                            src="<?php echo $level?>assets\img\product\<?php echo $pda['link_product']?>.jpg" alt=""></a>
+                                    <a href="<?php echo $level?>pages\single-product.php"><img
+                                            src="<?php echo $level?>assets\img\<?php echo $pda['product_image']?>.jpg" alt=""></a>
                                     <div class="img_icone">
-                                        <img src="<?php echo $level?>assets\img\cart\<?php echo $pda['link_span']?>.png" alt="">
+                                        <img src="<?php echo $level?>assets\img\cart\<?php echo $pda['span']?>.png" alt="">
                                     </div>
                                     <div class="product_action">
-                                        <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                       <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                                     </div>
                                 </div>
                                 <div class="product_content">
                                     <span class="product_price"><?php echo $pda['price']?></span>
-                                    <h3 class="product_title"><a href="single-product.php"><?php echo $pda['title']?></a></h3>
+                                    <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php"><?php echo $pda['product_name']?></a></h3>
                                 </div>
                                 <div class="product_info">
                                     <ul>
@@ -286,60 +229,22 @@
                 </div>
                 <div class="row">
                     <div class="product_active owl-carousel">
-                        <?php $feature_product= array(
-                                array(
-                                    'link_product' => 'product7',
-                                    'link_span' => 'span-new',
-                                    'price' => '$60.00',
-                                    'title' => 'Maecenas sit amet'
-
-                                ),
-                                array(
-                                    'link_product' => 'product8',
-                                    'link_span' => 'span-hot',
-                                    'price' => '$50.00',
-                                    'title' => 'Sed non turpis'
-
-                                ),
-                                array(
-                                    'link_product' => 'product9',
-                                    'link_span' => 'span-new',
-                                    'price' => '$70.00',
-                                    'title' => 'Donec ac congue'
-
-                                ),
-                                array(
-                                    'link_product' => 'product3',
-                                    'link_span' => 'span-hot',
-                                    'price' => '$60.00',
-                                    'title' => 'Curabitur sodales'
-
-                                ),
-                                array(
-                                    'link_product' => 'product2',
-                                    'link_span' => 'span-new',
-                                    'price' => '$50.00',
-                                    'title' => 'Phasellus a arcu'
-                                )
-                                
-                            )
-                        ?>
-                        <?php foreach($product_active as $pda): ?>
+                        <?php foreach($result as $pda): ?>
                             <div class="col-lg-3">
                             <div class="single_product">
                                 <div class="product_thumb">
-                                    <a href="single-product.php"><img
-                                            src="<?php echo $level?>assets\img\product\<?php echo $pda['link_product']?>.jpg" alt=""></a>
+                                    <a href="<?php echo $level?>pages\single-product.php"><img
+                                            src="<?php echo $level?>assets\img\<?php echo $pda['product_image']?>.jpg" alt=""></a>
                                     <div class="img_icone">
-                                        <img src="<?php echo $level?>assets\img\cart\<?php echo $pda['link_span']?>.png" alt="">
+                                        <img src="<?php echo $level?>assets\img\cart\<?php echo $pda['span']?>.png" alt="">
                                     </div>
                                     <div class="product_action">
-                                        <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                       <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                                     </div>
                                 </div>
                                 <div class="product_content">
                                     <span class="product_price"><?php echo $pda['price']?></span>
-                                    <h3 class="product_title"><a href="single-product.php"><?php echo $pda['title']?></a></h3>
+                                    <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php"><?php echo $pda['product_name']?></a></h3>
                                 </div>
                                 <div class="product_info">
                                     <ul>
@@ -360,21 +265,7 @@
             <!--banner area start-->
             <div class="banner_area mb-60">
                 <div class="row">
-                    <?php
-                    $banner_area = array(
-                        array(
-                            'link' => 'banner7',
-                            'title' => 'sale off',
-                            'sale_ps' => '40%'
-                        ),
-                        array(
-                            'link' => 'banner8',
-                            'title' => 'sale off',
-                            'sale_ps' => '30%'
-                        )                    
-                    )
-                    ?>
-                    <?php foreach($banner_area as $bna):?>
+                    <?php foreach($result_banner_area as $bna):?>
                         <div class="col-lg-6 col-md-6">
                         <div class="single_banner">
                             <a href="#"><img src="<?php echo $level?>assets\img\banner\<?php echo $bna['link']?>.jpg" alt=""></a>
@@ -397,12 +288,11 @@
                 <div class="row">
                     <div class="brand_active owl-carousel">
                         <?php
-                            $brand_link = array('brand1','brand2','brand3','brand4','brand5','brand6');
-                            foreach($brand_link as $brl):
+                            foreach($result_brand_link as $brl):
                         ?>
                          <div class="col-lg-2">
                             <div class="single_brand">
-                                <a href="#"><img src="<?php echo $level?>assets\img\brand\<?php echo $brl?>.jpg" alt=""></a>
+                                <a href="#"><img src="<?php echo $level?>assets\img\brand\<?php echo $brl['brand_link']?>.jpg" alt=""></a>
                             </div>
                         </div>
                         <?php endforeach;?>

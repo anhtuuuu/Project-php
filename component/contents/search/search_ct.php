@@ -1,3 +1,25 @@
+<?php 
+    if(isset($_POST['btn_search'])){
+        $noidung_search = $_POST['noidung_search'];
+    }
+
+    $stmt = $conn->prepare("SELECT * FROM product_information_tb WHERE product_name LIKE N'%$noidung_search%'");
+    $stmt->execute();
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    foreach($result as $dataSearch)
+    {
+        
+            $product_name = $dataSearch['product_name'];
+            $product_image =  $dataSearch['product_image'];
+            $price =  $dataSearch['price'];
+            $span=$dataSearch['span'];
+            $quanity=$dataSearch['quanity'];
+
+    }
+  
+?>
+
  <!--breadcrumbs area start-->
  <div class="breadcrumbs_area">
      <div class="row">
@@ -6,7 +28,7 @@
                  <ul>
                      <li><a href="<?php echo $level?>index.php">home</a></li>
                      <li><i class="fa fa-angle-right"></i></li>
-                     <li>single product</li>
+                     <li><?php echo $product_name?></li>
                  </ul>
 
              </div>
@@ -21,34 +43,16 @@
      <div class="row">
          <div class="col-lg-5 col-md-6">
              <div class="product_tab fix">
-                 <div class="product_tab_button">
-                     <ul class="nav" role="tablist">
-                         <li>
-                             <a class="active" data-toggle="tab" href="#p_tab1" role="tab" aria-controls="p_tab1"
-                                 aria-selected="false"><img src="<?php echo $level?>assets\img\cart\cart.jpg"
-                                     alt=""></a>
-                         </li>
-                         <li>
-                             <a data-toggle="tab" href="#p_tab2" role="tab" aria-controls="p_tab2"
-                                 aria-selected="false"><img src="<?php echo $level?>assets\img\cart\cart2.jpg"
-                                     alt=""></a>
-                         </li>
-                         <li>
-                             <a data-toggle="tab" href="#p_tab3" role="tab" aria-controls="p_tab3"
-                                 aria-selected="false"><img src="<?php echo $level?>assets\img\cart\cart4.jpg"
-                                     alt=""></a>
-                         </li>
-                     </ul>
-                 </div>
+                
                  <div class="tab-content produc_tab_c">
                      <div class="tab-pane fade show active" id="p_tab1" role="tabpanel">
                          <div class="modal_img">
-                             <a href="#"><img src="<?php echo $level?>assets\img\product\product13.jpg" alt=""></a>
+                             <a href="#"><img src="<?php echo $level?>assets\img\<?php echo $product_image?>.jpg" alt=""></a>
                              <div class="img_icone">
-                                <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
+                                <img src="<?php echo $level?>assets\img\cart\<?php echo $span?>.png" alt="">
                              </div>
                              <div class="view_img">
-                                 <a class="large_view" href="assets\img\product\product13.jpg"><i
+                                 <a class="large_view" href="assets\img\<?php echo $product_image?>.jpg"><i
                                          class="fa fa-search-plus"></i></a>
                              </div>
                          </div>
@@ -83,7 +87,7 @@
          </div>
          <div class="col-lg-7 col-md-6">
              <div class="product_d_right">
-                 <h1>Printed Summer Dress</h1>
+                 <h1><?php echo $product_name ?></h1>
                  <div class="product_ratting mb-10">
                      <ul>
                          <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -101,7 +105,7 @@
                  </div>
 
                  <div class="content_price mb-15">
-                     <span>$118.00</span>
+                     <span>$<?php echo $price?></span>
                      <span class="old-price">$130.00</span>
                  </div>
                  <div class="box_quantity mb-20">

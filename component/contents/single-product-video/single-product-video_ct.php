@@ -294,18 +294,18 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?>assets\img\product\product1.jpg"
+                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product1.jpg"
                                  alt=""></a>
                          <div class="img_icone">
                             <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                          </div>
                          <div class="product_action">
-                             <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                          </div>
                      </div>
                      <div class="product_content">
                          <span class="product_price">$50.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Curabitur sodales</a></h3>
+                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Curabitur sodales</a></h3>
                      </div>
                      <div class="product_info">
                          <ul>
@@ -319,18 +319,18 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?>assets\img\product\product2.jpg"
+                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product2.jpg"
                                  alt=""></a>
                          <div class="hot_img">
                             <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
                          </div>
                          <div class="product_action">
-                             <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                          </div>
                      </div>
                      <div class="product_content">
                          <span class="product_price">$40.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Quisque ornare dui</a></h3>
+                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Quisque ornare dui</a></h3>
                      </div>
                      <div class="product_info">
                          <ul>
@@ -344,18 +344,18 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?>assets\img\product\product3.jpg"
+                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product3.jpg"
                                  alt=""></a>
                          <div class="img_icone">
                             <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                          </div>
                          <div class="product_action">
-                             <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                          </div>
                      </div>
                      <div class="product_content">
                          <span class="product_price">$60.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Sed non turpiss</a></h3>
+                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Sed non turpiss</a></h3>
                      </div>
                      <div class="product_info">
                          <ul>
@@ -369,18 +369,18 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?>assets\img\product\product4.jpg"
+                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product4.jpg"
                                  alt=""></a>
                          <div class="hot_img">
                             <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
                          </div>
                          <div class="product_action">
-                             <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                          </div>
                      </div>
                      <div class="product_content">
                          <span class="product_price">$65.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Duis convallis</a></h3>
+                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Duis convallis</a></h3>
                      </div>
                      <div class="product_info">
                          <ul>
@@ -394,18 +394,18 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?>assets\img\product\product6.jpg"
+                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product6.jpg"
                                  alt=""></a>
                          <div class="img_icone">
                             <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                          </div>
                          <div class="product_action">
-                             <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                          </div>
                      </div>
                      <div class="product_content">
                          <span class="product_price">$50.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Curabitur sodales</a></h3>
+                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Curabitur sodales</a></h3>
                      </div>
                      <div class="product_info">
                          <ul>
@@ -436,18 +436,18 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?>assets\img\product\product6.jpg"
+                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product6.jpg"
                                  alt=""></a>
                          <div class="img_icone">
                             <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                          </div>
                          <div class="product_action">
-                             <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                          </div>
                      </div>
                      <div class="product_content">
                          <span class="product_price">$50.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Curabitur sodales</a></h3>
+                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Curabitur sodales</a></h3>
                      </div>
                      <div class="product_info">
                          <ul>
@@ -461,18 +461,18 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?>assets\img\product\product5.jpg"
+                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product5.jpg"
                                  alt=""></a>
                          <div class="hot_img">
                             <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
                          </div>
                          <div class="product_action">
-                             <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                          </div>
                      </div>
                      <div class="product_content">
                          <span class="product_price">$40.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Quisque ornare dui</a></h3>
+                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Quisque ornare dui</a></h3>
                      </div>
                      <div class="product_info">
                          <ul>
@@ -486,18 +486,18 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?>assets\img\product\product4.jpg"
+                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product4.jpg"
                                  alt=""></a>
                          <div class="img_icone">
                             <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                          </div>
                          <div class="product_action">
-                             <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                          </div>
                      </div>
                      <div class="product_content">
                          <span class="product_price">$60.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Sed non turpiss</a></h3>
+                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Sed non turpiss</a></h3>
                      </div>
                      <div class="product_info">
                          <ul>
@@ -511,18 +511,18 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?>assets\img\product\product3.jpg"
+                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product3.jpg"
                                  alt=""></a>
                          <div class="hot_img">
                             <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
                          </div>
                          <div class="product_action">
-                             <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                          </div>
                      </div>
                      <div class="product_content">
                          <span class="product_price">$65.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Duis convallis</a></h3>
+                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Duis convallis</a></h3>
                      </div>
                      <div class="product_info">
                          <ul>
@@ -536,18 +536,18 @@
              <div class="col-lg-3">
                  <div class="single_product">
                      <div class="product_thumb">
-                         <a href="<?php echo $level?>single-product.php"><img src="<?php echo $level?>assets\img\product\product2.jpg"
+                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product2.jpg"
                                  alt=""></a>
                          <div class="img_icone">
                             <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
                          </div>
                          <div class="product_action">
-                             <a href="#"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                          </div>
                      </div>
                      <div class="product_content">
                          <span class="product_price">$50.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>single-product.php">Curabitur sodales</a></h3>
+                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Curabitur sodales</a></h3>
                      </div>
                      <div class="product_info">
                          <ul>

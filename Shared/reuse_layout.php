@@ -1,3 +1,6 @@
+<?php 
+      include_once("{$level}lib/conn.php"); 
+?>
 <!doctype html>
 <html class="no-js" lang="zxx">
     <head>

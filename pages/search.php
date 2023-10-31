@@ -1,4 +1,4 @@
 <?php $level = "../";
-    $page = "register";
+    $page = "search";
     include_once("{$level}Shared/reuse_layout.php");
 ?>

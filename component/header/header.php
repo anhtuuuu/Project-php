@@ -5,12 +5,11 @@
             <div class="col-lg-6 col-md-6">
                 <div class="switcher">
                     <ul>
-                        <li class="languages"><a href="#"><img src="<?php echo $level?>assets\img\logo\fontlogo.jpg"
-                                    alt=""> English <i class="fa fa-angle-down"></i></a>
+                        <li class="languages"><a href="#"><img src="<?php echo $level ?>assets\img\logo\fontlogo.jpg" alt=""> English <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown_languages">
-                                <li><a href="#"><img src="<?php echo $level?>assets\img\logo\fontlogo.jpg" alt="">
+                                <li><a href="#"><img src="<?php echo $level ?>assets\img\logo\fontlogo.jpg" alt="">
                                         English</a></li>
-                                <li><a href="#"><img src="<?php echo $level?>assets\img\logo\fontlogo2.jpg" alt="">
+                                <li><a href="#"><img src="<?php echo $level ?>assets\img\logo\fontlogo2.jpg" alt="">
                                         French </a></li>
                             </ul>
                         </li>
@@ -27,11 +26,11 @@
             <div class="col-lg-6 col-md-6">
                 <div class="header_links">
                     <ul>
-                        <li><a href="<?php echo $level?>pages/contact.php" title="Contact">Contact</a></li>
-                        <li><a href="<?php echo $level?>pages/wishlist.php" title="wishlist">My wishlist</a></li>
-                        <li><a href="<?php echo $level?>pages/my-account.php" title="My account">My account</a></li>
-                        <li><a href="<?php echo $level?>pages/cart.php" title="My cart">My cart</a></li>
-                        <li><a href="<?php echo $level?>pages/login.php" title="Login">Login</a></li>
+                        <li><a href="<?php echo $level ?>pages/contact.php" title="Contact">Contact</a></li>
+                        <li><a href="<?php echo $level ?>pages/wishlist.php" title="wishlist">My wishlist</a></li>
+                        <li><a href="<?php echo $level ?>pages/my-account.php" title="My account">My account</a></li>
+                        <li><a href="<?php echo $level ?>pages/cart.php" title="My cart">My cart</a></li>
+                        <li><a href="<?php echo $level ?>pages/login.php" title="Login">Login</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,27 +43,25 @@
         <div class="row align-items-center">
             <div class="col-lg-3 col-md-3">
                 <div class="logo">
-                    <a href="<?php echo $level?>index.php"><img src="<?php echo $level?>assets\img\logo\logo.jpg.png"
-                            alt=""></a>
+                    <a href="<?php echo $level ?>index.php"><img src="<?php echo $level ?>assets\img\logo\logo.jpg.png" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9">
                 <div class="header_right_info">
                     <div class="search_bar">
-                        <form action="#">
-                            <input placeholder="Search..." type="text">
-                            <button type="submit"><i class="fa fa-search"></i></button>
+                        <form action="<?php echo $level ?>pages\search.php" method="POST">
+                            <input placeholder="Search... "  type="text" name="noidung_search"> <!-- Thuộc tính name cho ô nhập liệu -->
+                            <button type="submit" name="btn_search"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
                     <div class="shopping_cart">
-                        <a href="#"><i class="fa fa-shopping-cart"></i> 2Items - $209.44 <i
-                                class="fa fa-angle-down"></i></a>
+                        <a href="#"><i class="fa fa-shopping-cart"></i> 2Items - $209.44 <i class="fa fa-angle-down"></i></a>
 
                         <!--mini cart-->
                         <div class="mini_cart">
                             <div class="cart_item">
                                 <div class="cart_img">
-                                    <a href="#"><img src="<?php echo $level?>assets\img\cart\cart.jpg" alt=""></a>
+                                    <a href="#"><img src="<?php echo $level ?>assets\img\cart\cart.jpg" alt=""></a>
                                 </div>
                                 <div class="cart_info">
                                     <a href="#">lorem ipsum dolor</a>
@@ -77,7 +74,7 @@
                             </div>
                             <div class="cart_item">
                                 <div class="cart_img">
-                                    <a href="#"><img src="<?php echo $level?>assets\img\cart\cart2.jpg" alt=""></a>
+                                    <a href="#"><img src="<?php echo $level ?>assets\img\cart\cart2.jpg" alt=""></a>
                                 </div>
                                 <div class="cart_info">
                                     <a href="#">Quisque ornare dui</a>
@@ -97,7 +94,7 @@
                                 <span class="prices"> $227.00 </span>
                             </div>
                             <div class="cart_button">
-                                <a href="<?php echo $level?>checkout.php"> Check out</a>
+                                <a href="<?php echo $level ?>checkout.php"> Check out</a>
                             </div>
                         </div>
                         <!--mini cart end-->
@@ -115,29 +112,29 @@
                     <div class="main_menu d-none d-lg-block">
                         <nav>
                             <ul>
-                                <li class="active"><a href="<?php echo $level?>index.php">Home</a>
+                                <li class="active"><a href="<?php echo $level ?>index.php">Home</a>
                                     <div class="mega_menu jewelry">
                                         <div class="mega_items jewelry">
                                             <ul>
-                                                <li><a href="<?php echo $level?>index.php">Home 1</a></li>
-                                                <li><a href="<?php echo $level?>pages/index-2.php">Home 2</a></li>
+                                                <li><a href="<?php echo $level ?>index.php">Home 1</a></li>
+                                                <li><a href="<?php echo $level ?>pages/index-2.php">Home 2</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="<?php echo $level?>shop.php">shop</a>
+                                <li><a href="<?php echo $level ?>pages/shop.php">shop</a>
                                     <div class="mega_menu jewelry">
                                         <div class="mega_items jewelry">
                                             <ul>
-                                                <li><a href="<?php echo $level?>pages/shop-list.php">shop list</a></li>
-                                                <li><a href="<?php echo $level?>pages/shop-fullwidth.php">shop Full Width Grid</a></li>
-                                                <li><a href="<?php echo $level?>pages/shop-fullwidth-list.php">shop Full Width list</a></li>
-                                                <li><a href="<?php echo $level?>pages/shop-sidebar.php">shop Right Sidebar</a></li>
-                                                <li><a href="<?php echo $level?>pages/shop-sidebar-list.php">shop list Right Sidebar</a></li>
-                                                <li><a href="<?php echo $level?>pages/single-product.php">Product Details</a></li>
-                                                <li><a href="<?php echo $level?>pages/single-product-sidebar.php">Product sidebar</a></li>
-                                                <li><a href="<?php echo $level?>pages/single-product-video.php">Product Details video</a></li>
-                                                <li><a href="<?php echo $level?>pages/single-product-gallery.php">Product Details Gallery</a>
+                                                <li><a href="<?php echo $level ?>pages/shop-list.php">shop list</a></li>
+                                                <li><a href="<?php echo $level ?>pages/shop-fullwidth.php">shop Full Width Grid</a></li>
+                                                <li><a href="<?php echo $level ?>pages/shop-fullwidth-list.php">shop Full Width list</a></li>
+                                                <li><a href="<?php echo $level ?>pages/shop-sidebar.php">shop Right Sidebar</a></li>
+                                                <li><a href="<?php echo $level ?>pages/shop-sidebar-list.php">shop list Right Sidebar</a></li>
+                                                <li><a href="<?php echo $level ?>pages/single-product.php">Product Details</a></li>
+                                                <li><a href="<?php echo $level ?>pages/single-product-sidebar.php">Product sidebar</a></li>
+                                                <li><a href="<?php echo $level ?>pages/single-product-video.php">Product Details video</a></li>
+                                                <li><a href="<?php echo $level ?>pages/single-product-gallery.php">Product Details Gallery</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -182,12 +179,10 @@
                                         </div>
                                         <div class="mega_bottom fix">
                                             <div class="mega_thumb">
-                                                <a href="#"><img src="<?php echo $level?>assets\img\banner\banner1.jpg"
-                                                        alt=""></a>
+                                                <a href="#"><img src="<?php echo $level ?>assets\img\banner\banner1.jpg" alt=""></a>
                                             </div>
                                             <div class="mega_thumb">
-                                                <a href="#"><img src="<?php echo $level?>assets\img\banner\banner2.jpg"
-                                                        alt=""></a>
+                                                <a href="#"><img src="<?php echo $level ?>assets\img\banner\banner2.jpg" alt=""></a>
                                             </div>
                                         </div>
                                     </div>
@@ -216,8 +211,7 @@
                                                 </ul>
                                             </div>
                                             <div class="mega_items">
-                                                <a href="#"><img src="<?php echo $level?>assets\img\banner\banner3.jpg"
-                                                        alt=""></a>
+                                                <a href="#"><img src="<?php echo $level ?>assets\img\banner\banner3.jpg" alt=""></a>
                                             </div>
                                         </div>
 
@@ -229,51 +223,51 @@
                                             <div class="mega_items">
                                                 <h3><a href="#">Column1</a></h3>
                                                 <ul>
-                                                    <li><a href="<?php echo $level?>pages/portfolio.php">Portfolio</a></li>
-                                                    <li><a href="<?php echo $level?>pages/portfolio-details.php">single portfolio </a></li>
-                                                    <li><a href="<?php echo $level?>pages/about.php">About Us </a></li>
-                                                    <li><a href="<?php echo $level?>pages/about-2.php">About Us 2</a></li>
-                                                    <li><a href="<?php echo $level?>pages/services.php">Service </a></li>
-                                                    <li><a href="<?php echo $level?>pages/my-account.php">my account </a></li>
+                                                    <li><a href="<?php echo $level ?>pages/portfolio.php">Portfolio</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/portfolio-details.php">single portfolio </a></li>
+                                                    <li><a href="<?php echo $level ?>pages/about.php">About Us </a></li>
+                                                    <li><a href="<?php echo $level ?>pages/about-2.php">About Us 2</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/services.php">Service </a></li>
+                                                    <li><a href="<?php echo $level ?>pages/my-account.php">my account </a></li>
                                                 </ul>
                                             </div>
                                             <div class="mega_items">
                                                 <h3><a href="#">Column2</a></h3>
                                                 <ul>
-                                                    <li><a href="<?php echo $level?>pages/blog.php">Blog </a></li>
-                                                    <li><a href="<?php echo $level?>pages/blog-details.php">Blog Details </a></li>
-                                                    <li><a href="<?php echo $level?>pages/blog-fullwidth.php">Blog FullWidth</a></li>
-                                                    <li><a href="<?php echo $level?>pages/blog-sidebar.php">Blog Sidebar</a></li>
-                                                    <li><a href="<?php echo $level?>pages/faq.php">Frequently Questions</a></li>
-                                                    <li><a href="<?php echo $level?>pages/404.php">404</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/blog.php">Blog </a></li>
+                                                    <li><a href="<?php echo $level ?>pages/blog-details.php">Blog Details </a></li>
+                                                    <li><a href="<?php echo $level ?>pages/blog-fullwidth.php">Blog FullWidth</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/blog-sidebar.php">Blog Sidebar</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/faq.php">Frequently Questions</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/404.php">404</a></li>
                                                 </ul>
                                             </div>
                                             <div class="mega_items">
                                                 <h3><a href="#">Column3</a></h3>
                                                 <ul>
-                                                    <li><a href="<?php echo $level?>pages/contact.php">Contact</a></li>
-                                                    <li><a href="<?php echo $level?>pages/cart.php">cart</a></li>
-                                                    <li><a href="<?php echo $level?>pages/checkout.php">Checkout </a></li>
-                                                    <li><a href="<?php echo $level?>pages/wishlist.php">Wishlist</a></li>
-                                                    <li><a href="<?php echo $level?>pages/login.php">Login</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/contact.php">Contact</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/cart.php">cart</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/checkout.php">Checkout </a></li>
+                                                    <li><a href="<?php echo $level ?>pages/wishlist.php">Wishlist</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/login.php">Login</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li><a href="<?php echo $level?>pages/blog.php">blog</a>
+                                <li><a href="<?php echo $level ?>pages/blog.php">blog</a>
                                     <div class="mega_menu jewelry">
                                         <div class="mega_items jewelry">
                                             <ul>
-                                                <li><a href="<?php echo $level?>pages/blog-details.php">blog details</a></li>
-                                                <li><a href="<?php echo $level?>pages/blog-fullwidth.php">blog fullwidth</a></li>
-                                                <li><a href="<?php echo $level?>pages/blog-sidebar.php">blog sidebar</a></li>
+                                                <li><a href="<?php echo $level ?>pages/blog-details.php">blog details</a></li>
+                                                <li><a href="<?php echo $level ?>pages/blog-fullwidth.php">blog fullwidth</a></li>
+                                                <li><a href="<?php echo $level ?>pages/blog-sidebar.php">blog sidebar</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="<?php echo $level?>pages/contact.php">contact us</a></li>
+                                <li><a href="<?php echo $level ?>pages/contact.php">contact us</a></li>
 
                             </ul>
                         </nav>
@@ -281,29 +275,29 @@
                     <div class="mobile-menu d-lg-none">
                         <nav>
                             <ul>
-                                <li><a href="<?php echo $level?>index.php">Home</a>
+                                <li><a href="<?php echo $level ?>index.php">Home</a>
                                     <div>
                                         <div>
                                             <ul>
-                                                <li><a href="<?php echo $level?>index.php">Home 1</a></li>
-                                                <li><a href="<?php echo $level?>pages/index-2.php">Home 2</a></li>
+                                                <li><a href="<?php echo $level ?>index.php">Home 1</a></li>
+                                                <li><a href="<?php echo $level ?>pages/index-2.php">Home 2</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="<?php echo $level?>pages/shop.php">shop</a>
+                                <li><a href="<?php echo $level ?>pages/shop.php">shop</a>
                                     <div>
                                         <div>
                                             <ul>
-                                                <li><a href="<?php echo $level?>pages/shop-list.php">shop list</a></li>
-                                                <li><a href="<?php echo $level?>pages/shop-fullwidth.php">shop Full Width Grid</a></li>
-                                                <li><a href="<?php echo $level?>pages/shop-fullwidth-list.php">shop Full Width list</a></li>
-                                                <li><a href="<?php echo $level?>pages/shop-sidebar.php">shop Right Sidebar</a></li>
-                                                <li><a href="<?php echo $level?>pages/shop-sidebar-list.php">shop list Right Sidebar</a></li>
-                                                <li><a href="<?php echo $level?>pages/single-product.php">Product Details</a></li>
-                                                <li><a href="<?php echo $level?>pages/single-product-sidebar.php">Product sidebar</a></li>
-                                                <li><a href="<?php echo $level?>pages/single-product-video.php">Product Details video</a></li>
-                                                <li><a href="<?php echo $level?>pages/single-product-gallery.php">Product Details Gallery</a>
+                                                <li><a href="<?php echo $level ?>pages/shop-list.php">shop list</a></li>
+                                                <li><a href="<?php echo $level ?>pages/shop-fullwidth.php">shop Full Width Grid</a></li>
+                                                <li><a href="<?php echo $level ?>pages/shop-fullwidth-list.php">shop Full Width list</a></li>
+                                                <li><a href="<?php echo $level ?>pages/shop-sidebar.php">shop Right Sidebar</a></li>
+                                                <li><a href="<?php echo $level ?>pages/shop-sidebar-list.php">shop list Right Sidebar</a></li>
+                                                <li><a href="<?php echo $level ?>pages/single-product.php">Product Details</a></li>
+                                                <li><a href="<?php echo $level ?>pages/single-product-sidebar.php">Product sidebar</a></li>
+                                                <li><a href="<?php echo $level ?>pages/single-product-video.php">Product Details video</a></li>
+                                                <li><a href="<?php echo $level ?>pages/single-product-gallery.php">Product Details Gallery</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -348,12 +342,10 @@
                                         </div>
                                         <div>
                                             <div>
-                                                <a href="#"><img src="<?php echo $level?>assets\img\banner\banner1.jpg"
-                                                        alt=""></a>
+                                                <a href="#"><img src="<?php echo $level ?>assets\img\banner\banner1.jpg" alt=""></a>
                                             </div>
                                             <div>
-                                                <a href="#"><img src="<?php echo $level?>assets\img\banner\banner2.jpg"
-                                                        alt=""></a>
+                                                <a href="#"><img src="<?php echo $level ?>assets\img\banner\banner2.jpg" alt=""></a>
                                             </div>
                                         </div>
                                     </div>
@@ -382,8 +374,7 @@
                                                 </ul>
                                             </div>
                                             <div>
-                                                <a href="#"><img src="<?php echo $level?>assets\img\banner\banner3.jpg"
-                                                        alt=""></a>
+                                                <a href="#"><img src="<?php echo $level ?>assets\img\banner\banner3.jpg" alt=""></a>
                                             </div>
                                         </div>
 
@@ -395,51 +386,51 @@
                                             <div>
                                                 <h3><a href="#">Column1</a></h3>
                                                 <ul>
-                                                    <li><a href="<?php echo $level?>pages/portfolio.php">Portfolio</a></li>
-                                                    <li><a href="<?php echo $level?>pages/portfolio-details.php">single portfolio </a></li>
-                                                    <li><a href="<?php echo $level?>pages/about.php">About Us </a></li>
-                                                    <li><a href="<?php echo $level?>pages/about-2.php">About Us 2</a></li>
-                                                    <li><a href="<?php echo $level?>pages/services.php">Service </a></li>
-                                                    <li><a href="<?php echo $level?>pages/my-account.php">my account </a></li>
+                                                    <li><a href="<?php echo $level ?>pages/portfolio.php">Portfolio</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/portfolio-details.php">single portfolio </a></li>
+                                                    <li><a href="<?php echo $level ?>pages/about.php">About Us </a></li>
+                                                    <li><a href="<?php echo $level ?>pages/about-2.php">About Us 2</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/services.php">Service </a></li>
+                                                    <li><a href="<?php echo $level ?>pages/my-account.php">my account </a></li>
                                                 </ul>
                                             </div>
                                             <div>
                                                 <h3><a href="#">Column2</a></h3>
                                                 <ul>
-                                                    <li><a href="<?php echo $level?>pages/blog.php">Blog </a></li>
-                                                    <li><a href="<?php echo $level?>pages/blog-details.php">Blog Details </a></li>
-                                                    <li><a href="<?php echo $level?>pages/blog-fullwidth.php">Blog FullWidth</a></li>
-                                                    <li><a href="<?php echo $level?>pages/blog-sidebar.php">Blog Sidebar</a></li>
-                                                    <li><a href="<?php echo $level?>pages/faq.php">Frequently Questions</a></li>
-                                                    <li><a href="<?php echo $level?>pages/404.php">404</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/blog.php">Blog </a></li>
+                                                    <li><a href="<?php echo $level ?>pages/blog-details.php">Blog Details </a></li>
+                                                    <li><a href="<?php echo $level ?>pages/blog-fullwidth.php">Blog FullWidth</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/blog-sidebar.php">Blog Sidebar</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/faq.php">Frequently Questions</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/404.php">404</a></li>
                                                 </ul>
                                             </div>
                                             <div>
                                                 <h3><a href="#">Column3</a></h3>
                                                 <ul>
-                                                    <li><a href="<?php echo $level?>pages/contact.php">Contact</a></li>
-                                                    <li><a href="<?php echo $level?>pages/cart.php">cart</a></li>
-                                                    <li><a href="<?php echo $level?>pages/checkout.php">Checkout </a></li>
-                                                    <li><a href="<?php echo $level?>pages/wishlist.php">Wishlist</a></li>
-                                                    <li><a href="<?php echo $level?>pages/login.php">Login</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/contact.php">Contact</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/cart.php">cart</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/checkout.php">Checkout </a></li>
+                                                    <li><a href="<?php echo $level ?>pages/wishlist.php">Wishlist</a></li>
+                                                    <li><a href="<?php echo $level ?>pages/login.php">Login</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li><a href="<?php echo $level?>pages/blog.php">blog</a>
+                                <li><a href="<?php echo $level ?>pages/blog.php">blog</a>
                                     <div>
                                         <div>
                                             <ul>
-                                                <li><a href="<?php echo $level?>pages/blog-details.php">blog details</a></li>
-                                                <li><a href="<?php echo $level?>pages/blog-fullwidth.php">blog fullwidth</a></li>
-                                                <li><a href="<?php echo $level?>pages/blog-sidebar.php">blog sidebar</a></li>
+                                                <li><a href="<?php echo $level ?>pages/blog-details.php">blog details</a></li>
+                                                <li><a href="<?php echo $level ?>pages/blog-fullwidth.php">blog fullwidth</a></li>
+                                                <li><a href="<?php echo $level ?>pages/blog-sidebar.php">blog sidebar</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="<?php echo $level?>pages/contact.php">contact us</a></li>
+                                <li><a href="<?php echo $level ?>pages/contact.php">contact us</a></li>
 
                             </ul>
                         </nav>

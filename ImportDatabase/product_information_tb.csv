@@ -1,0 +1,21 @@
+product_id,product_name,price,product_image,product_reviews,product_condition,span,quanity,product_style
+OFL2419,Curabitur sodales,50.00,product\product1,5,in stock,span-hot,14,product
+LLT2337,QUISQUE ORNARA DUI,50.00,product\product2,5,in stock,span-hot,13,product
+FDB5812,sed non turipiss,60.00,product\product3,5,in stock,span-new,13,product
+PLL0137,Duis convalli,60.00,product\product4,5,in stock,span-hot,13,product
+UVQ8403,SILK ORGANZA SHIRT,50.00,product\product5,5,in stock,span-new,13,product
+WHS9603,PRINCE OF WALES WOOL PANT,50.00,product\product6,5,in stock,span-hot,13,product
+RVH0086,MOHAIR POLO SWEATER,70.00,product\product7,5,in stock,span-hot,13,product
+GCO5699,JERSEY SWEATSHIRT,80.00,product\product8,5,in stock,span-hot,13,product
+FQJ4405,INTERLOCKINGG,70.00,product\product9,5,in stock,span-hot,13,product
+MFB7943,NYLON JACKET,70.00,product\product10,5,in stock,span-hot,13,product
+XWT5753,HORSEBIT BELT,50.00,product\product11,5,in stock,span-new,15,product
+MQY2335,INTERLOCKING G,60.00,product\product12,5,in stock,span-new,152,product
+EGJ4781,JERSEY T-SHIRT,60.00,product\product13,5,in stock,span-new,13,product
+BRP9221,GG wool,50.00,product\product14,5,in stock,span-new,13,product
+WAS2987,WALES WOOL PANT,50.00,product\product15,5,in stock,span-new,13,product
+AWM1832,WALES WOOL,50.00,product\productbig,5,in stock,span-new,13,product
+SEO8996,ORGANZA DUI,50.00,product\productbig1,5,in stock,span-hot,13,product
+FXC0177,WALES SHIRT,50.00,product\productbig2,5,in stock,span-hot,13,product
+JFD5257,lorem ipsum dolor,115.00,cart\cart,5,in stock,span-hot,13,cart
+JFD2535,Quisque ornare dui,105.00,cart\cart2,5,in stock,span-hot,13,cart
