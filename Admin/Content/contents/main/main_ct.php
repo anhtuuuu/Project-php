@@ -45,7 +45,7 @@
             </ol>
         </nav>
     </div><!-- End Page Title -->
-
+    
     <section class="section dashboard">
         <div class="row">
 
@@ -218,7 +218,10 @@
 
                         </div>
                     </div><!-- End Reports -->
-
+                    <form action="<?php echo $level ?>EditDataBase/edit/E_search_recent_sales.php" method="POST">
+                        <input class="datatable-input" placeholder="Search..." type="text" title="Search within table" name="search" >
+                        <button type="submit"><i style="font-size:20px; color:black;" class="bi bi-search"></i></button>
+                    </form>  
                     <!-- Recent Sales -->
                     <div class="col-12">
                         <div class="card recent-sales overflow-auto">
@@ -238,7 +241,7 @@
 
                             <div class="card-body">
                                 <h5 class="card-title">Recent Sales <span>| Today</span></h5>
-
+                                
                                 <table class="table table-borderless datatable">
                                     <thead>
                                         <tr>
