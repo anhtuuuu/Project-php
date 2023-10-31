@@ -1,6 +1,14 @@
 <?php
-    include_once "{$level}Database/dashboard/list_data_recentSales.php";
-    include_once "{$level}Database/dashboard/list_data_topSelling.php";
+    include_once "{$level}Database/connect_database.php";
+
+
+    $data_search_rs = $conn->query("SELECT * FROM dashboard_recentsales where id like '%$search%'");
+    $searchData_rs = $data_search_rs->fetchAll(PDO::FETCH_ASSOC);    
+
+    $data_search_tsl = $conn->query("SELECT * FROM dashboard_topselling where id like '%$search%'");
+    $searchData_tsl = $data_search_tsl->fetchAll(PDO::FETCH_ASSOC);  
+
+
     function check_status($check)
     {
         if($check == 'Approved') return 'success';
@@ -45,6 +53,7 @@
             </ol>
         </nav>
     </div><!-- End Page Title -->
+    
     
     <section class="section dashboard">
         <div class="row">
@@ -222,6 +231,7 @@
                         <input class="datatable-input" placeholder="Search with id..." type="text" title="Search within table" name="search" >
                         <button type="submit"><i style="font-size:20px; color:black;" class="bi bi-search"></i></button>
                     </form>  
+                    <h5 class="card-title"><a href="<?php echo $level?>index.php" class="text-primary">Return to pagehome</a></h5>
                     <!-- Recent Sales -->
                     <div class="col-12">
                         <div class="card recent-sales overflow-auto">
@@ -259,7 +269,7 @@
                                
                                     <?php
                                     
-                                    foreach($recentSales as $rcs):
+                                    foreach($searchData_rs  as $rcs):
                                     ?>
                                         <tr>
                                             <th scope="row"><a href="#"><?php echo $rcs['id']?></a></th>
@@ -327,7 +337,7 @@
                                     </thead>
                                     <tbody>
                                         <?php
-                                      foreach($topSelling as $tsl):
+                                      foreach($searchData_tsl as $tsl):
                                       ?>
                                         <tr>
                                             <td><?php echo $tsl['id']?></td>
