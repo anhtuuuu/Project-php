@@ -12,9 +12,15 @@
     $price = $_POST['price'];
     $sold = $_POST['sold'];
     $revenue = $_POST['revenue'];
-   
+   if($preview != '') {
     $sql = $conn->prepare("update dashboard_topselling set preview = ?, product = ?, price = ?, sold = ?, revenue = ?  where id = ?");
     $sql->execute([$preview,$product,$price,$sold,$revenue,$id]);
+   }
+   else{
+    $sql = $conn->prepare("update dashboard_topselling set product = ?, price = ?, sold = ?, revenue = ?  where id = ?");
+    $sql->execute([$product,$price,$sold,$revenue,$id]);
+   }
+    
     echo '<h2 style="color: #34a853"> Changed successful products </h2> ';
     echo "<a href='{$level}index.php'> Return to homepage </a>"
 ?>
