@@ -14,20 +14,20 @@
      </div>
  </div>
  <!--breadcrumbs area end-->
-    <h3 style="font-weight: 100;">Rất tiếc, poscorn không tìm thấy kết quả nào phù hợp với từ khóa <?php echo $noidung_search?></h3>
-   <strong style="display: flex;
-    flex-direction: column;
-    
-    align-items: center;">Để tìm được kết quả chính xác hơn, bạn vui lòng:</strong>
-    <ol style="display: flex;
-    flex-direction: column;
-    
-    align-items: center;">
-        <li>Kiểm tra lỗi chính tả của từ khóa đã nhập</li>
-        <li>Thử lại bằng từ khóa khác</li>
-        <li>Thử lại bằng những từ khóa tổng quát hơn</li>
-        <li>Thử lại bằng những từ khóa ngắn gọn hơn</li>
-    </ol>
+ <h3 style="font-weight: 100; text-align: center;">Rất tiếc, poscorn không tìm thấy kết quả nào phù hợp với từ khóa <?php echo $noidung_search?></h3>
+<strong style="display: flex; justify-content: center;">Để tìm được kết quả chính xác hơn, bạn vui lòng:</strong>
+<ol style="display: flex; flex-direction: column; align-items: center; padding-left: 20px;">
+    <li style="text-align: left;">Kiểm tra lỗi chính tả của từ khóa đã nhập</li>
+    <li style="text-align: left;">Thử lại bằng từ khóa khác</li>
+    <li style="text-align: left;">Thử lại bằng những từ khóa tổng quát hơn</li>
+    <li style="text-align: left;">Thử lại bằng những từ khóa ngắn gọn hơn</li>
+</ol>
+
+
+
+
+
+
  <!--product wrapper start-->
 
 
