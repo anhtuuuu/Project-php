@@ -1,3 +1,21 @@
+<?php
+  include_once "{$level}Database/tables/list_data_tables_employee.php";
+  function check_status_el($check)
+  {
+    if($check == 'Working') return 'success';
+    else return 'danger';
+  }
+
+  function restore_or_delete_btn_rs($check){
+    if($check == 'Fired') return '<i title="Restore" class="bi bi-arrow-counterclockwise"></i>';
+    else return '<i title="Delete" class="bi bi-trash"></i>';
+  }
+  function restore_or_delete_link_rs($check){
+      if($check == 'Fired') return 'E_restore_data_table_employee.php';
+      else return 'E_delete_data_table_employee.php';
+  }
+?>
+
 <main id="main" class="main">
 
     <div class="pagetitle">
@@ -24,7 +42,7 @@
               <table class="table datatable ">
                 <thead>
                   <tr>
-                    <?php $list = array('#','Name','Position','Age','Start Date');
+                    <?php $list = array('Id','Name','Position','Age','Start Date','Status','Edit');
                       foreach($list as $ls)
                       {
                         echo '<th scope="col">'.$ls.'</th>';
@@ -33,54 +51,33 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <?php $data = array(
-                    array(
-                      'name' => 'Brandon Jacob',
-                      'position' => 'Designer',
-                      'age' => '28',
-                      'date' => '2016-05-25'
-                    ),
-                    array(
-                      'name' => 'Bridie Kessler',
-                      'position' => 'Developer',
-                      'age' => '35',
-                      'date' => '2014-12-05'
-                    ),
-                    array(
-                      'name' => 'Ashleigh Langosh',
-                      'position' => 'Finance',
-                      'age' => '45',
-                      'date' => '2011-08-12'
-                    ),
-                    array(
-                      'name' => 'Angus Grady',
-                      'position' => 'HR',
-                      'age' => '34',
-                      'date' => '2012-06-11'
-                    ),
-                    array(
-                      'name' => 'Raheem Lehner',
-                      'position' => 'Dynamic Division Officer',
-                      'age' => '47',
-                      'date' => '2011-04-19'
-                    )
-                    );
-                    foreach($data as $count => $dt):
+                  <?php
+                    foreach($employee as $count => $el):
                     ?>
                     <tr>
                       <th scope="row"><?php echo $count+1?></th>
-                      <td><?php echo $dt['name'] ?></td>
-                      <td><?php echo $dt['position'] ?></td>
-                      <td><?php echo $dt['age'] ?></td>
-                      <td><?php echo $dt['date'] ?></td>
+                      <td><?php echo $el['name'] ?></td>
+                      <td><?php echo $el['position'] ?></td>
+                      <td><?php echo $el['age'] ?></td>
+                      <td><?php echo $el['startdate'] ?></td>
+                      <td><span class="badge bg-<?php echo check_status_el($el['status'])?>"><?php echo $el['status']?></span></td>
+                      <td>
+                          <a href="<?php echo $level ?>EditDataBase/edit/<?php echo restore_or_delete_link_rs($el['status']) ?>?id=<?php echo $el['id'] ?>"
+                              style="margin:0 5px;"><?php echo restore_or_delete_btn_rs($el['status']) ?></a>
+                          <a href="<?php echo $level ?>EditDataBase/FormEdit/F_edit_table_employee.php?id=<?php echo $el['id'] ?>"
+                              style="margin:0 5px;"><i title="Edit" class="bi bi-pencil"></i></a>
+                      </td>
                     </tr>
-                    <?php endforeach;?>
-                  
-                  
-                  
-                  
+                    <?php endforeach;?>    
                 </tbody>
               </table>
+              <div class="btn-add d-flex flex-row-reverse">
+                  <a href="<?php echo $level ?>EditDataBase/FormEdit/F__add_table_employee.php"
+                      class="d-flex flex-row-reverse">
+                      <button type="button" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>
+                          Add </button>
+                  </a>
+              </div>
               <!-- End Table with stripped rows -->
 
             </div>

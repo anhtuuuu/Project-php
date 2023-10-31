@@ -50,7 +50,7 @@
 </head>
 
 <body>
-    <form action="<?php echo $level ?>EditDataBase/edit/E_change_top_selling.php?id=<?php echo $id ?>" method="POST">
+    <form action="<?php echo $level ?>EditDataBase/edit/E_change_top_selling.php?id=<?php echo $id ?>" method="POST" enctype="multipart/form-data">
         <h2>Change Top Selling </h2>
         <div class="form-group">
             <label for="preview">Preview:</label>
