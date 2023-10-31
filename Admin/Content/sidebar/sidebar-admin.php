@@ -43,8 +43,13 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="<?php echo $level?>pages/tables-data.php">
-              <i class="bi bi-circle"></i><span>Data Tables</span>
+            <a href="<?php echo $level?>pages/tables-data-employee.php">
+              <i class="bi bi-circle"></i><span>Data Employer</span>
+            </a>
+          </li>
+          <li>
+            <a href="<?php echo $level?>pages/tables-data-client.php">
+              <i class="bi bi-circle"></i><span>Data Client</span>
             </a>
           </li>
         </ul>

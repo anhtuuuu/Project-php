@@ -17,14 +17,6 @@
       <?php
         $section = array(
           array(
-            'title' => 'Default',
-            'class_name' => 'default'
-          ),
-          array(
-            'title' => 'Bubble',
-            'class_name' => 'bubble'
-          ),
-          array(
             'title' => 'Full',
             'class_name' => 'full'
           )          
@@ -48,22 +40,7 @@
 
     </div>
 
-    <div class="col-lg-6">
-
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">TinyMCE Editor</h5>
-
-          <!-- TinyMCE Editor -->
-          <textarea class="tinymce-editor">
-            <p>Hello World!</p>
-            <p>This is TinyMCE <strong>full</strong> editor</p>
-          </textarea><!-- End TinyMCE Editor -->
-
-        </div>
-      </div>
-
-    </div>
+    
   </div>
 </section>
 

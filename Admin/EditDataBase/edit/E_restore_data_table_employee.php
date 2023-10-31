@@ -9,5 +9,5 @@
     $sql = $conn->prepare("update data_table_employee_management set status = 'Working' where id = ?;");
     $sql->execute([$id]);
     echo '<h2 style="color: #34a853"> Restore successful employee </h2> ';
-    echo "<a href='{$level}pages/tables-data.php'> Return to table data </a>"
+    echo "<a href='{$level}pages/tables-data-employee.php'> Return to table data </a>"
 ?>
