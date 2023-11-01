@@ -52,6 +52,16 @@
               <i class="bi bi-circle"></i><span>Data Client</span>
             </a>
           </li>
+          <li>
+            <a href="<?php echo $level?>pages/tables-data-product.php">
+              <i class="bi bi-circle"></i><span>Data Product</span>
+            </a>
+          </li>
+          <li>
+            <a href="<?php echo $level?>pages/tables-data-product.php">
+              <i class="bi bi-circle"></i><span>Data Orders</span>
+            </a>
+          </li>
         </ul>
       </li><!-- End Tables Nav -->
 
