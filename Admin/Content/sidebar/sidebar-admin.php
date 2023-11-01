@@ -58,7 +58,7 @@
             </a>
           </li>
           <li>
-            <a href="<?php echo $level?>pages/tables-data-product.php">
+            <a href="<?php echo $level?>pages/tables-data-orders.php">
               <i class="bi bi-circle"></i><span>Data Orders</span>
             </a>
           </li>

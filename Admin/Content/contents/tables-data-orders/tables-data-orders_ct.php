@@ -57,7 +57,7 @@
                         <input class="datatable-input" placeholder="Search with id..." type="text" title="Search within table" name="search" >
                         <button type="submit"><i style="font-size:20px; color:black;" class="bi bi-search"></i></button>
                     </form>  
-              <h5 class="card-title">Product</h5>
+              <h5 class="card-title">Orders</h5>
             
               <!-- Table with stripped rows -->
               <table class="table table-borderless datatable">
