@@ -11,7 +11,7 @@
         {?>
         <?php
             $search = $_POST['search'];
-            $sql = "select * from dashboard_recentsales where id like '%$search%'";
+            $sql = "select * from data_table_bills where id like '%$search%'";
             $result = $db -> prepare($sql);
             $result -> execute();
             $rowsdata = $result->fetchAll();

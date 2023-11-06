@@ -16,7 +16,7 @@
     // echo     $next_id 
    
     $st = $conn->prepare("insert into data_table_client_management values(?,?,?,?,?,?)");
-    $st->execute([$next_id,$_POST['name'],$_POST['password'],$_POST['email'],$_POST['startdate'], $status_default]);
+    $st->execute([$next_id,$_POST['name'],$_POST['address'],$_POST['phone'],$_POST['startdate'], $status_default]);
     echo '<h2 style="color: #34a853"> Added successful imformation client </h2> ';
     echo "<a href='{$level}pages/tables-data-client.php'> Return to table data </a>"
 

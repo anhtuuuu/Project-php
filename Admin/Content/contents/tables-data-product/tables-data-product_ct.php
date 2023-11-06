@@ -64,7 +64,7 @@
                                     <thead>
                                         <tr>
 
-                                            <?php $col_sl = array('Id','Preview','Product','Price','Sold','Revenue','Status','Edit');
+                                            <?php $col_sl = array('Id','Preview','Name','Price','Manufacturing_country','Tyle','Status','Edit');
                                             foreach($col_sl as $csl)
                                             {
                                               echo '<th scope="col">'.$csl.'</th>';
@@ -83,11 +83,11 @@
                                                         src="<?php echo $level?>../uploads/<?php echo $tsl['preview']?>"
                                                         alt=""></a>
                                             </th>
-                                            <td><a href="#" class="text-primary fw-bold"><?php echo $tsl['product']?></a>
+                                            <td><a href="#" class="text-primary fw-bold"><?php echo $tsl['product_name']?></a>
                                             </td>
                                             <td><?php echo $tsl['price']?></td>
-                                            <td class="fw-bold"><?php echo $tsl['sold']?></td>
-                                            <td><?php echo $tsl['revenue']?></td>
+                                            <td class="fw-bold"><?php echo $tsl['manufacturing_country']?></td>
+                                            <td><?php echo $tsl['type']?></td>
                                             <td>
                                                 <span class="badge bg-<?php echo check_status_2($tsl['status'])?>"><?php echo $tsl['status']?></span>
                                             </td>

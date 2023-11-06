@@ -8,17 +8,17 @@
     $target_file = "{$level}../uploads/".$preview;
     move_uploaded_file($_FILES['preview']['tmp_name'],$target_file);
 
-    $product = $_POST['product'];
+    $product_name = $_POST['product_name'];
     $price = $_POST['price'];
-    $sold = $_POST['sold'];
-    $revenue = $_POST['revenue'];
+    $manufacturing_country = $_POST['manufacturing_country'];
+    $type = $_POST['type'];
    if($preview != '') {
-    $sql = $conn->prepare("update dashboard_topselling set preview = ?, product = ?, price = ?, sold = ?, revenue = ?  where id = ?");
-    $sql->execute([$preview,$product,$price,$sold,$revenue,$id]);
+    $sql = $conn->prepare("update data_table_products set preview = ?, product_name = ?, price = ?, manufacturing_country = ?, type = ?  where id = ?");
+    $sql->execute([$preview,$product,$price,$manufacturing_country,$type,$id]);
    }
    else{
-    $sql = $conn->prepare("update dashboard_topselling set product = ?, price = ?, sold = ?, revenue = ?  where id = ?");
-    $sql->execute([$product,$price,$sold,$revenue,$id]);
+    $sql = $conn->prepare("update data_table_products set product_name = ?, price = ?, manufacturing_country = ?, type = ?  where id = ?");
+    $sql->execute([$product_name,$price,$manufacturing_country,$type,$id]);
    }
     
     echo '<h2 style="color: #34a853"> Changed successful products </h2> ';

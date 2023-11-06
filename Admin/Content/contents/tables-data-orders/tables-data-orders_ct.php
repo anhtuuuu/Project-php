@@ -57,13 +57,13 @@
                         <input class="datatable-input" placeholder="Search with id..." type="text" title="Search within table" name="search" >
                         <button type="submit"><i style="font-size:20px; color:black;" class="bi bi-search"></i></button>
                     </form>  
-              <h5 class="card-title">Orders</h5>
+              <h5 class="card-title">Bills</h5>
             
               <!-- Table with stripped rows -->
               <table class="table table-borderless datatable">
                                     <thead>
                                         <tr>
-                                            <?php $col = array('Id','Customer','Product','Price','Status','Edit');
+                                            <?php $col = array('Id','Bill date','Id user','Id employee','invoice_value','Status','Edit');
                                     foreach($col as $c)
                                     {
                                       echo '<th scope="col">'.$c.'</th>';
@@ -81,9 +81,10 @@
                                     ?>
                                         <tr>
                                             <th scope="row"><a href="#"><?php echo $rcs['id']?></a></th>
-                                            <td><?php echo $rcs['customer']?></td>
-                                            <td><a href="#" class="text-primary"><?php echo $rcs['product']?></a></td>
-                                            <td><?php echo $rcs['price']?></td>
+                                            <td><?php echo $rcs['bill_date']?></td>
+                                            <td><?php echo $rcs['id_user']?></td>
+                                            <td><?php echo $rcs['id_employee']?></td>
+                                            <td><?php echo $rcs['invoice_value']?></td>
                                             <td><span
                                                     class="badge bg-<?php echo check_status($rcs['status'])?>"><?php echo $rcs['status']?></span>
                                             </td>
@@ -97,13 +98,7 @@
                                         <?php endforeach;?>
                                     </tbody>
                                 </table>
-                                <div class="btn-add d-flex flex-row-reverse">
-                                    <a href="<?php echo $level ?>EditDataBase/FormEdit/F__add_recent_sales.php"
-                                        class="d-flex flex-row-reverse">
-                                        <button type="button" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>
-                                            Add </button>
-                                    </a>
-                                </div>
+                               
               <!-- End Table with stripped rows -->
 
             </div>

@@ -59,7 +59,7 @@
           </li>
           <li>
             <a href="<?php echo $level?>pages/tables-data-orders.php">
-              <i class="bi bi-circle"></i><span>Data Orders</span>
+              <i class="bi bi-circle"></i><span>Data Bills</span>
             </a>
           </li>
         </ul>

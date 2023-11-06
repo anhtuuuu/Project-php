@@ -15,8 +15,8 @@
     $next_id = 'SP'.$count_id;
     // echo     $next_id 
    
-    $st = $conn->prepare("insert into dashboard_recentsales values(?,?,?,?,?)");
-    $st->execute([$next_id,$_POST['customer'],$_POST['product'],$_POST['price'], $status_default]);
+    $st = $conn->prepare("insert into data_table_bills values(?,?,?,?,?)");
+    $st->execute([$next_id,$_POST['bill_date'],$_POST['id_user'],$_POST['id_employee'],$_POST['price'], $status_default]);
     echo '<h2 style="color: #34a853"> Added successful products </h2> ';
     echo "<a href='{$level}index.php'> Return to homepage </a>"
 ?>

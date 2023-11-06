@@ -2,10 +2,10 @@
     include_once "{$level}Database/connect_database.php";
 
 
-    $data_search_rs = $conn->query("SELECT * FROM dashboard_recentsales where id like '%$search%'");
+    $data_search_rs = $conn->query("SELECT * FROM data_table_bills where id like '%$search%'");
     $searchData_rs = $data_search_rs->fetchAll(PDO::FETCH_ASSOC);    
 
-    $data_search_tsl = $conn->query("SELECT * FROM dashboard_topselling where id like '%$search%'");
+    $data_search_tsl = $conn->query("SELECT * FROM data_table_products where id like '%$search%'");
     $searchData_tsl = $data_search_tsl->fetchAll(PDO::FETCH_ASSOC);  
 
 
@@ -342,7 +342,7 @@
                                         <tr>
                                             <td><?php echo $tsl['id']?></td>
                                             <th scope="row"><a href="#"><img
-                                                        src="../uploads/<?php echo $tsl['preview']?>"
+                                                        src="../../uploads/<?php echo $tsl['preview']?>"
                                                         alt=""></a>
                                             </th>
                                             <td><a href="#" class="text-primary fw-bold"><?php echo $tsl['product']?></a>

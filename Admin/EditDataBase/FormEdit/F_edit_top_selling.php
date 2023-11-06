@@ -9,20 +9,20 @@
         include_once "{$level}Database/dashboard/list_data_topSelling.php";    
 
         $preview;
-        $product;
+        $product_name;
         $price;
-        $sold;
-        $revenue;
+        $manufacturing_country;
+        $type;
         $id = $_GET['id'];
         foreach($topSelling as $tsl)
         {
             if($tsl['id'] == $id)
             {
                 $preview = $tsl['preview'];
-                $product =  $tsl['product'];
+                $product_name =  $tsl['product_name'];
                 $price =  $tsl['price'];
-                $sold =  $tsl['sold'];
-                $revenue =  $tsl['revenue'];
+                $manufacturing_country =  $tsl['manufacturing_country'];
+                $type =  $tsl['type'];
             }
         };
         echo $preview;
@@ -57,20 +57,20 @@
             <input type="file" class="form-control" placeholder="Enter Preview" name="preview" id="preview" value="<?php echo $preview ?> ">
         </div>
         <div class="form-group">
-            <label for="product">Product:</label>
-            <input type="text" class="form-control" placeholder="Enter Product" name="product" id="product" value="<?php echo $product ?>">
+            <label for="product_name">Product name:</label>
+            <input type="text" class="form-control" placeholder="Enter product_name" name="product_name" id="product_name" value="<?php echo $product_name ?>">
         </div>
         <div class="form-group">
             <label for="price">Price:</label>
             <input type="text" class="form-control" placeholder="Enter Price" name="price" id="price" value="<?php echo $price ?>"> 
         </div>
         <div class="form-group">
-            <label for="sold">Sold:</label>
-            <input type="text" class="form-control" placeholder="Enter Sold" name="sold" id="sold" value="<?php echo $sold ?>"> 
+            <label for="manufacturing_country">Manufacturing_country:</label>
+            <input type="text" class="form-control" placeholder="Enter manufacturing_country" name="manufacturing_country" id="manufacturing_country" value="<?php echo $manufacturing_country ?>"> 
         </div>
         <div class="form-group">
-            <label for="revenue">Revenue:</label>
-            <input type="text" class="form-control" placeholder="Enter Revenue" name="revenue" id="revenue" value="<?php echo $revenue ?>"> 
+            <label for="type">type:</label>
+            <input type="text" class="form-control" placeholder="Enter type" name="type" id="type" value="<?php echo $type ?>"> 
         </div>
         
         <div class="btn-add d-flex flex-row-reverse">

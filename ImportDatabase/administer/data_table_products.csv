@@ -1,0 +1,6 @@
+﻿id,preview,product_name,price,manufacturing_country,type,status
+L01,product1.jpg,Wales Shirt,$50.00 ,China,coat,In stock
+L02,product2.jpg,Curabitur Sodales,$40.00 ,US,coat,Out of stock
+B02,product3.jpg,Quisque Ornara Dui,$60.00 ,Vietnam,set,In stock
+C04,product4.jpg,Sed Non Turipiss,$65.00 ,Malaysia,set,In stock
+B05,product5.jpg,Duis Convalli,$115.00 ,Vietnam,T-shirt,In stock

@@ -33,12 +33,16 @@
     <form action="<?php echo $level ?>EditDataBase/edit/E_add_recent_sales.php" method="POST">
         <h2>Add Recent Sales </h2>
         <div class="form-group">
-            <label for="customer">Customer:</label>
-            <input type="text" class="form-control" placeholder="Enter Customer" name="customer" id="customer">
+            <label for="bill_date">Bill date:</label>
+            <input type="text" class="form-control" placeholder="Enter bill date" name="bill_date" id="bill_date">
         </div>
         <div class="form-group">
-            <label for="product">Product:</label>
-            <input type="text" class="form-control" placeholder="Enter Product" name="product" id="product">
+            <label for="id_user">Id user:</label>
+            <input type="text" class="form-control" placeholder="Enter id_user" name="id_user" id="id_user">
+        </div>
+        <div class="form-group">
+            <label for="id_employee">Id employee:</label>
+            <input type="text" class="form-control" placeholder="Enter id_employee" name="id_employee" id="id_employee">
         </div>
         <div class="form-group">
             <label for="price">Price:</label>

@@ -1,0 +1,6 @@
+﻿id,bill_date,id_user,id_employee,invoice_value,status
+HD01,22/12/2020,1,2,$50.00 ,Approved
+HD02,31/1/2019,2,4,$40.00 ,Pending
+HD03,29/2/2023,1,2,$60.00 ,Rejected
+HD04,4/2/2022,2,3,$65.00 ,Approved
+HD05,4/5/2022,3,4,$40.00 ,Approved

@@ -5,11 +5,11 @@
     // echo "connected";
     $id = $_GET['id'];
     $name = $_POST['name'];
-    $password = $_POST['password'];
-    $email = $_POST['email'];
+    $password = $_POST['address'];
+    $email = $_POST['phone'];
     $startdate = $_POST['startdate'];
    
-    $sql = $conn->prepare("update data_table_client_management set name = ?, password = ?, email = ?, startdate = ? where id = ?");
+    $sql = $conn->prepare("update data_table_client_management set name = ?, address = ?, phone = ?, startdate = ? where id = ?");
     $sql->execute([$name,$password,$email,$startdate,$id]);
     echo '<h2 style="color: #34a853"> Changed successful information client </h2> ';
     echo "<a href='{$level}pages/tables-data-client.php'> Return to table data client </a>"

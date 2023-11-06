@@ -245,7 +245,7 @@
                                 <table class="table table-borderless datatable">
                                     <thead>
                                         <tr>
-                                            <?php $col = array('Id','Customer','Product','Price','Status','Edit');
+                                            <?php $col = array('Id','Name','Product','Price','Status','Edit');
                                     foreach($col as $c)
                                     {
                                       echo '<th scope="col">'.$c.'</th>';

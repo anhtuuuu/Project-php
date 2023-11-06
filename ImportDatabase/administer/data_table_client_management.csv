@@ -1,1 +1,6 @@
-id,name,password,email,startdate,status1,Goky,123456,brandon@gmail.vn,25/05/2016,online2,naruto,123456,kess@gmail.vn,05/12/2014,online3,gohan,123456,grady@gmail.com,11/06/2012,online4,chaudeptrai,123456,langosh@gmail.com,12/08/2011,Fired5,tudepzai,123456,saitama@yagoo.vn,19/04/2011,online
+id,name,address,phone,startdate,sales,status
+1,Tran Ngoc Han,Giau Day,8823451,25/05/2016,345.00$,online
+2,Tran Minh Long,Cau Dat,917325476,05/12/2014,23.34$,online
+3,Ha Duy Lap,Thu Duc,916783565,11/06/2012,123.43$,online
+4,Hoang Chau,Quan 9,034458483,12/08/2011,10000.45$,offline
+5,Anh Tu,Quan 4,0306221294,19/04/2011,9999.00$,online

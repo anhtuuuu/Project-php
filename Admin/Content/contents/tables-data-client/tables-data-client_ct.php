@@ -41,7 +41,7 @@
               <table class="table datatable ">
                 <thead>
                   <tr>
-                    <?php $list = array('Id','Name','Password','Email','Start Date','Status','Edit');
+                    <?php $list = array('Id','Name','Address','Phone','Start Date','Sales','Status','Edit');
                       foreach($list as $ls)
                       {
                         echo '<th scope="col">'.$ls.'</th>';
@@ -56,9 +56,10 @@
                     <tr>
                       <th scope="row"><?php echo $count+1?></th>
                       <td><?php echo $el['name'] ?></td>
-                      <td><?php echo $el['password'] ?></td>
-                      <td><?php echo $el['email'] ?></td>
+                      <td><?php echo $el['address'] ?></td>
+                      <td><?php echo $el['phone'] ?></td>
                       <td><?php echo $el['startdate'] ?></td>
+                      <td><?php echo $el['sales'] ?></td>
                       <td><span class="badge bg-<?php echo check_status_el($el['status'])?>"><?php echo $el['status']?></span></td>
                       <td>
                           <a href="<?php echo $level ?>EditDataBase/edit/<?php echo restore_or_delete_link_rs($el['status']) ?>?id=<?php echo $el['id'] ?>"
@@ -70,13 +71,7 @@
                     <?php endforeach;?>    
                 </tbody>
               </table>
-              <div class="btn-add d-flex flex-row-reverse">
-                  <a href="<?php echo $level ?>EditDataBase/FormEdit/F__add_table_client.php"
-                      class="d-flex flex-row-reverse">
-                      <button type="button" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>
-                          Add </button>
-                  </a>
-              </div>
+          
               <!-- End Table with stripped rows -->
 
             </div>

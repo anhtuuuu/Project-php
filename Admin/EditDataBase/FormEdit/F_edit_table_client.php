@@ -9,8 +9,8 @@
         include_once "{$level}Database/tables/list_data_tables_client.php";    
 
         $name;
-        $password;
-        $email;
+        $address;
+        $phone;
         $startdate;
         $id = $_GET['id'];
         foreach($clients as $client)
@@ -18,8 +18,8 @@
             if($client['id'] == $id)
             {
                 $name = $client['name'];
-                $password =  $client['password'];
-                $email =  $client['email'];
+                $address =  $client['address'];
+                $phone =  $client['phone'];
                 $startdate = $client['startdate'];
             }
         }
@@ -54,12 +54,12 @@
             <input type="text" class="form-control" placeholder="Enter Name" name="name" id="name" value="<?php echo $name ?>">
         </div>
         <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="text" class="form-control" placeholder="Enter password" name="password" id="password" value="<?php echo $password ?>">
+            <label for="address">address:</label>
+            <input type="text" class="form-control" placeholder="Enter address" name="address" id="address" value="<?php echo $address ?>">
         </div>
         <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="text" class="form-control" placeholder="Enter email" name="email" id="email" value="<?php echo $email ?>"> 
+            <label for="phone">phone:</label>
+            <input type="text" class="form-control" placeholder="Enter phone" name="phone" id="phone" value="<?php echo $phone ?>"> 
         </div>
         <div class="form-group">
             <label for="startdate">Start Date:</label>
