@@ -62,6 +62,11 @@
               <i class="bi bi-circle"></i><span>Data Bills</span>
             </a>
           </li>
+          <li>
+            <a href="<?php echo $level?>pages/tables-data-bill-detail.php">
+              <i class="bi bi-circle"></i><span>Data Bills Detail</span>
+            </a>
+          </li>
         </ul>
       </li><!-- End Tables Nav -->
 
