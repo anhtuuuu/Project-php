@@ -1,0 +1,8 @@
+"bill_detail_ID","bill_ID","product_ID","quantity","status"
+"1","1","L01","5","Paid"
+"2","1","L02","3","Paid"
+"3","1","L02","2","Paid"
+"4","2","L01","4","Paid"
+"5","2","C04","7","Paid"
+"6","3","B05","1","Paid"
+"7","39","B02","3","Paid"
