@@ -11,7 +11,8 @@
    
     $sql = $conn->prepare("update data_table_employee_management set name = ?, position = ?, age = ?, startdate = ? where id = ?");
     $sql->execute([$name,$position,$age,$startdate,$id]);
-    echo '<h2 style="color: #34a853"> Changed successful information employee </h2> ';
-    echo "<a href='{$level}pages/tables-data-employee.php'> Return to table data </a>"
+
+   header("location:{$level}pages/tables-data-employee.php")
+    
 
 ?>

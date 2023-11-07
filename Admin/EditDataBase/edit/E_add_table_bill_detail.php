@@ -17,7 +17,7 @@
    
     $st = $conn->prepare("insert into data_table_bill_detail values(?,?,?,?,?)");
     $st->execute([$next_id,$_POST['bill_ID'],$_POST['product_ID'],$_POST['quantity'], $status_default]);
-    echo '<h2 style="color: #34a853"> Added successful imformation bill detail </h2> ';
-    echo "<a href='{$level}pages/tables-data-bill-detail.php'> Return to table data </a>"
+
+    header("location:{$level}pages/tables-data-bill-detail.php")
 
 ?>

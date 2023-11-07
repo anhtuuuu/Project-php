@@ -11,7 +11,7 @@
    
     $sql = $conn->prepare("update data_table_client_management set name = ?, address = ?, phone = ?, startdate = ? where id = ?");
     $sql->execute([$name,$password,$email,$startdate,$id]);
-    echo '<h2 style="color: #34a853"> Changed successful information client </h2> ';
-    echo "<a href='{$level}pages/tables-data-client.php'> Return to table data client </a>"
+
+    header("location:{$level}pages/tables-data-client.php")
 
 ?>

@@ -6,8 +6,9 @@
    
     $id = $_GET['id'];
         // echo $a;
-    $sql = $conn->prepare("update data_table_employee_management set status = 'Fired' where id = ?;");
+    $sql = $conn->prepare("update data_table_employee_management set status = 'Quit' where id = ?;");
     $sql->execute([$id]);
-    echo '<h2 style="color: #34a853"> Delete successful employee </h2> ';
-    echo "<a href='{$level}pages/tables-data-employee.php'> Return to table data </a>"
+
+   header("location:{$level}pages/tables-data-employee.php")
+
 ?>

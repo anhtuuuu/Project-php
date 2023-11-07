@@ -8,6 +8,6 @@
         // echo $a;
     $sql = $conn->prepare("update data_table_bill_detail set status = 'Paid' where bill_detail_ID = ?;");
     $sql->execute([$id]);
-    echo '<h2 style="color: #34a853"> Restore successful bill detail </h2> ';
-    echo "<a href='{$level}pages/tables-data-bill-detail.php'> Return to table data </a>"
+   header("location:{$level}pages/tables-data-bill-detail.php")
+
 ?>

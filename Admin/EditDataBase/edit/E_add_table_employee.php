@@ -17,7 +17,8 @@
    
     $st = $conn->prepare("insert into data_table_employee_management values(?,?,?,?,?,?)");
     $st->execute([$next_id,$_POST['name'],$_POST['position'],$_POST['age'],$_POST['startdate'], $status_default]);
-    echo '<h2 style="color: #34a853"> Added successful imformation employee </h2> ';
-    echo "<a href='{$level}pages/tables-data-employee.php'> Return to table data </a>"
+
+    header("location:{$level}pages/tables-data-employee.php")
+
 
 ?>

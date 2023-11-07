@@ -10,7 +10,7 @@
    
     $sql = $conn->prepare("update data_table_bill_detail set bill_ID = ?, product_ID = ?, quantity=? where bill_detail_ID = ?");
     $sql->execute([$bill_ID,$product_ID,$quantity,$bill_detail_ID]);
-    echo '<h2 style="color: #34a853"> Changed successful information bill detail </h2> ';
-    echo "<a href='{$level}pages/tables-data-bill_detail.php'> Return to table data bill detail </a>"
+
+    header("location:{$level}pages/tables-data-bill-detail.php")
 
 ?>

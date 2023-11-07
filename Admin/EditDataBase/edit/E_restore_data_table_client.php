@@ -8,6 +8,7 @@
         // echo $a;
     $sql = $conn->prepare("update data_table_client_management set status = 'online' where id = ?;");
     $sql->execute([$id]);
-    echo '<h2 style="color: #34a853"> Restore successful client </h2> ';
-    echo "<a href='{$level}pages/tables-data-client.php'> Return to table data client </a>"
+   header("location:{$level}pages/tables-data-client.php")
+
+    
 ?>

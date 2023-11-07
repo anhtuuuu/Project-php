@@ -7,11 +7,11 @@
   }
 
   function restore_or_delete_btn_rs($check){
-    if($check == 'Fired') return '<i title="Restore" class="bi bi-arrow-counterclockwise"></i>';
+    if($check == 'Quit') return '<i title="Restore" class="bi bi-arrow-counterclockwise"></i>';
     else return '<i title="Delete" class="bi bi-trash"></i>';
   }
   function restore_or_delete_link_rs($check){
-      if($check == 'Fired') return 'E_restore_data_table_employee.php';
+      if($check == 'Quit') return 'E_restore_data_table_employee.php';
       else return 'E_delete_data_table_employee.php';
   }
 ?>
@@ -35,7 +35,11 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Datatables</h5>
+            <form action="<?php echo $level?>pages/pages-search.php" method="POST">
+                        <input class="datatable-input" placeholder="Search..." type="text" title="Search within table" name="search" >
+                        <button type="submit" name='btn'><i style="font-size:20px; color:black;" class="bi bi-search"></i></button>
+            </form>  
+              <h5 class="card-title">Employee</h5>
               
 
               <!-- Table with stripped rows -->
