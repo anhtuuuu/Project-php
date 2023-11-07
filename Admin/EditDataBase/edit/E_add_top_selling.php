@@ -20,7 +20,7 @@
     move_uploaded_file($_FILES['preview']['tmp_name'],$target_file);
 
     $st = $conn->prepare("insert into data_table_products values(?,?,?,?,?,?,?)");
-    $st->execute([$next_id,$preview,$_POST['name_product'],$_POST['price'],$_POST['sold'],$_POST['revenue'], $status_default]);
+    $st->execute([$next_id,$preview,$_POST['product_name'],$_POST['price'],$_POST['manufacturing_country'],$_POST['tyle'], $status_default]);
 
     header("location:{$level}pages/tables-data-product.php")
 

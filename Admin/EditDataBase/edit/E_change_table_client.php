@@ -5,12 +5,12 @@
     // echo "connected";
     $id = $_GET['id'];
     $name = $_POST['name'];
-    $password = $_POST['address'];
-    $email = $_POST['phone'];
+    $address = $_POST['address'];
+    $phone = $_POST['phone'];
     $startdate = $_POST['startdate'];
    
-    $sql = $conn->prepare("update data_table_client_management set name = ?, address = ?, phone = ?, startdate = ? where id = ?");
-    $sql->execute([$name,$password,$email,$startdate,$id]);
+    $sql = $conn->prepare("update data_table_client_management set name = ?, address = ?, phone = ?, startdate = ? where id = ?;");
+    $sql->execute([$name,$address,$phone,$startdate,$id]);
 
     header("location:{$level}pages/tables-data-client.php")
 

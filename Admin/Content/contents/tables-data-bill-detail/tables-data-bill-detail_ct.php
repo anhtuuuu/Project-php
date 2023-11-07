@@ -35,7 +35,11 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Datatables</h5>
+            <form action="<?php echo $level?>pages/pages-search.php" method="POST">
+                            <input class="datatable-input" placeholder="Search with id..." type="text" title="Search within table" name="search" >
+                            <button type="submit" name='btn'><i style="font-size:20px; color:black;" class="bi bi-search"></i></button>
+                </form> 
+              <h5 class="card-title">Bill Detail</h5>
             
               <!-- Table with stripped rows -->
               <table class="table datatable ">

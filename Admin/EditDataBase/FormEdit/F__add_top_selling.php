@@ -37,20 +37,20 @@
             <input type="file" class="form-control" placeholder="Enter Preview" name="preview" id="preview">
         </div>
         <div class="form-group">
-            <label for="product">Product:</label>
-            <input type="text" class="form-control" placeholder="Enter Customer" name="product" id="product">
+            <label for="product_name">Product Name:</label>
+            <input type="text" class="form-control" placeholder="Enter Product Name" name="product_name" id="product_name">
         </div>
         <div class="form-group">
             <label for="price">Price:</label>
             <input type="text" class="form-control" placeholder="Enter Price" name="price" id="price">
         </div>
         <div class="form-group">
-            <label for="sold">Sold:</label>
-            <input type="number" class="form-control" placeholder="Enter Sold" name="sold" id="sold">
+            <label for="manufacturing_country">Manufacturing_country:</label>
+            <input type="text" class="form-control" placeholder="Enter Manufacturing_country" name="manufacturing_country" id="manufacturing_country">
         </div>
         <div class="form-group">
-            <label for="revenue">Revenue:</label>
-            <input type="text" class="form-control" placeholder="Enter Revenue" name="revenue" id="revenue">
+            <label for="tyle">Tyle:</label>
+            <input type="text" class="form-control" placeholder="Enter Tyle" name="tyle" id="tyle">
         </div>        
         <div class="btn-add d-flex flex-row-reverse">
             <button type="submit" class="btn btn-primary">Add</button>

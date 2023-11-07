@@ -44,17 +44,13 @@
 </head>
 
 <body>
-    <form action="<?php echo $level ?>EditDataBase/edit/E_change_table_bill_detail.php?id=<?php echo $id ?>" method="POST">
+    <form action="<?php echo $level ?>EditDataBase/edit/E_change_bill_detail.php?id=<?php echo $id ?>" method="POST">
         <h2>Change Information Bill Detail </h2>
         <div class="form-group">
             <label for="quantity">quantity:</label>
             <input type="text" class="form-control" placeholder="Enter quantity" name="quantity" id="quantity" value="<?php echo $quantity ?>">
         </div>
-        <div class="form-group">
-            <label for="status">status:</label>
-            <input type="text" class="form-control" placeholder="Enter status" name="status" id="status" value="<?php echo $status ?>">
-        </div>
-       
+        
         <div class="btn-add d-flex flex-row-reverse">
             <button type="submit" class="btn btn-primary">Change</button>
         </div>

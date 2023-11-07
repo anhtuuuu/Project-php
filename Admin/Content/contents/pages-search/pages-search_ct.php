@@ -91,6 +91,20 @@ function restore_or_delete_link_od($check){
     if($check == 'Rejected') return 'E_restore_recent_sales.php';
     else return 'E_delete_recent_sales.php';
 }
+function check_status_bd($check)
+  {
+    if($check == 'Paid') return 'success';
+    else return 'danger';
+  }
+
+  function restore_or_delete_btn_bd($check){
+    if($check == 'Unpaid') return '<i title="Restore" class="bi bi-arrow-counterclockwise"></i>';
+    else return '<i title="Delete" class="bi bi-trash"></i>';
+  }
+  function restore_or_delete_link_bd($check){
+      if($check == 'Unpaid') return 'E_restore_data_table_bill_detail.php';
+      else return 'E_delete_data_table_bill_detail.php';
+  }
 ?>
 <?php
     if(isset($_POST['btn']))
@@ -109,12 +123,17 @@ function restore_or_delete_link_od($check){
     $data_search_bl = $conn->query("SELECT * FROM data_table_bills where id like '%$value_ip%' or bill_date like '%$value_ip%' or id_user like '%$value_ip%' or id_employee like '%$value_ip%'");
     $list_search_bl = $data_search_bl->fetchAll(PDO::FETCH_ASSOC);
 
+    $data_search_bd = $conn->query("SELECT * FROM data_table_bill_detail where bill_detail_ID like '%$value_ip%' or bill_ID like '%$value_ip%' or product_ID like '%$value_ip%' or quantity like '%$value_ip%'");
+    $list_search_bd = $data_search_bd->fetchAll(PDO::FETCH_ASSOC);
+
     // print_r($list_search);
 
     $count_pd = count($list_search_pd);
     $count_epl = count($list_search_epl);
     $count_cle = count($list_search_cle);
     $count_bl = count($list_search_bl);
+    $count_bd = count($list_search_bd);
+
     ?>
     <?php
       if($value_ip == ''){ ?>
@@ -472,7 +491,121 @@ function restore_or_delete_link_od($check){
 </section>
 
 </main>
-      <?php } ?>
+    <?php } ?>
+    <?php  if($count_bd > 0){ ?>
+      
+<main id="main" class="main">
+
+<div class="pagetitle">
+  <h1>Data Tables</h1>
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="<?php echo $level?>index.php">Home</a></li>
+      <li class="breadcrumb-item">Tables</li>
+      <li class="breadcrumb-item active">Data</li>
+    </ol>
+  </nav>
+</div><!-- End Page Title -->
+
+<section class="section">
+  <div class="row">
+    <div class="col-lg-12">
+
+      <div class="card">
+        <div class="card-body">
+        <form action="<?php echo $level?>pages/pages-search.php" method="POST">
+                        <input class="datatable-input" placeholder="Search with id..." type="text" title="Search within table" name="search" >
+                        <button type="submit" name='btn'><i style="font-size:20px; color:black;" class="bi bi-search"></i></button>
+            </form> 
+          <h5 class="card-title">Bill Detail</h5>
+        
+          <!-- Table with stripped rows -->
+          <table class="table datatable ">
+            <thead>
+              <tr>
+                <?php $list = array('Bill Detail ID','Bill ID','Product ID','Quantity','Status','Edit');
+                  foreach($list as $ls)
+                  {
+                    echo '<th scope="col">'.$ls.'</th>';
+                  }
+                ?>                  
+              </tr>
+            </thead>
+            <tbody>
+              <?php
+                foreach($list_search_bd as $count => $el):
+                ?>
+                <tr>
+                  <th scope="row"><?php echo $count+1?></th>
+                  <td><?php echo $el['bill_ID'] ?></td>
+                  <td><?php echo $el['product_ID'] ?></td>
+                  <td><?php echo $el['quantity'] ?></td>
+                  
+                  <td><span class="badge bg-<?php echo check_status_bd($el['status'])?>"><?php echo $el['status']?></span></td>
+                  <td>
+                      <a href="<?php echo $level ?>EditDataBase/edit/<?php echo restore_or_delete_link_bd($el['status']) ?>?id=<?php echo $el['bill_detail_ID'] ?>"
+                          style="margin:0 5px;"><?php echo restore_or_delete_btn_bd($el['status']) ?></a>
+                      <a href="<?php echo $level ?>EditDataBase/FormEdit/F_edit_table_bill_detail.php?id=<?php echo $el['bill_detail_ID'] ?>"
+                          style="margin:0 5px;"><i title="Edit" class="bi bi-pencil"></i></a>
+                  </td>
+                </tr>
+                <?php endforeach;?>    
+            </tbody>
+          </table>
+          <div class="btn-add d-flex flex-row-reverse">
+                            <a href="<?php echo $level ?>EditDataBase/FormEdit/F__add_table_bill_detail.php"
+                                class="">
+                                <button type="button" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>
+                                    Add </button>
+                            </a>
+                            </div>
+          <!-- End Table with stripped rows -->
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+    <?php } ?> 
+    <?php if($count_bd == 0 && $count_bl == 0 && $count_cle == 0 && $count_epl == 0 && $count_pd == 0){ ?>
+      <main id="main" class="main">
+
+        <div class="pagetitle">
+          <h1>Data Tables</h1>
+          <nav>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="<?php echo $level?>index.php">Home</a></li>
+              <li class="breadcrumb-item">Tables</li>
+              <li class="breadcrumb-item active">Data</li>
+            </ol>
+          </nav>
+        </div><!-- End Page Title -->
+
+        <section class="section">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <div class="card">
+                <div class="card-body">
+                <form action="<?php echo $level?>pages/pages-search.php" method="POST">
+                            <input class="datatable-input" placeholder="Search with id..." type="text" title="Search within table" name="search" >
+                            <button type="submit" name='btn'><i style="font-size:20px; color:black;" class="bi bi-search"></i></button>
+                </form>  
+                
+                  <h5 class="card-title"> Can't find the keyword you just entered, try again.</h5>                
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        </main>
+      <?php } ?> 
     <?php } ?>
     <?php
     }
