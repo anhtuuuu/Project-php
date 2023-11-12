@@ -41,30 +41,15 @@
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">          
           <li>
-            <a href="<?php echo $level?>pages/tables-data-employee.php">
-              <i class="bi bi-circle"></i><span>Data Employer</span>
+            <a href="<?php echo $level?>pages/table-data-user.php">
+              <i class="bi bi-circle"></i><span>Data User</span>
             </a>
           </li>
           <li>
-            <a href="<?php echo $level?>pages/tables-data-client.php">
-              <i class="bi bi-circle"></i><span>Data Client</span>
-            </a>
-          </li>
-          <li>
-            <a href="<?php echo $level?>pages/tables-data-product.php">
+            <a href="<?php echo $level?>pages/table-data-product.php">
               <i class="bi bi-circle"></i><span>Data Product</span>
-            </a>
-          </li>
-          <li>
-            <a href="<?php echo $level?>pages/tables-data-orders.php">
-              <i class="bi bi-circle"></i><span>Data Bills</span>
-            </a>
-          </li>
-          <li>
-            <a href="<?php echo $level?>pages/tables-data-bill-detail.php">
-              <i class="bi bi-circle"></i><span>Data Bills Detail</span>
             </a>
           </li>
         </ul>
