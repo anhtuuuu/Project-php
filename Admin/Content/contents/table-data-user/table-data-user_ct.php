@@ -5,11 +5,11 @@
   $data = $conn->query($sql);
   $user_role = $data->fetchAll(PDO::FETCH_ASSOC);    
 
-  function restore_or_delete_btn_us($check){
+  function restore_or_delete_btn($check){
     if($check == '0') return '<i title="Restore" class="bi bi-arrow-counterclockwise"></i>';
     else return '<i title="Delete" class="bi bi-trash"></i>';
   }
-  function restore_or_delete_link_us($check){
+  function restore_or_delete_link($check){
       if($check == '0') return 'E_restore_data_user.php';
       else return 'E_delete_data_user.php';
   }
@@ -39,11 +39,13 @@
 
           <div class="card">
             <div class="card-body">
-            <div class="search-bar">
+            <div class="d-flex justify-content-between mt-2">
                 <form class="search-form d-flex align-items-center" method="POST" action="#">
                     <input type="text" name="search" placeholder="Search" title="Enter search keyword">
                     <button type="submit" title="Search" name='btn'><i class="bi bi-search"></i></button>
                 </form>
+                <a href="<?php echo $level?>EditDataBase/FormEdit/F_add_admin.php" class="text-light"><button type="button" class="btn btn-primary"><i class="bi bi-plus-circle-dotted"></i>  New Account Admin</button></a>
+
             </div>
               <h5 class="card-title">User Information</h5>
             <?php                
@@ -80,7 +82,7 @@
                                     ?>
                                     <tr>                      
                                     <td><?php echo $us['id'] ?></td>
-                                    <td><?php echo $us['fullname'] ?></td>
+                                    <td class="text-capitalize"><?php echo $us['fullname'] ?></td>
                                     <td><?php echo $us['email'] ?></td>
                                     <td><?php echo $us['phone_number'] ?></td>
                                     <td><?php echo $us['address'] ?></td>
@@ -90,8 +92,8 @@
                                     <td><?php echo $us['updated_at'] ?></td>
                                     <td><?php echo print_deleted($us['deleted']) ?></td>                      
                                     <td>
-                                        <a href="<?php echo $level ?>EditDataBase/edit/<?php echo restore_or_delete_link_us($us['deleted']) ?>?id=<?php echo $us['id'] ?>"
-                                            style="margin:0 5px;"><?php echo restore_or_delete_btn_us($us['deleted']) ?></a>
+                                        <a href="<?php echo $level ?>EditDataBase/edit/<?php echo restore_or_delete_link($us['deleted']) ?>?id=<?php echo $us['id'] ?>"
+                                            style="margin:0 5px;"><?php echo restore_or_delete_btn($us['deleted']) ?></a>
                                         <a href="<?php echo $level ?>EditDataBase/FormEdit/F_edit_user.php?id=<?php echo $us['id'] ?>"
                                             style="margin:0 5px;"><i title="Edit" class="bi bi-pencil"></i></a>
                                     </td>
@@ -152,8 +154,8 @@
                                     <td><?php echo $us['updated_at'] ?></td>
                                     <td><?php echo print_deleted($us['deleted']) ?></td>                      
                                     <td>
-                                        <a href="<?php echo $level ?>EditDataBase/edit/<?php echo restore_or_delete_link_us($us['deleted']) ?>?id=<?php echo $us['id'] ?>"
-                                            style="margin:0 5px;"><?php echo restore_or_delete_btn_us($us['deleted']) ?></a>
+                                        <a href="<?php echo $level ?>EditDataBase/edit/<?php echo restore_or_delete_link($us['deleted']) ?>?id=<?php echo $us['id'] ?>"
+                                            style="margin:0 5px;"><?php echo restore_or_delete_btn($us['deleted']) ?></a>
                                         <a href="<?php echo $level ?>EditDataBase/FormEdit/F_edit_user.php?id=<?php echo $us['id'] ?>"
                                             style="margin:0 5px;"><i title="Edit" class="bi bi-pencil"></i></a>
                                     </td>

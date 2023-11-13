@@ -45,7 +45,7 @@
         </div>
         <div class="form-group">
             <label for="title">Title:</label>
-            <input required type="title" class="form-control" placeholder="Enter your title" name="title" id="title" >
+            <input required type="text" class="form-control" placeholder="Enter your title" name="title" id="title" >
         </div>
         <div class="form-group">
             <label for="price">Price:</label>
