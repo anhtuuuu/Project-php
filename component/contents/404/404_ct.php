@@ -1,3 +1,9 @@
+<?php
+    if(!isset($_SESSION['loginC']))
+    {
+        header("location:{$level}pages/login.php");
+    }
+  ?>
                          <!--error section area start-->
                          <div class="error_section">
                              <div class="row">

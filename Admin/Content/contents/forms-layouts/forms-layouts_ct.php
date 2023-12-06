@@ -1,12 +1,66 @@
+<?php
+if(!isset($_SESSION['login']))
+{
+    header("location:{$level}pages/page-login.php");
+}
+  include_once "{$level}Database/tables/list_data_user.php";
+  
+  $getPassword = '';
+  $getEmail = '';
+
+
+  if(isset($_POST['btn']))
+  {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    foreach($user as $us)
+    {
+      if($us['email'] == $email && $us['role_id'] == '1')
+      {
+        $getEmail = $email;
+        if($us['password'] == $password)
+        {
+          $getPassword = $password;
+          break;
+        }
+        $getPassword = '0';
+      }
+      else
+      {
+        $getEmail = '0';
+      }
+    }
+    
+    
+  }
+  function checkEmail($check)
+  {
+    if($check == '0')
+    {
+      return '<p class="text-danger">Can not find your email.</p>';
+    }
+    else return '';
+  }
+  function checkPassword($check)
+  {
+    if($check == '0')
+    {
+      return '<p class="text-danger">Your password is incorrect.</p>';
+    }
+    else return '';
+  }
+  
+    
+?>
 <main id="main" class="main">
 
   <div class="pagetitle">
-    <h1>Form Layouts</h1>
+    <h1>Form Login</h1>
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="<?php echo $level ?>index.php">Home</a></li>
         <li class="breadcrumb-item">Forms</li>
-        <li class="breadcrumb-item active">Layouts</li>
+        <li class="breadcrumb-item active">Login</li>
       </ol>
     </nav>
   </div><!-- End Page Title -->
@@ -16,63 +70,26 @@
 
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Horizontal Form</h5>
+            <h5 class="card-title">Login</h5>
 
             <!-- Horizontal Form -->
-            <form>
-              <div class="row mb-3">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Your Name</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputText">
-                </div>
-              </div>
+            <form method="POST" action="">              
               <div class="row mb-3">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail">
+                  <input required name="email" type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
+                  <?php echo checkEmail($getEmail) ?>
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <label for="inputPassword3" class="col-sm-2 col-form-label" >Password</label>
                 <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword">
-                </div>
-              </div>
-              <fieldset class="row mb-3">
-                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                <div class="col-sm-10">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                    <label class="form-check-label" for="gridRadios1">
-                      First radio
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios2">
-                      Second radio
-                    </label>
-                  </div>
-                  <div class="form-check disabled">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                    <label class="form-check-label" for="gridRadios3">
-                      Third disabled radio
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-              <div class="row mb-3">
-                <div class="col-sm-10 offset-sm-2">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck1">
-                    <label class="form-check-label" for="gridCheck1">
-                      Example checkbox
-                    </label>
-                  </div>
+                  <input required name="password" type="password" class="form-control" id="inputPassword" placeholder="Enter your password">
+                  <?php echo checkPassword($getPassword) ?>
                 </div>
               </div>
               <div class="text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary btn-login" name="btn" >Login</button>
                 <button type="reset" class="btn btn-secondary">Reset</button>
               </div>
             </form><!-- End Horizontal Form -->
@@ -80,5 +97,7 @@
           </div>
         </div>
   </section>
-
+  <?php
+  echo 'abc: '.$getEmail;
+  ?>
 </main>

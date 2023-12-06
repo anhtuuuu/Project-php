@@ -6,6 +6,7 @@
     $category_id = $_POST['category_id'];
     $title = $_POST['title'];
     $price = $_POST['price'];
+    $discount = ($_POST['price'] - $_POST['price']*0.1) ;
     $quantity = $_POST['quantity'];
     $description = $_POST['description'];
     $created_at = date('Y-m-d H:i:s'); 
@@ -16,8 +17,8 @@
     $target_file = "{$level}../uploads/".$thumbnail;
     move_uploaded_file($_FILES['thumbnail']['tmp_name'],$target_file);
 
-    $st = $conn->prepare("insert into product values(?,?,?,?,?,?,?,?,?,?)");
-    $st->execute([$next_id,$category_id,$title,$price,$quantity,$thumbnail,$description,$created_at,$updated_at,$status_default]);
+    $st = $conn->prepare("insert into product values(?,?,?,?,?,?,?,?,?,?,?)");
+    $st->execute([$next_id,$category_id,$title,$price,$quantity,$thumbnail,$description,$created_at,$updated_at,$status_default,$discount]);
 
     header("location:{$level}pages/table-data-product.php")
 

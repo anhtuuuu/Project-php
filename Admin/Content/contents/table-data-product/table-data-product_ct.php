@@ -1,7 +1,11 @@
 <?php
+if(!isset($_SESSION['login']))
+{
+    header("location:{$level}pages/page-login.php");
+}
   include_once "{$level}Database/tables/list_data_product.php";
   include_once "{$level}Database/tables/list_data_category.php";
-  $sql = "select product.id,category_id,title,price,quantity,thumbnail,description,created_at,updated_at,deleted,category.name from product inner join category on product.category_id = category.id";
+  $sql = "select product.id,category_id,title,price,discount,quantity,thumbnail,description,created_at,updated_at,deleted,category.name from product inner join category on product.category_id = category.id";
   $data = $conn->query($sql);
   $product_category = $data->fetchAll(PDO::FETCH_ASSOC);    
 
@@ -75,7 +79,7 @@
 
                                 <thead>
                                 <tr>
-                                    <?php $list = array('Product ID','Category','Title','Price','Quantity','Thumbnail','Description','Created at','Updated at','Deleted','Edit');
+                                    <?php $list = array('Product ID','Category','Title','Price','Discount','Quantity','Thumbnail','Description','Created at','Updated at','Deleted','Edit');
                                     foreach($list as $ls)
                                     {
                                         echo '<th scope="col">'.$ls.'</th>';
@@ -93,6 +97,7 @@
                                     <td><?php echo $us['name'] ?></td>
                                     <td><?php echo $us['title'] ?></td>
                                     <td>$<?php echo $us['price'] ?></td>
+                                    <td>$<?php echo $us['discount'] ?></td>
                                     <td><?php echo $us['quantity'] ?></td>
                                     <td><img src="<?php echo $level ?>../uploads/<?php echo $us['thumbnail'] ?>" alt="" class="img-thumbnail"></td>
                                     <td><?php echo $us['description'] ?></td>
@@ -138,7 +143,7 @@
                     <table class="table datatable ">
                                 <thead>
                                 <tr>
-                                <?php $list = array('Product ID','Category','Title','Price','Quantity','Thumbnail','Description','Created at','Updated at','Deleted','Edit');
+                                <?php $list = array('Product ID','Category','Title','Price','Discount','Quantity','Thumbnail','Description','Created at','Updated at','Deleted','Edit');
                                     foreach($list as $ls)
                                     {
                                         echo '<th scope="col">'.$ls.'</th>';
@@ -155,6 +160,7 @@
                                     <td><?php echo $us['name'] ?></td>
                                     <td><?php echo $us['title'] ?></td>
                                     <td>$<?php echo $us['price'] ?></td>
+                                    <td>$<?php echo $us['discount'] ?></td>
                                     <td><?php echo $us['quantity'] ?></td>
                                     <td><img src="<?php echo $level ?>../uploads/<?php echo $us['thumbnail'] ?>" alt="" class="img-thumbnail"></td>
                                     <td><?php echo $us['description'] ?></td>

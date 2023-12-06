@@ -25,13 +25,14 @@ CREATE TABLE `Product` (
   `id` int PRIMARY KEY,
   `category_id` int,
   `title` varchar(350),
-  `price` int,
+  `price` double,
   `quantity` int,
   `thumbnail` varchar(500),
   `description` text,
   `created_at` datetime,
   `updated_at` datetime,
-  `deleted` int
+  `deleted` int,
+`deleted` double,	
 );
 
 CREATE TABLE `Galery` (
@@ -57,9 +58,9 @@ CREATE TABLE `Order_Details` (
   `order_id` int,
   `product_id` int,
   `size_id` int,
-  `price` int,
+  `price` double,
   `num` int,
-  `total_money` int
+  `total_money` double
 );
 
 CREATE TABLE `Feedback` (

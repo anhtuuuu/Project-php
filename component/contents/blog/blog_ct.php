@@ -1,3 +1,9 @@
+<?php
+    if(!isset($_SESSION['loginC']))
+    {
+        header("location:{$level}pages/login.php");
+    }
+  ?>
 <div class="breadcrumbs_area">
                             <div class="row">
                                 <div class="col-12">

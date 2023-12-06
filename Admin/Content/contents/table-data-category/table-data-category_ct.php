@@ -1,4 +1,8 @@
 <?php
+if(!isset($_SESSION['login']))
+{
+    header("location:{$level}pages/page-login.php");
+}
   include_once "{$level}Database/tables/list_data_category.php";
   $sql = "select * from category";
 

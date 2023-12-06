@@ -62,6 +62,11 @@
               <i class="bi bi-circle"></i><span>Data Orders</span>
             </a>
           </li>
+          <li>
+            <a href="<?php echo $level?>pages/table-data-order-details.php">
+              <i class="bi bi-circle"></i><span>Data Order Detail</span>
+            </a>
+          </li>
         </ul>
       </li><!-- End Tables Nav -->
 
