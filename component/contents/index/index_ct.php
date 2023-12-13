@@ -150,18 +150,18 @@
                             <div class="col-lg-3">
                             <div class="single_product">
                                 <div class="product_thumb">
-                                    <a href="<?php echo $level?>pages\single-product.php"><img
-                                            src="<?php echo $level?>assets\img\<?php echo $pda['product_image']?>.jpg" alt=""></a>
+                                    <a href="<?php echo $level?>pages\single-product.php?id=<?php echo $pda['id']?>"><img
+                                            src="<?php echo $level?>assets\img\product\<?php echo $pda['thumbnail']?>" alt=""></a>
                                     <div class="img_icone">
-                                        <img src="<?php echo $level?>assets\img\cart\<?php echo $pda['span']?>.png" alt="">
+                                        <img src="<?php echo $level?>assets\img\cart\span-<?php echo $pda['id']%2==1?'hot':'new' ?>.png" alt="">
                                     </div>
                                     <div class="product_action">
                                        <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                                     </div>
                                 </div>
                                 <div class="product_content">
-                                    <span class="product_price"><?php echo $pda['price']?></span>
-                                    <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php"><?php echo $pda['product_name']?></a></h3>
+                                    <span class="product_price">$<?php echo $pda['price']?></span>
+                                    <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php"><?php echo $pda['title']?></a></h3>
                                 </div>
                                 <div class="product_info">
                                     <ul>
@@ -190,18 +190,18 @@
                             <div class="col-lg-3">
                             <div class="single_product">
                                 <div class="product_thumb">
-                                    <a href="<?php echo $level?>pages\single-product.php"><img
-                                            src="<?php echo $level?>assets\img\<?php echo $pda['product_image']?>.jpg" alt=""></a>
+                                    <a href="<?php echo $level?>pages\single-product.php?id=<?php echo $pda['id']?>"><img
+                                            src="<?php echo $level?>assets\img\product\<?php echo $pda['thumbnail']?>" alt=""></a>
                                     <div class="img_icone">
-                                        <img src="<?php echo $level?>assets\img\cart\<?php echo $pda['span']?>.png" alt="">
+                                        <img src="<?php echo $level?>assets\img\cart\span-<?php echo $pda['id']%2==1?'hot':'new' ?>.png" alt="">
                                     </div>
                                     <div class="product_action">
                                        <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
                                     </div>
                                 </div>
                                 <div class="product_content">
-                                    <span class="product_price"><?php echo $pda['price']?></span>
-                                    <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php"><?php echo $pda['product_name']?></a></h3>
+                                    <span class="product_price">$<?php echo $pda['price']?></span>
+                                    <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php"><?php echo $pda['title']?></a></h3>
                                 </div>
                                 <div class="product_info">
                                     <ul>

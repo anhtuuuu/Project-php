@@ -14,18 +14,19 @@
      </div>
  </div>
  <!--breadcrumbs area end-->
-    <h3 style="font-weight: 100;">Rất tiếc, poscorn không tìm thấy kết quả nào phù hợp với từ khóa <?php echo $noidung_search?></h3>
-   <strong style="display: flex;
+ <h3 style="font-weight: 100;">Sorry, Poscorn couldn't find any results matching the keyword <?php echo $noidung_search?></h3>
+<strong style="display: flex;
     flex-direction: column;
-    align-items: center;">Để tìm được kết quả chính xác hơn, bạn vui lòng:</strong>
+    align-items: center;">To find more accurate results, please:</strong>
     <ol style="display: flex;
     flex-direction: column;
     align-items: center;">
-        <li>Kiểm tra lỗi chính tả của từ khóa đã nhập</li>
-        <li>Thử lại bằng từ khóa khác</li>
-        <li>Thử lại bằng những từ khóa tổng quát hơn</li>
-        <li>Thử lại bằng những từ khóa ngắn gọn hơn</li>
+        <li>Check the spelling of the entered keyword</li>
+        <li>Try again with a different keyword</li>
+        <li>Try again with more general keywords</li>
+        <li>Try again with shorter keywords</li>
     </ol>
+
  <!--product wrapper start-->
 
 

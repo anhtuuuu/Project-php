@@ -1,5 +1,9 @@
 <?php 
-      include_once("{$level}lib/conn.php"); 
+     
+     
+   include("{$level}lib/data_product.php"); 
+
+
 ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
