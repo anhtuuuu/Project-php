@@ -1,4 +1,8 @@
 <?php
+if(!isset($_SESSION['login']))
+{
+    header("location:{$level}pages/page-login.php");
+}
   include_once "{$level}Database/tables/list_data_user.php";
   include_once "{$level}Database/tables/list_data_role.php";
   $sql = "select user.id,fullname,email,phone_number,address,password,role.name,created_at,updated_at,deleted from user inner join role on user.role_id = role.id";
@@ -68,7 +72,7 @@
 
                                 <thead>
                                 <tr>
-                                    <?php $list = array('User ID','Full name','Email','Phone number','Address','Password','Role','Created at','Updated at','Deleted','Edit');
+                                    <?php $list = array('User ID','Full name','Email','Phone number','Address','Password','Role','Created at','Updated at','Baned','Edit');
                                     foreach($list as $ls)
                                     {
                                         echo '<th scope="col">'.$ls.'</th>';
@@ -130,7 +134,7 @@
                     <table class="table datatable ">
                                 <thead>
                                 <tr>
-                                    <?php $list = array('User ID','Full name','Email','Phone number','Address','Password','Role','Created at','Updated at','Deleted','Edit');
+                                    <?php $list = array('User ID','Full name','Email','Phone number','Address','Password','Role','Created at','Updated at','Baned','Edit');
                                     foreach($list as $ls)
                                     {
                                         echo '<th scope="col">'.$ls.'</th>';

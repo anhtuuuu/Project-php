@@ -1,4 +1,9 @@
-
+<?php
+if(!isset($_SESSION['login']))
+{
+    header("location:{$level}pages/page-login.php");
+}
+?>
 <div class="pagetitle">
       <h1>ApexCharts</h1>
       <nav>

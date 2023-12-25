@@ -1,3 +1,9 @@
+<?php
+if(!isset($_SESSION['login']))
+{
+    header("location:{$level}pages/page-login.php");
+}
+?>
 <main id="main" class="main">
 
     <div class="pagetitle">

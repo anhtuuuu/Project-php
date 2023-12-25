@@ -7,14 +7,14 @@
                  <ul>
                      <li><a href="<?php echo $level?>index.php">home</a></li>
                      <li><i class="fa fa-angle-right"></i></li>
-                     <li>Không tìm thấy kết quả</li>
+                     <li>No results were found</li>
                  </ul>
              </div>
          </div>
      </div>
  </div>
  <!--breadcrumbs area end-->
- <h3 style="font-weight: 100;">Sorry, Poscorn couldn't find any results matching the keyword <?php echo $noidung_search?></h3>
+ <h3 style="font-weight: 100;">Sorry, Poscorn couldn't find any results matching the keyword </h3>
 <strong style="display: flex;
     flex-direction: column;
     align-items: center;">To find more accurate results, please:</strong>
@@ -29,409 +29,88 @@
 
  <!--product wrapper start-->
 
-
- <!--product info start-->
- <div class="product_d_info">
-     <div class="row">
-         <div class="col-12">
-             <div class="product_d_inner">
-                 <div class="product_info_button">
-                     <ul class="nav" role="tablist">
-                         <li>
-                             <a class="active" data-toggle="tab" href="#info" role="tab" aria-controls="info"
-                                 aria-selected="false">More info</a>
-                         </li>
-                         <li>
-                             <a data-toggle="tab" href="#sheet" role="tab" aria-controls="sheet"
-                                 aria-selected="false">Data sheet</a>
-                         </li>
-                         <li>
-                             <a data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews"
-                                 aria-selected="false">Reviews</a>
-                         </li>
-                     </ul>
-                 </div>
-                 <div class="tab-content">
-                     <div class="tab-pane fade show active" id="info" role="tabpanel">
-                         <div class="product_info_content">
-                             <p>Fashion has been creating well-designed collections since 2010. The brand offers
-                                 feminine designs delivering stylish separates and statement dresses which have since
-                                 evolved into a full ready-to-wear collection in which every item is a vital part of a
-                                 woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and
-                                 unmistakable signature style. All the beautiful pieces are made in Italy and
-                                 manufactured with the greatest attention. Now Fashion extends to a range of accessories
-                                 including shoes, hats, belts and more!</p>
-                         </div>
-                     </div>
-
-                     <div class="tab-pane fade" id="sheet" role="tabpanel">
-                         <div class="product_d_table">
-                             <form action="#">
-                                 <table>
-                                     <tbody>
-                                         <tr>
-                                             <td class="first_child">Compositions</td>
-                                             <td>Polyester</td>
-                                         </tr>
-                                         <tr>
-                                             <td class="first_child">Styles</td>
-                                             <td>Girly</td>
-                                         </tr>
-                                         <tr>
-                                             <td class="first_child">Properties</td>
-                                             <td>Short Dress</td>
-                                         </tr>
-                                     </tbody>
-                                 </table>
-                             </form>
-                         </div>
-                         <div class="product_info_content">
-                             <p>Fashion has been creating well-designed collections since 2010. The brand offers
-                                 feminine designs delivering stylish separates and statement dresses which have since
-                                 evolved into a full ready-to-wear collection in which every item is a vital part of a
-                                 woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and
-                                 unmistakable signature style. All the beautiful pieces are made in Italy and
-                                 manufactured with the greatest attention. Now Fashion extends to a range of accessories
-                                 including shoes, hats, belts and more!</p>
-                         </div>
-                     </div>
-                     <div class="tab-pane fade" id="reviews" role="tabpanel">
-                         <div class="product_info_content">
-                             <p>Fashion has been creating well-designed collections since 2010. The brand offers
-                                 feminine designs delivering stylish separates and statement dresses which have since
-                                 evolved into a full ready-to-wear collection in which every item is a vital part of a
-                                 woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and
-                                 unmistakable signature style. All the beautiful pieces are made in Italy and
-                                 manufactured with the greatest attention. Now Fashion extends to a range of accessories
-                                 including shoes, hats, belts and more!</p>
-                         </div>
-                         <div class="product_info_inner">
-                             <div class="product_ratting mb-10">
-                                 <ul>
-                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                 </ul>
-                                 <strong>Posthemes</strong>
-                                 <p>09/07/2018</p>
-                             </div>
-                             <div class="product_demo">
-                                 <strong>demo</strong>
-                                 <p>That's OK!</p>
-                             </div>
-                         </div>
-                         <div class="product_review_form">
-                             <form action="#">
-                                 <h2>Add a review </h2>
-                                 <p>Your email address will not be published. Required fields are marked </p>
-                                 <div class="row">
-                                     <div class="col-12">
-                                         <label for="review_comment">Your review </label>
-                                         <textarea name="comment" id="review_comment"></textarea>
-                                     </div>
-                                     <div class="col-lg-6 col-md-6">
-                                         <label for="author">Name</label>
-                                         <input id="author" type="text">
-
-                                     </div>
-                                     <div class="col-lg-6 col-md-6">
-                                         <label for="email">Email </label>
-                                         <input id="email" type="text">
-                                     </div>
-                                 </div>
-                                 <button type="submit">Submit</button>
-                             </form>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </div>
- <!--product info end-->
-
-
  <!--new product area start-->
- <div class="new_product_area product_page">
-     <div class="row">
-         <div class="col-12">
-             <div class="block_title">
-                 <h3> 11 other products category:</h3>
-             </div>
-         </div>
-     </div>
-     <div class="row">
-         <div class="single_p_active owl-carousel">
-             <div class="col-lg-3">
-                 <div class="single_product">
-                     <div class="product_thumb">
-                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product1.jpg"
-                                 alt=""></a>
-                         <div class="img_icone">
-                            <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
-                         </div>
-                         <div class="product_action">
-                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                         </div>
-                     </div>
-                     <div class="product_content">
-                         <span class="product_price">$50.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Curabitur sodales</a></h3>
-                     </div>
-                     <div class="product_info">
-                         <ul>
-                             <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                             <li><a href="#" data-toggle="modal" data-target="#modal_box" title="Quick view">View
-                                     Detail</a></li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-lg-3">
-                 <div class="single_product">
-                     <div class="product_thumb">
-                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product2.jpg"
-                                 alt=""></a>
-                         <div class="hot_img">
-                            <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
-                         </div>
-                         <div class="product_action">
-                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                         </div>
-                     </div>
-                     <div class="product_content">
-                         <span class="product_price">$40.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Quisque ornare dui</a></h3>
-                     </div>
-                     <div class="product_info">
-                         <ul>
-                             <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                             <li><a href="#" data-toggle="modal" data-target="#modal_box" title="Quick view">View
-                                     Detail</a></li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-lg-3">
-                 <div class="single_product">
-                     <div class="product_thumb">
-                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product3.jpg"
-                                 alt=""></a>
-                         <div class="img_icone">
-                            <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
-                         </div>
-                         <div class="product_action">
-                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                         </div>
-                     </div>
-                     <div class="product_content">
-                         <span class="product_price">$60.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Sed non turpiss</a></h3>
-                     </div>
-                     <div class="product_info">
-                         <ul>
-                             <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                             <li><a href="#" data-toggle="modal" data-target="#modal_box" title="Quick view">View
-                                     Detail</a></li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-lg-3">
-                 <div class="single_product">
-                     <div class="product_thumb">
-                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product4.jpg"
-                                 alt=""></a>
-                         <div class="hot_img">
-                            <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
-                         </div>
-                         <div class="product_action">
-                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                         </div>
-                     </div>
-                     <div class="product_content">
-                         <span class="product_price">$65.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Duis convallis</a></h3>
-                     </div>
-                     <div class="product_info">
-                         <ul>
-                             <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                             <li><a href="#" data-toggle="modal" data-target="#modal_box" title="Quick view">View
-                                     Detail</a></li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-lg-3">
-                 <div class="single_product">
-                     <div class="product_thumb">
-                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product6.jpg"
-                                 alt=""></a>
-                         <div class="img_icone">
-                            <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
-                         </div>
-                         <div class="product_action">
-                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                         </div>
-                     </div>
-                     <div class="product_content">
-                         <span class="product_price">$50.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Curabitur sodales</a></h3>
-                     </div>
-                     <div class="product_info">
-                         <ul>
-                             <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                             <li><a href="#" data-toggle="modal" data-target="#modal_box" title="Quick view">View
-                                     Detail</a></li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </div>
+ <div class="new_product_area product_two">
+        <div class="row">
+            <div class="col-12">
+                <div class="block_title">
+                <h3>  New Products</h3>
+            </div>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="single_p_active owl-carousel">
+                <?php
+                    foreach($product as $pd):
+                ?>
+                <div class="col-lg-3">
+                    <div class="single_product">
+                        <div class="product_thumb">
+                            <a href="<?php echo $level?>pages\single-product.php?id=<?php echo $pd['id'] ?>"><img src="<?php echo $level?>uploads/<?php echo $pd['thumbnail'] ?>" alt=""></a> 
+                            <div class="img_icone">
+                                <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
+                            </div>
+                            <div class="product_action">
+                                <a href="<?php echo $level?>pages\single-product.php?id=<?php echo $pd['id'] ?>"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            </div>
+                        </div>
+                        <div class="product_content">
+                            <span class="product_price">$50.00</span>
+                            <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php?id=<?php echo $pd['id'] ?>"><?php echo $pd['title'] ?></a></h3>
+                        </div>
+                        <div class="product_info">
+                            <ul>
+                                <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#modal_box" title="Quick view">View Detail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+                
+            </div> 
+        </div>      
+    </div> 
  <!--new product area start-->
 
+<!--new product area start-->
+<div class="new_product_area product_page">
+    <div class="row">
+        <div class="col-12">
+            <div class="block_title">
+                <h3> Related Products</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="product_active owl-carousel">
+            <?php foreach ($result as $pda) : ?>
+                <div class="col-lg-3">
+                    <div class="single_product">
+                        <div class="product_thumb">
+                            <a href="<?php echo $level ?>pages\single-product.php?id=<?php echo $pda['id'] ?>"><img src="<?php echo $level ?>assets\img\product\<?php echo $pda['thumbnail'] ?>" alt=""></a>
+                            <div class="img_icone">
+                                <img src="<?php echo $level ?>assets\img\cart\span-<?php echo $pda['id'] % 2 == 0 ? 'hot' : 'new' ?>.png" alt="">
+                            </div>
+                            <div class="product_action">
+                                <a href="<?php echo $level ?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            </div>
+                        </div>
+                        <div class="product_content">
+                            <span class="product_price"><?php echo $pda['price'] ?></span>
+                            <h3 class="product_title"><a href="<?php echo $level ?>pages\single-product.php"><?php echo $pda['title'] ?></a></h3>
+                        </div>
+                        <div class="product_info">
+                            <ul>
+                                <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#modal_box" title="Quick view">View Detail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
 
- <!--new product area start-->
- <div class="new_product_area product_page">
-     <div class="row">
-         <div class="col-12">
-             <div class="block_title">
-                 <h3> Related Products</h3>
-             </div>
-         </div>
-     </div>
-     <div class="row">
-         <div class="single_p_active owl-carousel">
-             <div class="col-lg-3">
-                 <div class="single_product">
-                     <div class="product_thumb">
-                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product6.jpg"
-                                 alt=""></a>
-                         <div class="img_icone">
-                            <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
-                         </div>
-                         <div class="product_action">
-                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                         </div>
-                     </div>
-                     <div class="product_content">
-                         <span class="product_price">$50.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Curabitur sodales</a></h3>
-                     </div>
-                     <div class="product_info">
-                         <ul>
-                             <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                             <li><a href="#" data-toggle="modal" data-target="#modal_box" title="Quick view">View
-                                     Detail</a></li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-lg-3">
-                 <div class="single_product">
-                     <div class="product_thumb">
-                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product5.jpg"
-                                 alt=""></a>
-                         <div class="hot_img">
-                            <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
-                         </div>
-                         <div class="product_action">
-                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                         </div>
-                     </div>
-                     <div class="product_content">
-                         <span class="product_price">$40.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Quisque ornare dui</a></h3>
-                     </div>
-                     <div class="product_info">
-                         <ul>
-                             <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                             <li><a href="#" data-toggle="modal" data-target="#modal_box" title="Quick view">View
-                                     Detail</a></li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-lg-3">
-                 <div class="single_product">
-                     <div class="product_thumb">
-                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product4.jpg"
-                                 alt=""></a>
-                         <div class="img_icone">
-                            <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
-                         </div>
-                         <div class="product_action">
-                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                         </div>
-                     </div>
-                     <div class="product_content">
-                         <span class="product_price">$60.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Sed non turpiss</a></h3>
-                     </div>
-                     <div class="product_info">
-                         <ul>
-                             <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                             <li><a href="#" data-toggle="modal" data-target="#modal_box" title="Quick view">View
-                                     Detail</a></li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-lg-3">
-                 <div class="single_product">
-                     <div class="product_thumb">
-                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product3.jpg"
-                                 alt=""></a>
-                         <div class="hot_img">
-                            <img src="<?php echo $level?>assets\img\cart\span-hot.png" alt="">
-                         </div>
-                         <div class="product_action">
-                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                         </div>
-                     </div>
-                     <div class="product_content">
-                         <span class="product_price">$65.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Duis convallis</a></h3>
-                     </div>
-                     <div class="product_info">
-                         <ul>
-                             <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                             <li><a href="#" data-toggle="modal" data-target="#modal_box" title="Quick view">View
-                                     Detail</a></li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-lg-3">
-                 <div class="single_product">
-                     <div class="product_thumb">
-                         <a href="<?php echo $level?>pages\single-product.php"><img src="<?php echo $level?>assets\img\product\product2.jpg"
-                                 alt=""></a>
-                         <div class="img_icone">
-                            <img src="<?php echo $level?>assets\img\cart\span-new.png" alt="">
-                         </div>
-                         <div class="product_action">
-                            <a href="<?php echo $level?>pages\single-product.php"> <i class="fa fa-shopping-cart"></i> Add to cart</a>
-                         </div>
-                     </div>
-                     <div class="product_content">
-                         <span class="product_price">$50.00</span>
-                         <h3 class="product_title"><a href="<?php echo $level?>pages\single-product.php">Curabitur sodales</a></h3>
-                     </div>
-                     <div class="product_info">
-                         <ul>
-                             <li><a href="#" title=" Add to Wishlist ">Add to Wishlist</a></li>
-                             <li><a href="#" data-toggle="modal" data-target="#modal_box" title="Quick view">View
-                                     Detail</a></li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </div>
- <!--new product area start-->
+        </div>
+    </div>
+</div>
+<!--new product area start-->

@@ -1,7 +1,12 @@
 <?php
+if(!isset($_SESSION['login']))
+{
+    header("location:{$level}pages/page-login.php");
+}
   include_once "{$level}Database/tables/list_data_user.php";
   include_once "{$level}Database/tables/list_data_orders.php";
-  $sql = "select orders.id,user.fullname,user.email,user.phone_number,user.address,orders.user_id,orders.note,orders.order_date,orders.status from user inner join orders on orders.user_id = user.id";
+
+  $sql = "select orders.id,orders.fullname,orders.email,orders.phone_number,orders.address,orders.user_id,orders.note,orders.order_date,orders.status, orders.total_money from user inner join orders on orders.user_id = user.id ";
   $data = $conn->query($sql);
   $user_orders = $data->fetchAll(PDO::FETCH_ASSOC);    
 
@@ -54,17 +59,16 @@
                     <input type="text" name="search" placeholder="Search" title="Enter search keyword">
                     <button type="submit" title="Search" name='btn'><i class="bi bi-search"></i></button>
                 </form>
-                <a href="<?php echo $level?>EditDataBase/FormEdit/F_add_admin.php" class="text-light"><button type="button" class="btn btn-primary"><i class="bi bi-plus-circle-dotted"></i>  New Account Admin</button></a>
 
             </div>
-              <h5 class="card-title">User Information</h5>
+              <h5 class="card-title">Orders</h5>
             <?php                
                 if(isset($_POST['btn']))
                 {       
                     $get_value = $_POST['search'];             
                     if($get_value != '')
                     {                        
-                        $filter = $sql." where orders.id like '%$get_value%' or fullname like '%$get_value%' or email like '%$get_value%' or phone_number like '%$get_value%' or address like '%$get_value%' or note like '%$get_value%' or order_date like '%$get_value%'";
+                        $filter = $sql." where orders.id like '%$get_value%' or user.fullname like '%$get_value%' or user.email like '%$get_value%' or user.phone_number like '%$get_value%' or user.address like '%$get_value%' or note like '%$get_value%' or order_date like '%$get_value%'";
                         $data_search = $conn->query($filter);
                         $search = $data_search->fetchAll(PDO::FETCH_ASSOC); 
                         $count = count($search);
@@ -78,7 +82,7 @@
 
                                 <thead>
                                 <tr>
-                                    <?php $list = array('Order ID','Full name','Email','Phone number','Address','Note','Order date','Status','Edit');
+                                    <?php $list = array('Order ID','Full name','Email','Phone number','Address','Note','Order date','Total money','Status','Edit','View');
                                     foreach($list as $ls)
                                     {
                                         echo '<th scope="col">'.$ls.'</th>';
@@ -98,12 +102,15 @@
                                     <td><?php echo $us['address'] ?></td>
                                     <td><?php echo $us['note'] ?></td>
                                     <td><?php echo $us['order_date'] ?></td>
+                                    <td><span class="badge bg-warning text-dark">$<?php echo $us['total_money'] ?></span></td>
                                     <td><span class="badge bg-<?php echo bg_status($us['status'])?>"><?php echo check_status($us['status'])?></span></td>                                                       
                                     <td>
                                         <a href="<?php echo $level ?>EditDataBase/edit/E_accept_order.php?id=<?php echo $us['id'] ?>"
                                             style="margin:0 5px;"><?php echo check_btn_accept($us['status'])?></a>
                                        
                                     </td>
+                                    <td><a href="<?php echo $level ?>pages/table-data-order-details.php?id=<?php echo $us['id'] ?>" class="text-primary" style="font-size: 12px;">Detail</a></td>
+
                                     </tr>
                                     <?php endforeach;?>    
                                 </tbody>
@@ -137,7 +144,7 @@
                     <table class="table datatable ">
                                 <thead>
                                 <tr>
-                                    <?php $list = array('Order ID','Full name','Email','Phone number','Address','Note','Order date','Status','Edit');
+                                    <?php $list = array('Order ID','Full name','Email','Phone number','Address','Note','Order date','Total money','Status','Edit','View');
 
                                     foreach($list as $ls)
                                     {
@@ -158,12 +165,15 @@
                                     <td><?php echo $us['address'] ?></td>
                                     <td><?php echo $us['note'] ?></td>
                                     <td><?php echo $us['order_date'] ?></td>
+                                    <td><span class="badge bg-warning text-dark">$<?php echo $us['total_money'] ?></span></td>
                                     <td><span class="badge bg-<?php echo bg_status($us['status'])?>"><?php echo check_status($us['status'])?></span></td>                                                                           
                                     <td>
                                         <a href="<?php echo $level ?>EditDataBase/edit/E_accept_order.php?id=<?php echo $us['id'] ?>"
                                             style="margin:0 5px;"><?php echo check_btn_accept($us['status'])?></a>
                                         
                                     </td>
+                                    <td><a href="<?php echo $level ?>pages/table-data-order-details.php?id=<?php echo $us['id'] ?>" class="text-primary" style="font-size: 12px;">Detail</a></td>
+
                                     </tr>
                                     <?php endforeach;?>    
                                 </tbody>
